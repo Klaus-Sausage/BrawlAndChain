@@ -49,7 +49,7 @@ These IDs organize future tests; no tests have been run. Numerical criteria or o
 ## Later production and full-game questions
 
 - Browser/hardware baseline for 60 FPS, load size, memory, supported input, and build hosting.
-- 2D fantasy sprites are the current direction; final art/animation pipeline, budget, replacement asset sources/licenses and audio/voice scope remain open. Private Mystara visual-study framing awaits owner feedback.
+- 2D fantasy sprites are the current direction; final art/animation pipeline, budget, replacement asset sources/licenses and audio/voice scope remain open. Current private visual-study framing is owner-approved; production resolution and final art remain open.
 - Accessibility: rebinding, visual alternatives to barks, readable hidden-health cues, text/contrast, camera shake/slowdown and gore settings. No final accessibility specification is established.
 - Full-game persistence: map/loot survival on mission failure, unlock ownership, duplicate drop filtering, online loot sharing, saves. Slice does not need a proper persistent save.
 - Full-game town/buildings, economy, extraction variation, campaign content, and alternate role sets.

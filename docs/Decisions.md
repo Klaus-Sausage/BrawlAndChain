@@ -117,3 +117,8 @@ Record **date / ID / old rule → new rule / status / owner or source / reason a
 **Source:** Owner confirmed eventual similar 80s/90s fantasy sprite art, temporary Mystara use purely for the first private build, then explicitly requested implementation of the visual-test plan.
 
 **CURRENT:** 2D fantasy sprites; Fighter as temporary Barbarian visual, goblin and Village of Trintan; replaceable visual children with foot origins. **EXPERIMENTAL:** static 480×270 composition at 960×540, nearest filtering, fixed camera; no HUD or gameplay. Reason: owner wants to see scale/framing before combat development. Supersedes “2D sprites versus 3D pipeline OPEN” for the initial visual direction; final resolution and asset production remain open. Source credits/original sheets preserved, reuse permission unverified, preview restricted to private use. Affected: GDD art section, handoff, asset notes, visual scene, progress and open questions. Actual native/browser results: [Visual Preview](Visual-Preview.md). Not playable 0.0.1.
+
+
+### D-059 owner review — 2026-11-16
+
+Owner approved the current private preview composition (“yeah thats perfect”) after viewing the native and browser result. Keep this character scale, camera distance and composition as the accepted starting visual. The canvas/display dimensions remain experimental and are not a production-resolution decision. No gameplay or final-asset decision follows from this feedback.

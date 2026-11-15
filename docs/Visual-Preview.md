@@ -23,4 +23,6 @@ Asset provenance and replacement notes: [temporary artwork](../assets/temporary_
 
 Repeat export: `godot --headless --path . --export-release Web exports/web/index.html`. Native evidence capture: `godot --path . -- --capture-preview` writes `/tmp/brawl-visual-native.png` then exits. Build output is ignored.
 
-Next: owner reviews character size, camera distance and composition. Then agree the focused first-combat objective. Final artwork and animation production remain future work.
+## Owner review
+
+2026-11-16: Owner reviewed the native/browser composition and confirmed “yeah thats perfect”. **CURRENT for this private visual study:** approved character scale, camera distance and composition as shown. The 480×270 canvas and 960×540 display remain provisional framing values, not a locked production resolution. Next: agree the focused first-combat objective. Final artwork and animation production remain future work.
