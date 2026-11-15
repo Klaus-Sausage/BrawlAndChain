@@ -1,14 +1,32 @@
 # First private visual preview
 
-2026-11-16. Owner approved implementing the static visual-test plan: eventual 80s/90s fantasy sprite art, temporary Mystara Fighter/Barbarian stand-in, goblin and Village of Trintan. This records a visual study, not playable 0.0.1.
+2026-11-16. Owner approved the initial visual-test plan: eventual 80s/90s fantasy sprite art, temporary Mystara Fighter/Barbarian stand-in, goblin and Village of Trintan. The composition was later extended into the private 0.0.1 movement-and-strike experiment below.
 
 ## Layout and operation
 
-Default scene: `scenes/visual_preview.tscn`. Run `godot --path .` or open the project and press F5. It contains a fixed Camera2D at (240,135), static hero at (140,226), goblin at (340,226), village backdrop and a separate foreground floor crop. The two figures face each other, have replaceable `Visual` child nodes and share a foot baseline. No HUD, movement, combat, animation loops or audio.
+Default scene: `scenes/visual_preview.tscn`. Run `godot --path .` or open the project and press F5. It contains a fixed Camera2D at (240,135), hero at (140,226), goblin at (340,226), village backdrop and a separate foreground floor crop. The two figures have replaceable `Visual` child nodes and share a foot baseline. There are no animation loops or audio.
 
 Provisional 480×270 internal canvas, 960×540 desktop window, viewport stretch with integer scaling/letterboxing and nearest-neighbour texture filtering. Sprites use source pixel proportions at 1× internally. This is an experiment in composition and scale, not a locked production resolution or final Barbarian design. The scene's only script logs readiness and supports optional verification capture.
 
 Original launch-check scene is preserved. Run it explicitly with `godot --path . res://scenes/launch_test.tscn`; its script restores its 960×540 content scale so the existing controls remain visible.
+
+## 0.0.1 — Basic movement and hit feel
+
+Owner-approved 2026-11-16. This private experiment asks whether floor-depth movement and one clear strike feel like a sound starting point. The code is deliberately small and replaceable: `hero_intent.gd` converts provisional WASD/J input to movement/strike intent, `combat_resolver.gd` checks front/range/lane and reports a hit or miss, `goblin_reaction.gd` presents hit flash/knockback, and `visual_preview.gd` presents short HIT/MISS text. Input/origin, hit decision and sprite response remain separate. The goblin has no AI or attacks.
+
+- **WASD:** A/D across the arena, W/S along the floor; movement is clamped to scene bounds. Horizontal movement changes facing. The Fighter art is flipped according to its left-facing source orientation.
+- **J:** one strike in the current facing direction. A miss shows MISS but does not flash or move the goblin. A hit briefly colors and nudges the goblin, then it settles back to its starting point.
+- **Editable tuning:** `movement_speed` (90 px/s), horizontal margin (24 px), floor range (185–246 px), strike range (78 px), lane tolerance (18 px), strike repeat delay (0.32 s), flash (0.12 s), knockback (12 px), settle speed (90 px/s) and feedback duration (0.45 s). These are test values, not game-design commitments.
+- **Not included:** combos, player attack animation, enemy AI/attacks, health display, damage numbers, abilities, networking, production art, or audio.
+
+### Actual verification — 2026-11-16
+
+- Godot 4.7.2 stable import and Compatibility runtime pass. Native non-headless run on NVIDIA RTX 3080 logged `COMBAT_TEST_READY platform=Linux renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J`; frame capture returned `COMBAT_CAPTURE result=0 size=(480, 270)`. Existing X11 input-method warning remains; the game rendered successfully.
+- Release Web export completed with the matching standard 4.7.2 template. Localhost in-app Chromium loaded WebGL 2.0/Compatibility and logged `COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J`. Browser console errors/warnings: none.
+- Browser interaction: long D movement approached the goblin and J logged `STRIKE_RESULT hit=true`; visible HIT text appeared, and the goblin remained visible after its reaction. An isolated J from the starting distance logged `hit=false`. Moving briefly left while in close range, then pressing J, logged `hit=false` while facing away. W movement changed floor position; long D and S movement held the hero at the right/bottom arena bounds. Pixel edges stayed crisp and the scene framing remained fixed.
+- These checks verify code response and browser execution, not whether the movement, range, impact, or timing feels good to the owner. Controls and values are provisional. No gameplay owner playtest or external playtest has occurred.
+
+Reproduce: `godot --headless --editor --path . --import`; `godot --path .`; `godot --headless --path . --export-release Web exports/web/index.html`; `python3 tools/serve_web.py`; open `http://127.0.0.1:8060/`. Keep exported files private with the Mystara assets.
 
 Asset provenance and replacement notes: [temporary artwork](../assets/temporary_mystara/README.md). Original sheets remain unchanged and are excluded from engine import/export; only display crops enter the web pack. To reproduce the crops, run `python3 tools/prepare_visual_assets.py` with Pillow installed.
 

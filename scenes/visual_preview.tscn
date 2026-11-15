@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=9 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/village.png" id="1"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/floor.png" id="2"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/fighter_idle.png" id="3"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/goblin_idle.png" id="4"]
 [ext_resource type="Script" path="res://scripts/visual_preview.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/hero_intent.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/goblin_reaction.gd" id="7"]
+[ext_resource type="Script" path="res://scripts/combat_resolver.gd" id="8"]
 
-[node name="VisualPreview" type="Node2D"]
+[node name="CombatTest" type="Node2D"]
 texture_filter = 1
 script = ExtResource("5")
 
@@ -25,6 +28,7 @@ centered = false
 
 [node name="Hero" type="Node2D" parent="."]
 position = Vector2(140, 226)
+script = ExtResource("6")
 
 [node name="Visual" type="Sprite2D" parent="Hero"]
 texture = ExtResource("3")
@@ -34,6 +38,7 @@ flip_h = true
 
 [node name="Goblin" type="Node2D" parent="."]
 position = Vector2(340, 226)
+script = ExtResource("7")
 
 [node name="Visual" type="Sprite2D" parent="Goblin"]
 texture = ExtResource("4")
@@ -41,6 +46,18 @@ centered = false
 offset = Vector2(-32, -46)
 flip_h = true
 
+[node name="CombatResolver" type="Node" parent="."]
+script = ExtResource("8")
+
 [node name="Camera" type="Camera2D" parent="."]
 position = Vector2(240, 135)
 position_smoothing_enabled = false
+
+[node name="Feedback" type="Label" parent="."]
+visible = false
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 90.0
+offset_bottom = 38.0
+text = "HIT"
+theme_override_font_sizes/font_size = 14

@@ -122,3 +122,11 @@ Record **date / ID / old rule → new rule / status / owner or source / reason a
 ### D-059 owner review — 2026-11-16
 
 Owner approved the current private preview composition (“yeah thats perfect”) after viewing the native and browser result. Keep this character scale, camera distance and composition as the accepted starting visual. The canvas/display dimensions remain experimental and are not a production-resolution decision. No gameplay or final-asset decision follows from this feedback.
+
+## D-060 — First private 0.0.1 combat experiment, 2026-11-16
+
+**Source:** Owner explicitly approved implementing “0.0.1 — Basic movement and hit feel” in the current visual study.
+
+**CURRENT objective / EXPERIMENTAL implementation:** Move the Barbarian stand-in with provisional WASD inside the arena; press J for one directional strike; a goblin registers a valid strike with temporary flash and displacement, without enemy AI. Keep the 480×270 canvas/960×540 framing, Compatibility renderer, fixed camera, temporary Mystara art and replaceable visual children. Intent, hit resolution and visual reaction are separate scripts. Strike range, lane tolerance, repeat delay and reaction timing are editable scene/script settings. Values and feel remain **PLAYTEST REQUIRED**.
+
+**Reason and boundary:** Prove one focused movement/strike question after the owner approved the composition. This is a first private playable experiment, not 0.1.0 scope or an approved feature roadmap. No combos, enemy attacks, health UI, damage numbers, abilities or networking. Supersedes the earlier “no gameplay; agree first playable objective” progress wording. Affected: GDD technical state, Visual Preview, Open Questions and Progress. Actual native/browser results are recorded in [Visual Preview](Visual-Preview.md); owner play-feel review is pending.

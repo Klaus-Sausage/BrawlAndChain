@@ -11,7 +11,7 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
 | Godot tooling/version/export templates | CURRENT local / OPEN cloud | Standard Godot 4.7.2 stable, matching web templates, typed GDScript technical project and Compatibility configured/launch-verified locally. See Godot-Setup.md. Cloud engine installation still unverified. |
 | Browser export validation | CURRENT launch / OPEN gameplay/audio | Minimal single-threaded release export rendered and handled an actual click in the in-app Chromium browser using WebGL 2.0. Other browsers, performance and MONEY SHOT music/slowdown timing remain untested. See Godot-Setup.md. |
-| First prototype | OPEN | One agreed playable question and minimal acceptance criteria. No detailed numbered roadmap approved. |
+| First prototype | CURRENT 0.0.1 implemented; PLAYTEST REQUIRED | Owner approved basic movement and one-hit feel as the focused 0.0.1 question. Private Mystara test supports provisional WASD + J movement/strike. Owner feel feedback is still needed before tuning or expanding scope. No detailed numbered roadmap approved. See [Visual Preview](Visual-Preview.md). |
 
 ## Mechanics needing specification before their implementation
 

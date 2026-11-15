@@ -32,11 +32,11 @@ Pull before working and commit/push before switching environments. Automatic syn
 
 ## Current implementation status
 
-A minimal Godot 4.7.2 Compatibility technical launch project now exists with typed GDScript and a Web export preset. Native/editor startup and browser startup/input were verified. No gameplay, production assets, playable prototype or gameplay test exists. No console developer access or platform builds have been verified. Historical Unity references remain in the source archive and dated records.
+A minimal Godot 4.7.2 Compatibility project now includes the private 0.0.1 WASD movement and single-strike experiment. Native rendering and browser movement/hit/miss behavior were verified; owner feel review remains pending. Production assets, full-slice gameplay, and console developer access/platform builds have not been verified. Historical Unity references remain in the source archive and dated records.
 
 ## Local technical launch test — 2026-11-16
 
-Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and a browser export/input check passed. Read [Godot setup](docs/Godot-Setup.md) for exact installation paths, run/export commands, screenshots and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. No gameplay is implemented; this is not playable 0.0.1.
+Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and browser movement/hit checks passed for the initial private 0.0.1 experiment. Read [Godot setup](docs/Godot-Setup.md) and [the Visual Preview notes](docs/Visual-Preview.md) for exact setup, controls, repeatable commands, evidence and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. Owner feel review remains pending; this is not the public 0.1.0 slice.
 
 ## Private visual study
 

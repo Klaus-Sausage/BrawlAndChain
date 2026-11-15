@@ -2,7 +2,13 @@
 
 Updated 2026-11-16 (Australia/Melbourne).
 
-## Current state — private visual study
+## Current state — private 0.0.1 movement and hit experiment
+
+2026-11-16: Implemented owner-approved 0.0.1 scope on the Mystara visual scene. Provisional WASD movement is clamped to the 480×270 arena; horizontal motion sets the Fighter's facing. J sends a single strike intent. Resolution checks facing, horizontal range and lane; a valid strike flashes/displaces the goblin. Short HIT/MISS text provides local feedback. Movement/intent, outcome resolution and replaceable sprite reaction are separate. Range, lane tolerance, cooldown, movement, feedback and reaction timings/distances are editable settings. The goblin does not fight back. No combos, player attack animation, health display, damage numbers, abilities, audio or networking.
+
+PASS: Godot 4.7.2 stable Compatibility import; native RTX 3080 scene launch/render and 480×270 capture; single-threaded WebGL 2.0/Compatibility release export and localhost Chromium run. Browser interaction logged close hit=true with visible HIT; distant and close-facing-away strikes logged hit=false; W movement changed floor position; prolonged D/S held the hero at the right/bottom bounds. Crisp pixel scaling and the approved fixed framing remained. Browser console had no warnings/errors. Native still reports the known X11 IME warning. Owner has not yet reviewed feel; speed, range, strike repeat, impact and knockback are experiment values. Details: [Visual Preview](Visual-Preview.md). Next: owner tries the build and gives movement/strike feel feedback before any tuning or added scope. This is not the public 0.1.0 slice.
+
+## Previous state — private visual study
 
 2026-11-16: Implemented the owner-approved static Mystara visual study as the default scene. Preserved original source sheets and credits, created transparent crops, placed Fighter/Barbarian stand-in and goblin facing each other on a shared foot baseline, and composed the Trintan village/floor. Replaceable visual child nodes, fixed camera, nearest filtering, 480×270 internal canvas with 960×540 desktop window and integer scaling. Original launch test remains available with its own content-scale restoration.
 
@@ -71,15 +77,15 @@ PASS: Reviewed the expected eight-file diff; all 10 Markdown files are nonempty 
 
 1. Use the latest GitHub checkout in the next session; read `AGENTS.md`, the handoff, and maintained docs, and inspect its actual path/branch/status. Verify a fresh task from the published cloud configuration separately if using it.
 2. Local Godot 4.7.2 standard editor and matching web templates are installed and launch-verified; follow Godot-Setup.md. Install/verify separately in any cloud environment used for engine work.
-3. Agree one focused 0.0.1 playable question and acceptance criteria, then implement only the required systems. No numbered feature roadmap or gameplay implementation is authorized by this documentation update.
+3. Have the owner play the private 0.0.1 build and record actual feel feedback; tune only the approved movement/strike experiment from that feedback. No detailed numbered roadmap is approved.
 4. Export/test the browser version early; include an audio/music/slowdown timing experiment for MONEY SHOT before substantial content work. Keep target browser/hardware and 60 FPS measurements explicit.
 5. Pull before work and commit/push before switching between cloud and `/home/klaus/Documents/BrawlAndChain`. GitHub backup is configured; automatic sync is not.
 
-## Build log template — no playable builds yet
+## Build log
 
 | Version | Date | Primary goal | Changes | Owner test notes | Other tester notes | Verification / bugs | Next step |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | — | No playable build created | — | Not tested | Not tested | Technical launch verified; no gameplay | Agree first playable goal |
+| 0.0.1 private experiment | 2026-11-16 | Basic movement and single-hit feel | Provisional WASD movement, J strike, hit/miss resolution, goblin flash/nudge | Owner review pending | No external tester | Native + browser verified; hit, distance/facing misses, W floor movement and D/S clamping observed; see Visual-Preview.md | Owner playtest, then tune feel |
 
 Use sequential 0.0.x playable prototypes; public slice is 0.1.0. Every build gets one primary proof, actual test results, known bugs, and next step. Iterate on poor feel rather than advancing an assumed roadmap. No specific feature-to-build numbering is approved.
 
