@@ -2,6 +2,8 @@
 
 **Baseline:** PDF recovery, 2026-11-15 (Australia/Melbourne). **Game milestone:** public vertical slice 0.1.0. This document replaces incomplete summaries for working purposes; it does not claim all tuning or implementation decisions are complete.
 
+**Last updated:** 2026-11-16 (Australia/Melbourne): owner-approved Unity → Godot engine direction; gameplay scope unchanged. See D-057 in [Decisions](Decisions.md).
+
 Sources: [historical transcript](sources/Historical-Design-Chat.md), [original PDF](sources/Historical-Design-Chat.pdf), and [later owner confirmations](sources/Codex-Owner-Confirmations.md). References below are PDF page numbers. Individual historical turn dates are unknown.
 
 ## 1. Status and authority
@@ -270,7 +272,9 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 
 **CURRENT (pp. 105–116 and later Codex setup):**
 
-- Unity; browser-playable slice, later Steam/PC and console aspirations. Editor version, renderer, packages, physics model, and browser compatibility constraints remain to be verified.
+- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Exact Godot release, installations, export templates, add-ons, and physics model remain OPEN; no project has been created or configured.
+- Planned browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify export behavior against the selected release. Test browser builds early, especially audio/music timing during MONEY SHOT slowdown. Sample versus Stream playback has feature/latency tradeoffs; the playback strategy is OPEN, not already implemented.
+- Console aspirations remain current, but Godot's standard download does not contain official console exporters. Platform approval, SDK access, and suitable third-party console tooling/porting services (or custom platform work) are required. Provider, budget, version compatibility, and platform support remain OPEN.
 - Target **60 FPS**, including browser. Test hardware/browser and measurable budget are OPEN; this is a target, not a verified result.
 - No proper persistent save needed for the short self-contained slice; session state is enough initially. Full-game persistence remains a separate requirement.
 - Solo + AI slice. Online co-op implementation DEFERRED, possible stretch goal only.
@@ -279,13 +283,15 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 - Rough placeholders acceptable during development. Public asset choices and licensing must be verified; no rights or production assets are established by the source. This is a delivery constraint, not a claim of a separate owner-approved art pipeline.
 - Default to deferring features that delay the demo unless they directly prove its core combat/tactical identity. Do not silently remove explicit slice inclusions; record any owner-approved scope change.
 
+Technical references checked 2026-11-16: [Godot web export and audio constraints](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [Godot console support](https://godotengine.org/consoles/). Recheck these against the release chosen during setup; these references do not verify this game's exports or performance.
+
 ## 17. Required public vertical slice — 0.1.0
 
 Recovered explicit scope (pp. 106–119):
 
 | Item | Scope / evidence |
 | --- | --- |
-| Browser playable | CURRENT required direction; exact Unity/build setup OPEN. |
+| Browser playable | CURRENT required direction; Godot 4 + GDScript, planned Compatibility baseline; exact release/export setup OPEN. |
 | Approximately 5–15 minutes | CURRENT intended size, not yet measured. Owner directly describes this duration on p. 107; earlier summaries overstated uncertainty about its source. |
 | Solo + AI, all four heroes playable | Required; later Codex confirmations establish hero switching. |
 | Starter sets only | Required boundary; no alternate sets needed for slice. |

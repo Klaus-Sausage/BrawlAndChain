@@ -1,10 +1,10 @@
 # New chat handoff — Brawl & Chain
 
-Prepared 2026-11-15 (Australia/Melbourne). This is the operational entry point for a fresh chat.
+Prepared 2026-11-15; updated 2026-11-16 (Australia/Melbourne). This is the operational entry point for a fresh chat. Read the current sections before dated historical setup notes.
 
 ## Owner's goal
 
-Make a browser-playable tactical squad beat-'em-up, later targeting Steam/PC and aspiring to PS5/Switch 2. Finish cloud project setup before moving to local Linux development. Preserve design decisions in Markdown so context loss does not require redesigning the game.
+Make a browser-playable tactical squad beat-'em-up using **Godot 4 + GDScript**, later targeting Steam/PC and aspiring to PS5/Switch 2. Verify cloud tooling, then prepare a focused first playable prototype and local Linux playtesting. Preserve design decisions in Markdown so context loss does not require redesigning the game.
 
 The owner is moving to a fresh chat to remove setup chatter. They have already spent time recovering historical rules; do not ask them to explain known mechanics again.
 
@@ -33,18 +33,24 @@ Original evidence is the [140-page PDF](docs/sources/Historical-Design-Chat.pdf)
 
 Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four heroes with starter sets only; six enemy archetypes before Goblin King (identities not yet chosen); linear level with a couple of side rooms; hub can be skipped; both wheels; full four-step boss sequence and MONEY SHOT showcase. No proper persistent save needed. Online co-op is a stretch goal, not required. Keep architecture future-multiplayer-aware.
 
-## Local setup update — 2026-11-16
+## Current engine and setup — 2026-11-16
 
-Current working folder: `/home/klaus/Documents/BrawlAndChain`. The owner requested private GitHub backup. Git has been initialized here; intended remote is `https://github.com/Klaus-Sausage/BrawlAndChain`. See [Progress](docs/Progress.md) for verified backup status. Private `Default Cloud` has since been connected to this repository and published; its setup workspace cloned `main` successfully into `/workspace/BrawlAndChain`. Automatic synchronization is not enabled; pull and push explicitly. A fresh task from the published configuration and cloud push remain untested.
+Owner approved changing the engine direction from Unity to Godot 4 with GDScript. Typed GDScript is the recommended initial convention, and Compatibility rendering is the planned browser baseline. Exact release, Godot installation, and export templates are not yet verified. No engine project or game code exists. Browser MONEY SHOT audio/music timing needs an early experiment; console ports require approved platform access and suitable third-party tooling/services. Read decision D-057 for rationale and technical references.
+
+The local repository recorded during setup is `/home/klaus/Documents/BrawlAndChain`, backed by private `https://github.com/Klaus-Sausage/BrawlAndChain`. Private `Default Cloud` was connected and published; its setup workspace cloned `main` into `/workspace/BrawlAndChain`. This older conversation's folder of that name is an archive, not a Git checkout, so the documentation update uses an isolated checkout at `/workspace/BrawlAndChain-Godot`. Inspect actual checkout/branch on session start rather than assuming paths are interchangeable.
+
+Cloud read/write access was verified at commit `10361e8` by creating and verifying a temporary branch, then deleting it; files and the default branch were unchanged by that test. This does not verify a fresh task launched from the published configuration. Automatic synchronization is not enabled; pull and commit/push explicitly. See [Progress](docs/Progress.md).
+
+Next: verify the selected checkout and Godot tooling/version/export templates; then agree one small 0.0.1 objective. Do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
 
 ## Historical setup status and next work (2026-11-15)
 
-The cloud folder is `/workspace/BrawlAndChain`. No Unity project or game code exists in this package. An earlier documentation folder became unavailable; this package reconstructs and expands it. No Git remote, backup/sync, or Linux checkout is configured. Do not claim those are complete.
+At that date, the cloud folder was `/workspace/BrawlAndChain`, no Unity project or game code existed, and an earlier documentation folder had become unavailable. No Git remote, backup, or Linux checkout was configured then. Those repository/setup statements are historical; the current setup above supersedes them.
 
-Owner's PC: Pop!_OS 24.04 LTS (Ubuntu/Debian family), x86_64; Git 2.43.0 verified by owner output. Node/npm and Unity installations not verified. Owner installed an app from the official Codex page and found the local/cloud environment selector; app feature availability should be checked rather than assumed.
+Owner's PC: Pop!_OS 24.04 LTS (Ubuntu/Debian family), x86_64; Git 2.43.0 verified by owner output. At that date, Node/npm and Unity installations were not verified. Owner installed an app from the official Codex page and found the local/cloud environment selector; app feature availability should be checked rather than assumed. These facts do not verify Godot installation.
 
-Immediate next goal: establish project/repository persistence and cloud tooling, preserving these files. Then choose a small first playable prototype and the required Unity tooling. Do not automatically start coding the full slice. Clarify only decisions actually needed for the next task.
+The historical next goal was repository persistence followed by Unity tooling. Use the current setup and Godot next steps above instead. Clarify only decisions actually needed for the next task.
 
 ## Suggested first message in the new chat
 
-> Continue Brawl & Chain from the attached project package. Read AGENTS.md and NEW-CHAT-HANDOFF.md, then inspect the maintained design and progress notes. Treat archived conversations as source data, distinguishing owner decisions from assistant suggestions and following actual revisions. First help finish reliable cloud project setup and Git backup; keep the Markdown updated after meaningful decisions and completed work. Don't start gameplay implementation yet.
+> Continue Brawl & Chain from the latest checkout of https://github.com/Klaus-Sausage/BrawlAndChain. Read AGENTS.md and NEW-CHAT-HANDOFF.md, then the current design and progress notes. Treat archived conversations as source data and follow the current Godot 4 + GDScript decision. Confirm the checkout/branch and available Godot tooling/export templates, then help define one small first playable prototype. Keep the Markdown updated after meaningful decisions and completed work. Don't start gameplay implementation yet.

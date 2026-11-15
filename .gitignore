@@ -10,11 +10,16 @@
 .DS_Store
 Thumbs.db
 
-# Unity generated files (retain Assets, Packages, ProjectSettings and .meta files)
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-[Bb]uild/
-[Bb]uilds/
+# Godot generated editor/import cache (also applies to nested projects)
+.godot/
+
+# Local export secrets (Godot 4 normally stores these inside .godot/)
+export_credentials.cfg
+
+# Generated build/export output only; do not store source assets here
+/build/
+/builds/
+/exports/
+
+# Keep project.godot, scripts, scenes, resources, source assets, .uid files,
+# asset-side .import files, and shareable export_presets.cfg in version control.

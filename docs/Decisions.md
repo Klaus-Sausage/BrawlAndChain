@@ -2,6 +2,8 @@
 
 Baseline recorded 2026-11-15 (Australia/Melbourne). Historical turn dates unknown. Page references point to the [original PDF](sources/Historical-Design-Chat.pdf) and corresponding headings in the [full transcript](sources/Historical-Design-Chat.md). This register summarizes owner-confirmed rules; it does not make every tunable or example immutable.
 
+Updated 2026-11-16 (Australia/Melbourne). D-057 supersedes the engine portion of D-046; D-056 reflects subsequent verified repository setup. Historical source documents are unchanged.
+
 ## Identity and principles
 
 | ID | Decision | Status | Source / reason |
@@ -66,7 +68,7 @@ Baseline recorded 2026-11-15 (Australia/Melbourne). Historical turn dates unknow
 
 | ID | Decision | Status | Source / reason |
 | --- | --- | --- | --- |
-| D-046 | Unity; browser slice, Steam first, eventual consoles. Later console intent PS5/Switch 2. | CURRENT | pp. 12, 105–107 and later Codex owner statement; no version/build verified. |
+| D-046 | Historical engine choice: Unity. Browser slice, Steam first, eventual consoles; later console intent PS5/Switch 2. | Engine superseded by D-057; platforms CURRENT | pp. 12, 105–107 and later Codex owner statement. Unity was chosen for broad platform reach; no game project was implemented. Engine replaced by owner-approved Godot direction on 2026-11-16; platform goals retained. |
 | D-047 | Solo + AI first; future network-authoritative compatibility in all system/code briefs. | LOCKED planning constraint | pp. 106–107, 114; online only a slice stretch goal. |
 | D-048 | Approx. 5–15-minute self-contained slice; no proper persistent save needed. | CURRENT | p. 107; duration has direct owner evidence, not just earlier assistant framing. |
 | D-049 | 60 FPS target including browser. | CURRENT target | p. 108; hardware/browser measurement baseline open. |
@@ -76,7 +78,16 @@ Baseline recorded 2026-11-15 (Australia/Melbourne). Historical turn dates unknow
 | D-053 | Amazon, Warlock, adaptive enemy director, town minigames parked; full online implementation deferred/stretch. | DEFERRED / EXPERIMENTAL | pp. 112–114. Adaptive music specifically excluded from deferrals. |
 | D-054 | Frequent playable 0.0.x builds, one primary proof; first public slice 0.1.0; game feel first. | LOCKED workflow | pp. 107–109, 115–116; detailed example roadmap not approved. |
 | D-055 | Build log Version/Date/Goal/Changes/Test Notes/Next Step; separate owner/other tester feedback. | CURRENT | pp. 114–116. |
-| D-056 | Persistent Markdown documentation, cloud first then local Linux/Git sync. | CURRENT operational intent | Later Codex owner requests and setup. Repository/backup not configured. |
+| D-056 | Persistent Markdown documentation; private GitHub backup and separate cloud/Linux checkouts with explicit pull/commit/push. | CURRENT operational workflow | Later Codex owner requests and setup. Private repository, initial push/fresh clone, and local checkout were recorded during setup; subsequent cloud read/write test created, verified, and deleted a temporary branch at `10361e8`. Automatic sync is not configured; a fresh task from the published cloud configuration remains untested. See Progress. |
+| D-057 | Godot 4 + GDScript replaces Unity; typed GDScript recommended initially, Compatibility rendering planned for browser. | CURRENT engine/language; recommended technical defaults, exact release OPEN | Owner approved implementing the Godot documentation plan in Codex on 2026-11-16. Rationale: 2D/browser-first suitability, lighter Linux/cloud setup, open-source engine licensing, and GDScript iteration. Tradeoffs: standard Godot 4 web export lacks C# support; consoles need approved access plus appropriate third-party tooling/services or custom work. No engine project or install/export test yet. |
+
+## Engine change — 2026-11-16
+
+**Old → new:** Unity (historical D-046) → Godot 4 + GDScript (D-057). This is an engine/language decision and documentation/ignore-rule update, not a gameplay redesign or a port of existing code. Exact release remains OPEN. Typed GDScript and Compatibility rendering are recommended/planned initial technical defaults, not locked implementation details.
+
+**Evidence and impact:** Owner requested the change after comparing engines and GDScript, then approved the implementation plan. Update GDD technical/browser sections, assistant instructions, README/handoff, setup/playtest backlog, progress notes, and generated-file exclusions. Preserve the original transcript/PDF and prior Unity rationale. Godot browser audio timing is an early MONEY SHOT test; adaptive music remains in the slice. Future multiplayer separation and all platform/slice goals are retained.
+
+**Technical references:** [Godot web export](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [console support](https://godotengine.org/consoles/), [engine license](https://godotengine.org/license/). Verified against published documentation during the decision discussion; recheck release-specific behavior during setup. No gameplay build or playtest evidence exists for this change.
 
 ## Reconciliation notes — 2026-11-15
 

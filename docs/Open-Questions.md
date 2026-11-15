@@ -6,10 +6,11 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 
 | Item | Status | Needed outcome |
 | --- | --- | --- |
-| Codex project/environment organization | CURRENT | Private `Default Cloud` connected to BrawlAndChain and published 2026-11-16; setup clone verified. Fresh published task and cloud push still untested. No automatic file sync. |
+| Codex project/environment organization | CURRENT | Private `Default Cloud` connected to BrawlAndChain and published 2026-11-16; setup clone verified. Cloud read/write subsequently verified with a temporary branch created, checked, and deleted at `10361e8`. Fresh task launched from published configuration still untested. No automatic file sync. |
 | Repository and external backup | CURRENT | Private `Klaus-Sausage/BrawlAndChain` created; initial push and fresh clone verified 2026-11-16. Automatic sync is not configured. |
-| Local Linux checkout | CURRENT | Working repository at `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Cloud checkout/setup remains separate. |
-| Unity tooling/version/template | OPEN | Verify available tools, pick supported release and browser-compatible rendering/build configuration. No editor version selected. |
+| Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
+| Godot tooling/version/export templates | OPEN | Godot 4 + GDScript is current direction; choose and pin an exact stable release, verify cloud/Linux installations and matching export templates. Typed GDScript recommended; Compatibility rendering planned for browser. No project/configuration created yet. |
+| Browser export validation | OPEN | Verify a minimal GDScript export in target browsers, then test MONEY SHOT music/slowdown timing and audio feature/latency tradeoffs before significant content work. Test browser/hardware baseline not yet chosen. |
 | First prototype | OPEN | One agreed playable question and minimal acceptance criteria. No detailed numbered roadmap approved. |
 
 ## Mechanics needing specification before their implementation
@@ -38,7 +39,7 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | PT-06 | Anti-spam solution. | Anti-spam required; no chosen mechanism. |
 | PT-07 | Friendly status side effects. | No ordinary teammate chip damage. |
 | PT-08 | MONEY SHOT frequency and eligibility, camera/time restoration. | Selective significance; Goblin King showcase required. |
-| PT-09 | Adaptive music approach and overall music genre. | Musical payoff remains in slice; style not chosen. |
+| PT-09 | Adaptive music approach and overall music genre; early Godot browser music/slowdown synchronization check. | Musical payoff remains in slice; style not chosen. Sample/Stream playback mode, feature/latency tradeoffs, and scheduling remain open. No browser audio test run yet. |
 | PT-10 | Short-rest effects, locations, limits/costs. | No explicit long-rest mechanic. Not automatically a slice gate. |
 | PT-11 | Depth and usability of conditional companion AI settings. | Deeper-than-presets direction; exact rule set not fixed. |
 | PT-12 | Full boss-chain readability and overall run. | Four-step sequence required; observe actual duration and uncoached understanding. |
@@ -53,7 +54,7 @@ These IDs organize future tests; no tests have been run. Numerical criteria or o
 - Full-game persistence: map/loot survival on mission failure, unlock ownership, duplicate drop filtering, online loot sharing, saves. Slice does not need a proper persistent save.
 - Full-game town/buildings, economy, extraction variation, campaign content, and alternate role sets.
 - One baseline difficulty is established; exact optional hardcore/permadeath rules are OPEN.
-- Future network topology/player join model/authority and slowdown/presentation coordination; SDK/platform approval and console testing later. No networking framework chosen.
+- Future network topology/player join model/authority and slowdown/presentation coordination; SDK/platform approval and console testing later. Godot console middleware/porting provider, costs, target coverage, and compatibility with the chosen engine release remain OPEN. No networking framework chosen.
 
 ## Explicitly deferred, not accidentally forgotten
 
