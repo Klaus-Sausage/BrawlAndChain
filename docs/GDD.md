@@ -272,7 +272,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 
 **CURRENT (pp. 105–116 and later Codex setup):**
 
-- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Exact Godot release, installations, export templates, add-ons, and physics model remain OPEN; no project has been created or configured.
+- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). A minimal technical launch project exists, without gameplay; cloud engine installation, add-ons and physics model remain OPEN.
 - Planned browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify export behavior against the selected release. Test browser builds early, especially audio/music timing during MONEY SHOT slowdown. Sample versus Stream playback has feature/latency tradeoffs; the playback strategy is OPEN, not already implemented.
 - Console aspirations remain current, but Godot's standard download does not contain official console exporters. Platform approval, SDK access, and suitable third-party console tooling/porting services (or custom platform work) are required. Provider, budget, version compatibility, and platform support remain OPEN.
 - Target **60 FPS**, including browser. Test hardware/browser and measurable budget are OPEN; this is a target, not a verified result.
@@ -291,7 +291,7 @@ Recovered explicit scope (pp. 106–119):
 
 | Item | Scope / evidence |
 | --- | --- |
-| Browser playable | CURRENT required direction; Godot 4 + GDScript, planned Compatibility baseline; exact release/export setup OPEN. |
+| Browser playable | CURRENT required direction; Godot 4 + GDScript, Compatibility baseline; local Godot 4.7.2 launch/export verified, full-slice behavior untested. |
 | Approximately 5–15 minutes | CURRENT intended size, not yet measured. Owner directly describes this duration on p. 107; earlier summaries overstated uncertainty about its source. |
 | Solo + AI, all four heroes playable | Required; later Codex confirmations establish hero switching. |
 | Starter sets only | Required boundary; no alternate sets needed for slice. |
@@ -311,4 +311,4 @@ Replayability/game feel remain current goals. Exact pass/fail release checks, te
 
 See [Open Questions](Open-Questions.md). The historical source now supplies the main design; do not describe Reacharound/Circle Jerk/MUM RULES as entirely missing again. Detailed class kits, physical controls, simulation/AI implementation, balancing, and asset production still need focused decisions and playtests.
 
-This package contains documentation only. Actual development state and verification are in [Progress](Progress.md).
+This repository includes documentation and a minimal technical launch test, with no gameplay. Actual development state and verification are in [Progress](Progress.md).

@@ -2,7 +2,15 @@
 
 Updated 2026-11-16 (Australia/Melbourne).
 
-## Current state — Godot documentation update
+## Current state — local Godot launch setup
+
+2026-11-16: Installed and verified standard Godot **4.7.2.stable.official.ed1daf0bf** with GDScript and matching **4.7.2.stable** web export templates on the owner's Pop!_OS 24.04 x86_64 PC. Compatibility rendering is configured. A minimal technical project now exists: one scene, typed GDScript, version/renderer/platform text, timer and launch-check button. No gameplay exists and this is not playable 0.0.1.
+
+PASS: official archive SHA-256 checks; editor import; graphical editor startup; non-headless native 960×540 frame capture on RTX 3080; clean release web export; visible Chromium/WebGL 2.0 browser startup and actual click yielding `LAUNCH_INPUT_PASS`. Native/editor X11 IME warning remains; text entry/IME, native input click, other browsers, performance and audio timing are untested. The initial sandboxed export logged permission errors; the repeated export with normal permissions passed cleanly.
+
+Exact paths, downloads, installation record, repeatable commands, logs and screenshots: [Godot setup](Godot-Setup.md). Generated output/caches are ignored; source, script UID and shareable preset are tracked. Cloud Godot installation is not verified by this local work. Next: agree one focused first-playable question; retain early browser music/slowdown experiment. No gameplay implementation was performed.
+
+## Historical state — Godot documentation update
 
 Owner approved implementing the Unity → Godot documentation plan. **Current engine/language: Godot 4 + GDScript.** Typed GDScript is the recommended initial convention; Compatibility rendering is the planned browser baseline. Exact release, Godot installations, matching export templates, physics configuration, and browser exports remain unverified. No game project or code was ported or created, and no gameplay test was run.
 
@@ -56,16 +64,16 @@ PASS: Reviewed the expected eight-file diff; all 10 Markdown files are nonempty 
 ## Next tasks
 
 1. Use the latest GitHub checkout in the next session; read `AGENTS.md`, the handoff, and maintained docs, and inspect its actual path/branch/status. Verify a fresh task from the published cloud configuration separately if using it.
-2. Select/pin a stable Godot 4 release and verify editor/CLI plus matching browser export templates in the selected environment. Plan the local Linux tooling for actual playtesting; setup is not yet complete.
+2. Local Godot 4.7.2 standard editor and matching web templates are installed and launch-verified; follow Godot-Setup.md. Install/verify separately in any cloud environment used for engine work.
 3. Agree one focused 0.0.1 playable question and acceptance criteria, then implement only the required systems. No numbered feature roadmap or gameplay implementation is authorized by this documentation update.
 4. Export/test the browser version early; include an audio/music/slowdown timing experiment for MONEY SHOT before substantial content work. Keep target browser/hardware and 60 FPS measurements explicit.
 5. Pull before work and commit/push before switching between cloud and `/home/klaus/Documents/BrawlAndChain`. GitHub backup is configured; automatic sync is not.
 
-## Build log template — no builds yet
+## Build log template — no playable builds yet
 
 | Version | Date | Primary goal | Changes | Owner test notes | Other tester notes | Verification / bugs | Next step |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | — | No playable build created | — | Not tested | Not tested | Documentation only | Finish setup |
+| — | — | No playable build created | — | Not tested | Not tested | Technical launch verified; no gameplay | Agree first playable goal |
 
 Use sequential 0.0.x playable prototypes; public slice is 0.1.0. Every build gets one primary proof, actual test results, known bugs, and next step. Iterate on poor feel rather than advancing an assumed roadmap. No specific feature-to-build numbering is approved.
 

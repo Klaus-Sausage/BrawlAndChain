@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL
+Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.
+LAUNCH_READY platform=Web renderer=gl_compatibility version=4.7.2-stable (official)
+LAUNCH_INPUT_PASS
+
+Browser console retrieval returned these five log entries; no warn/error entries.

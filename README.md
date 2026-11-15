@@ -28,8 +28,12 @@ Pull before working and commit/push before switching environments. Automatic syn
 
 ## Engine direction
 
-**Godot 4 + GDScript**, replacing the earlier Unity choice by owner-approved decision on 2026-11-16. Typed GDScript is the recommended initial convention; Compatibility rendering is the planned browser baseline. Exact Godot release and installations remain open. The game design, browser-first slice, Steam/PC direction, and eventual PS5/Switch 2 aspirations remain in place. Godot console work requires approved platform access and suitable third-party tooling or porting services.
+**Godot 4 + GDScript**, replacing the earlier Unity choice by owner-approved decision on 2026-11-16. Typed GDScript is the recommended initial convention; Compatibility rendering is the planned browser baseline. Local Godot 4.7.2 stable and matching web templates are verified; other machines need their own installation. The game design, browser-first slice, Steam/PC direction, and eventual PS5/Switch 2 aspirations remain in place. Godot console work requires approved platform access and suitable third-party tooling or porting services.
 
 ## Current implementation status
 
-Documentation only. No Godot project, game scripts, production assets, playable build, or gameplay test has been created here. Godot installation and export templates have not been verified; no exact release is pinned. No console developer access or platform builds have been verified. Historical Unity references remain in the source archive and dated records.
+A minimal Godot 4.7.2 Compatibility technical launch project now exists with typed GDScript and a Web export preset. Native/editor startup and browser startup/input were verified. No gameplay, production assets, playable prototype or gameplay test exists. No console developer access or platform builds have been verified. Historical Unity references remain in the source archive and dated records.
+
+## Local technical launch test — 2026-11-16
+
+Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and a browser export/input check passed. Read [Godot setup](docs/Godot-Setup.md) for exact installation paths, run/export commands, screenshots and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. No gameplay is implemented; this is not playable 0.0.1.

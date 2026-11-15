@@ -35,13 +35,13 @@ Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four
 
 ## Current engine and setup — 2026-11-16
 
-Owner approved changing the engine direction from Unity to Godot 4 with GDScript. Typed GDScript is the recommended initial convention, and Compatibility rendering is the planned browser baseline. Exact release, Godot installation, and export templates are not yet verified. No engine project or game code exists. Browser MONEY SHOT audio/music timing needs an early experiment; console ports require approved platform access and suitable third-party tooling/services. Read decision D-057 for rationale and technical references.
+Owner approved changing the engine direction from Unity to Godot 4 with GDScript. Typed GDScript is the recommended initial convention, and Compatibility rendering is the planned browser baseline. Local Linux setup now uses standard Godot **4.7.2.stable.official.ed1daf0bf**, matching **4.7.2.stable** web templates and Compatibility rendering. A technical launch project exists; graphical editor/native rendering and a single-threaded WebGL 2.0 browser launch/input check passed. No gameplay exists. See [Godot setup](docs/Godot-Setup.md) for exact commands, evidence and limitations. Cloud engine installation remains unverified. Browser MONEY SHOT audio/music timing needs an early experiment; console ports require approved platform access and suitable third-party tooling/services. Read decision D-057 for rationale and technical references.
 
 The local repository recorded during setup is `/home/klaus/Documents/BrawlAndChain`, backed by private `https://github.com/Klaus-Sausage/BrawlAndChain`. Private `Default Cloud` was connected and published; its setup workspace cloned `main` into `/workspace/BrawlAndChain`. This older conversation's folder of that name is an archive, not a Git checkout, so the documentation update uses an isolated checkout at `/workspace/BrawlAndChain-Godot`. Inspect actual checkout/branch on session start rather than assuming paths are interchangeable.
 
 Cloud read/write access was verified at commit `10361e8` by creating and verifying a temporary branch, then deleting it; files and the default branch were unchanged by that test. This does not verify a fresh task launched from the published configuration. Automatic synchronization is not enabled; pull and commit/push explicitly. See [Progress](docs/Progress.md).
 
-Next: verify the selected checkout and Godot tooling/version/export templates; then agree one small 0.0.1 objective. Do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
+Next: pull the latest selected checkout; local tooling/technical launch is verified, then agree one small 0.0.1 objective. Do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
 
 ## Historical setup status and next work (2026-11-15)
 
