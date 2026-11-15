@@ -35,7 +35,7 @@ Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four
 
 ## Latest build — private 0.0.1 experiment (2026-11-16)
 
-Owner-approved private Mystara study now has basic gameplay: provisional WASD arena movement, J single directional strike, front/range/lane hit checks and goblin flash/nudge. Intent, hit resolution and visual reaction are separated; art stays replaceable. The goblin does not fight back. No combos, player attack animation, health UI, abilities, audio or networking. Native Linux and single-threaded WebGL 2.0/Compatibility browser runs and interaction checks passed at the approved 480×270 / 960×540 provisional framing. Owner has not play-tested feel yet. Read [Visual Preview](docs/Visual-Preview.md) for values, checks and actual limitations, then project instructions/design notes. Mystara reuse permission is unverified; keep the private build private and replace temporary art before public distribution. Next: owner tries the build and reports movement and strike feel before tuning or extending scope.
+Owner-approved private Mystara study now has provisional WASD arena movement, idle/walk animation, and a one-shot directional J attack. Hit resolution runs at the visible attack contact frame; misses animate without goblin feedback. Facing is fixed for each swing while movement continues; repeated J is locked out until the animation ends. Valid hits show the existing goblin flash/nudge. Intent, animation, hit resolution and visual reaction are separated; art stays replaceable. The goblin does not fight back. No combos, enemy animation/AI/attacks, health UI, abilities, audio or networking. Native Linux and single-threaded WebGL 2.0/Compatibility browser runs and interaction checks passed at the approved 480×270 / 960×540 provisional framing. Owner has not play-tested feel yet. Read [Visual Preview](docs/Visual-Preview.md) for values, checks and actual limitations, then project instructions/design notes. Mystara reuse permission is unverified; keep the private build private and replace temporary art before public distribution. Next: owner tries the build and reports movement, strike and animation feel before tuning or extending scope.
 
 ## Current engine and setup — 2026-11-16
 
@@ -45,7 +45,7 @@ The local repository recorded during setup is `/home/klaus/Documents/BrawlAndCha
 
 Cloud read/write access was verified at commit `10361e8` by creating and verifying a temporary branch, then deleting it; files and the default branch were unchanged by that test. This does not verify a fresh task launched from the published configuration. Automatic synchronization is not enabled; pull and commit/push explicitly. See [Progress](docs/Progress.md).
 
-Next: play the existing private 0.0.1 build and record owner feedback. Pull the latest selected checkout first and inspect status. Tune only the approved movement/strike experiment after feedback; do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
+Next: play the existing private 0.0.1 build and record owner feedback on movement, strike and animation feel. Pull the latest selected checkout first and inspect status. Tune only the approved experiment after feedback; do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
 
 ## Historical setup status and next work (2026-11-15)
 

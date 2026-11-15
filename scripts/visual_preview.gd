@@ -7,6 +7,10 @@ var _feedback_revision: int = 0
 
 func _ready() -> void:
 	print("COMBAT_TEST_READY platform=%s renderer=%s viewport=%s controls=WASD+J" % [OS.get_name(), RenderingServer.get_current_rendering_method(), get_viewport_rect().size])
+	$Hero.movement_state_changed.connect($Hero/HeroAnimation.set_movement_state)
+	$Hero.strike_requested.connect($Hero/HeroAnimation.play_attack)
+	$Hero/HeroAnimation.strike_contact.connect($CombatResolver.resolve_strike)
+	$Hero/HeroAnimation.attack_finished.connect($Hero.finish_attack)
 	$CombatResolver.strike_resolved.connect(_show_result)
 	if "--capture-preview" in OS.get_cmdline_user_args():
 		await get_tree().create_timer(1.0).timeout

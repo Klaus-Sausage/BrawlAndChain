@@ -32,12 +32,12 @@ Pull before working and commit/push before switching environments. Automatic syn
 
 ## Current implementation status
 
-A minimal Godot 4.7.2 Compatibility project now includes the private 0.0.1 WASD movement and single-strike experiment. Native rendering and browser movement/hit/miss behavior were verified; owner feel review remains pending. Production assets, full-slice gameplay, and console developer access/platform builds have not been verified. Historical Unity references remain in the source archive and dated records.
+A minimal Godot 4.7.2 Compatibility project now includes the private 0.0.1 WASD movement, walk/attack animation and single-strike experiment. Native rendering and browser movement/animation/hit/miss behavior were verified; owner feel review remains pending. Production assets, full-slice gameplay, and console developer access/platform builds have not been verified. Historical Unity references remain in the source archive and dated records.
 
 ## Local technical launch test — 2026-11-16
 
-Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and browser movement/hit checks passed for the initial private 0.0.1 experiment. Read [Godot setup](docs/Godot-Setup.md) and [the Visual Preview notes](docs/Visual-Preview.md) for exact setup, controls, repeatable commands, evidence and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. Owner feel review remains pending; this is not the public 0.1.0 slice.
+Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and browser movement, animation, contact-hit and miss checks passed for the private 0.0.1 experiment. Read [Godot setup](docs/Godot-Setup.md) and [the Visual Preview notes](docs/Visual-Preview.md) for exact setup, controls, repeatable commands, evidence and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. Owner feel review remains pending; this is not the public 0.1.0 slice.
 
 ## Private visual study
 
-The default scene now shows a static fantasy sprite composition using temporary Mystara artwork, with no HUD or gameplay. Run `godot --path .`; see [Visual Preview](docs/Visual-Preview.md) for screenshots, source credits, reproduction commands and limitations. The existing launch-check scene can be run explicitly. Keep these temporary assets and builds private; replace before public distribution.
+The default scene is a private 0.0.1 visual/combat experiment using temporary Mystara artwork, with no HUD. It has provisional movement, a hero walk loop and one attack. Run `godot --path .`; see [Visual Preview](docs/Visual-Preview.md) for controls, source credits, reproduction commands and limitations. The existing launch-check scene can be run explicitly. Keep these temporary assets and builds private; replace before public distribution.

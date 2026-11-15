@@ -9,11 +9,8 @@ signal strike_resolved(did_hit: bool)
 @onready var hero: Node2D = get_parent().get_node("Hero")
 @onready var goblin: Node2D = get_parent().get_node("Goblin")
 
-func _ready() -> void:
-	hero.strike_requested.connect(_resolve_strike)
-
-func _resolve_strike(origin: Vector2, facing_direction: float) -> void:
-	var offset := goblin.global_position - origin
+func resolve_strike(facing_direction: float) -> void:
+	var offset := goblin.global_position - hero.global_position
 	var in_front := offset.x * facing_direction > 0.0
 	var in_range := absf(offset.x) <= strike_range
 	var in_lane := absf(offset.y) <= lane_tolerance

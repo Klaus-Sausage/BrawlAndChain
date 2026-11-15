@@ -11,13 +11,13 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
 | Godot tooling/version/export templates | CURRENT local / OPEN cloud | Standard Godot 4.7.2 stable, matching web templates, typed GDScript technical project and Compatibility configured/launch-verified locally. See Godot-Setup.md. Cloud engine installation still unverified. |
 | Browser export validation | CURRENT launch / OPEN gameplay/audio | Minimal single-threaded release export rendered and handled an actual click in the in-app Chromium browser using WebGL 2.0. Other browsers, performance and MONEY SHOT music/slowdown timing remain untested. See Godot-Setup.md. |
-| First prototype | CURRENT 0.0.1 implemented; PLAYTEST REQUIRED | Owner approved basic movement and one-hit feel as the focused 0.0.1 question. Private Mystara test supports provisional WASD + J movement/strike. Owner feel feedback is still needed before tuning or expanding scope. No detailed numbered roadmap approved. See [Visual Preview](Visual-Preview.md). |
+| First prototype | CURRENT 0.0.1 implemented; PLAYTEST REQUIRED | Owner approved basic movement, one-hit feel and a hero walk/attack animation pass. Private Mystara test supports provisional WASD, idle/walk, and contact-frame J strike. Owner feel feedback is still needed before tuning or expanding scope. No detailed numbered roadmap approved. See [Visual Preview](Visual-Preview.md). |
 
 ## Mechanics needing specification before their implementation
 
 - **Starter kits:** exact Light/Heavy strings, defense, active abilities, number of equal ability slots, cooldowns/resources, move/hit timings, costs and outcomes. Preserve Cleric support plus shield/aggro details rather than assuming a pure healer.
 - **Combo execution:** after-input ability trigger timing, buffering, animation overlap, whiff commitment, and cancel rules.
-- **Movement/collision:** facing, hit volumes, floor-depth tolerance, movement speed, attack movement, grounded mobility and class-dependent airborne actions.
+- **Movement/collision:** movement speed, attack movement, facing/cancel rules beyond this experiment, hit volumes, floor-depth tolerance, grounded mobility and class-dependent airborne actions. The prototype's attack facing lock and active movement are provisional.
 - **Hero switching:** button/key, availability during attacks/downed state, selection order, target/input handover, camera behavior, AI continuation.
 - **Reacharound:** exact ability navigation, confirmation/release, cancellation, target ordering, empty/invalid targets, selecting cooldown abilities, state changes while open.
 - **Circle Jerk:** final wheel organization, action/target validity during selection, contextual default among simultaneous opportunities, request ownership/lifetime, queuing/rejection feedback, human request presentation.
