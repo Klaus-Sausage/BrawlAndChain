@@ -35,7 +35,7 @@ Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four
 
 ## Local setup update — 2026-11-16
 
-Current working folder: `/home/klaus/Documents/BrawlAndChain`. The owner requested private GitHub backup. Git has been initialized here; intended remote is `https://github.com/Klaus-Sausage/BrawlAndChain`. See [Progress](docs/Progress.md) for verified backup status. Cloud setup and automatic synchronization are not established by this local setup.
+Current working folder: `/home/klaus/Documents/BrawlAndChain`. The owner requested private GitHub backup. Git has been initialized here; intended remote is `https://github.com/Klaus-Sausage/BrawlAndChain`. See [Progress](docs/Progress.md) for verified backup status. Private `Default Cloud` has since been connected to this repository and published; its setup workspace cloned `main` successfully into `/workspace/BrawlAndChain`. Automatic synchronization is not enabled; pull and push explicitly. A fresh task from the published configuration and cloud push remain untested.
 
 ## Historical setup status and next work (2026-11-15)
 

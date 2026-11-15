@@ -22,7 +22,7 @@ The GDD is a maintained working baseline, not a claim that balance, timing, clas
 
 ## Cloud and Linux workflow
 
-Current local folder: `/home/klaus/Documents/BrawlAndChain`. Private GitHub backup target: `https://github.com/Klaus-Sausage/BrawlAndChain`. See [Progress](docs/Progress.md) for verification status. The historical cloud folder was `/workspace/BrawlAndChain`; its present persistence is unverified. Automatic synchronization is not configured.
+Current local folder: `/home/klaus/Documents/BrawlAndChain`. Private GitHub backup target: `https://github.com/Klaus-Sausage/BrawlAndChain`. See [Progress](docs/Progress.md) for verification status. The historical cloud folder was `/workspace/BrawlAndChain`; the private `Default Cloud` environment is now published with this repository attached, and its setup clone was verified. Automatic synchronization is not configured.
 
 Once Git is configured, pull before working and push before switching environments. Cloud and PC copies are separate, not a live shared folder.
 

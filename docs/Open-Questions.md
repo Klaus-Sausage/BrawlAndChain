@@ -6,7 +6,7 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 
 | Item | Status | Needed outcome |
 | --- | --- | --- |
-| Codex project/environment organization | OPEN | Identify current app options and selected environment; avoid assuming chats/files sync across machines. |
+| Codex project/environment organization | CURRENT | Private `Default Cloud` connected to BrawlAndChain and published 2026-11-16; setup clone verified. Fresh published task and cloud push still untested. No automatic file sync. |
 | Repository and external backup | CURRENT | Private `Klaus-Sausage/BrawlAndChain` created; initial push and fresh clone verified 2026-11-16. Automatic sync is not configured. |
 | Local Linux checkout | CURRENT | Working repository at `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Cloud checkout/setup remains separate. |
 | Unity tooling/version/template | OPEN | Verify available tools, pick supported release and browser-compatible rendering/build configuration. No editor version selected. |
