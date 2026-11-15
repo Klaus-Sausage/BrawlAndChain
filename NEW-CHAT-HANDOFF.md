@@ -33,6 +33,10 @@ Original evidence is the [140-page PDF](docs/sources/Historical-Design-Chat.pdf)
 
 Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four heroes with starter sets only; six enemy archetypes before Goblin King (identities not yet chosen); linear level with a couple of side rooms; hub can be skipped; both wheels; full four-step boss sequence and MONEY SHOT showcase. No proper persistent save needed. Online co-op is a stretch goal, not required. Keep architecture future-multiplayer-aware.
 
+## Latest visual work — 2026-11-16
+
+The default scene is now a private static visual study: temporary Mystara Fighter/Barbarian stand-in, goblin and Trintan village/floor. Owner confirmed eventual 80s/90s fantasy sprite art. Provisional 480×270 viewport at 960×540, fixed camera, nearest filtering; native/browser rendering checked. Original launch test preserved. No gameplay. Read [Visual Preview](docs/Visual-Preview.md) and asset provenance before editing; replace temporary art before public distribution. Next: owner judges scale and framing, then agree first combat scope.
+
 ## Current engine and setup — 2026-11-16
 
 Owner approved changing the engine direction from Unity to Godot 4 with GDScript. Typed GDScript is the recommended initial convention, and Compatibility rendering is the planned browser baseline. Local Linux setup now uses standard Godot **4.7.2.stable.official.ed1daf0bf**, matching **4.7.2.stable** web templates and Compatibility rendering. A technical launch project exists; graphical editor/native rendering and a single-threaded WebGL 2.0 browser launch/input check passed. No gameplay exists. See [Godot setup](docs/Godot-Setup.md) for exact commands, evidence and limitations. Cloud engine installation remains unverified. Browser MONEY SHOT audio/music timing needs an early experiment; console ports require approved platform access and suitable third-party tooling/services. Read decision D-057 for rationale and technical references.

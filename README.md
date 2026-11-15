@@ -37,3 +37,7 @@ A minimal Godot 4.7.2 Compatibility technical launch project now exists with typ
 ## Local technical launch test — 2026-11-16
 
 Standard Godot **4.7.2 stable**, GDScript and matching web templates are installed locally. Compatibility rendering is configured; native/editor launch and a browser export/input check passed. Read [Godot setup](docs/Godot-Setup.md) for exact installation paths, run/export commands, screenshots and limitations. Open `project.godot` with Godot or run `godot --editor --path .`. No gameplay is implemented; this is not playable 0.0.1.
+
+## Private visual study
+
+The default scene now shows a static fantasy sprite composition using temporary Mystara artwork, with no HUD or gameplay. Run `godot --path .`; see [Visual Preview](docs/Visual-Preview.md) for screenshots, source credits, reproduction commands and limitations. The existing launch-check scene can be run explicitly. Keep these temporary assets and builds private; replace before public distribution.

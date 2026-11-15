@@ -1,0 +1,35 @@
+[
+  {
+    "file": "originals/fighter.png",
+    "page": "https://spritedatabase.net/file/96",
+    "download": "https://spritedatabase.net/files/arcade/605/Sprite/FighterP1.png",
+    "credit": "romab",
+    "sha256": "02ce88d363ea36b85b451f4da28136fccbac5e208ae5a392a0e598e1802f6fa8",
+    "size": [
+      5200,
+      5392
+    ]
+  },
+  {
+    "file": "originals/goblins.png",
+    "page": "https://www.spriters-resource.com/arcade/ddshadovermyst/asset/55506/",
+    "download": "https://www.spriters-resource.com/media/assets/52/55506.png?updated=1755473124",
+    "credit": "T0misaurus; sheet also credits grod99 for fire sprites (unused)",
+    "sha256": "10dc2f2a993a60b797ca18fcfcd33e19b435522ec95ec545855983f6cb4e553d",
+    "size": [
+      1100,
+      1374
+    ]
+  },
+  {
+    "file": "originals/trintan.png",
+    "page": "https://www.spriters-resource.com/arcade/ddshadovermyst/asset/66465/",
+    "download": "https://www.spriters-resource.com/media/assets/63/66465.png?updated=1755473594",
+    "credit": "Omega (embedded sheet credit); website uploader: Deleted User",
+    "sha256": "dd652f2a34f749bfcced8c91911bbd81d477e28bcbcbd1ef3724845255dd78f1",
+    "size": [
+      1874,
+      768
+    ]
+  }
+]

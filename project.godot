@@ -10,17 +10,23 @@ config_version=5
 
 [application]
 
-config/name="Brawl & Chain — Launch Test"
-run/main_scene="res://scenes/launch_test.tscn"
+config/name="Brawl & Chain — Private Visual Preview"
+run/main_scene="res://scenes/visual_preview.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=540
-window/stretch/mode="canvas_items"
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/size/window_width_override=960
+window/size/window_height_override=540
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [rendering]
+
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

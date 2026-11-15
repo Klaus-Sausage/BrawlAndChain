@@ -6,6 +6,7 @@ var _elapsed: float = 0.0
 var _clock: Label
 
 func _ready() -> void:
+	get_window().content_scale_size = Vector2i(960, 540)
 	var panel := VBoxContainer.new()
 	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
 	panel.position = Vector2(-350, -160)

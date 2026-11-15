@@ -1,0 +1,26 @@
+[
+  {
+    "level": "log",
+    "message": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+    "timestamp": "2026-11-15T14:54:47.045Z",
+    "url": "http://127.0.0.1:8060/index.js"
+  },
+  {
+    "level": "log",
+    "message": "OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+    "timestamp": "2026-11-15T14:54:47.243Z",
+    "url": "http://127.0.0.1:8060/index.js"
+  },
+  {
+    "level": "log",
+    "message": "Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+    "timestamp": "2026-11-15T14:54:47.363Z",
+    "url": "http://127.0.0.1:8060/index.js"
+  },
+  {
+    "level": "log",
+    "message": "VISUAL_PREVIEW_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0)",
+    "timestamp": "2026-11-15T14:54:47.400Z",
+    "url": "http://127.0.0.1:8060/index.js"
+  }
+]

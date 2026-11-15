@@ -31,6 +31,8 @@ Archives were downloaded to `/tmp/brawl-godot-install/`. Extracted the editor, i
 
 ## Repeat the checks
 
+Update: the default scene is now the [private visual preview](Visual-Preview.md). To repeat the original launch test below, specify `res://scenes/launch_test.tscn` after `--path .`; F5 runs the new default scene.
+
 Run from the repository root. Use the absolute executable path if `godot` is not on a new terminal's PATH.
 
 ```bash

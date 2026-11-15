@@ -250,7 +250,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 - Responsive arcade combat with strong impact, varied by hero. Strong silhouettes identify characters/sets without GUI labels.
 - Camera baseline between Mystara and TMNT framing, dynamically adjusting for party spread and narrative space. Can move from wide/open to claustrophobic dungeon framing.
 - Rich illustrated atmosphere with TMNT-like modern readability. Pulp town/interior scenes. VFX must not obscure silhouettes, enemy tells, hazards, or tactical information.
-- **OPEN:** Sprites versus 3D production, resolution, asset pipeline, exact camera bounds, animation counts, and final assets. Influences do not license copying reference-game art.
+- **CURRENT — owner confirmation, 2026-11-16:** 2D fantasy sprite art with an 80s/90s appearance. Mystara artwork is temporary for the first private visual build; final assets will be replaced. **EXPERIMENTAL:** 480×270 visual-study canvas displayed at 960×540, fixed framing and native sprite proportions. **OPEN:** final resolution, production asset pipeline, camera bounds, animation counts and final assets. See [Visual Preview](Visual-Preview.md); this is not approval of final character designs or gameplay.
 
 **MONEY SHOT — CURRENT feature:** Select significant finishes get a brief cinematic zoom/push-in and exaggerated slowdown to enjoy the impact/gore. Last-enemy tactical finishes are a core example; bosses/elites may qualify before all enemies are dead. Exact trigger frequency/eligible kills is PLAYTEST REQUIRED; it must not become automatic/repetitive.
 

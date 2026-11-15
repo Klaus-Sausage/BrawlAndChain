@@ -1,0 +1,34 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Project initialization (5 steps)
+[   0% ] first_scan_filesystem | Scanning file structure...
+[  16% ] first_scan_filesystem | Loading global class names...
+[  33% ] first_scan_filesystem | Verifying GDExtensions...
+[  50% ] first_scan_filesystem | Creating autoload scripts...
+[  66% ] first_scan_filesystem | Initializing plugins...
+[  83% ] first_scan_filesystem | Starting file scan...
+[ DONE ] first_scan_filesystem
+
+[   0% ] savepack | Started Packing (102 steps)
+[   1% ] savepack | Storing File: res://.godot/imported/fighter_idle.png-2ae706addcec5d2354279dcb0a8c6d23.ctex
+[   1% ] savepack | Storing File: res://assets/temporary_mystara/display/fighter_idle.png.import
+[  12% ] savepack | Storing File: res://.godot/imported/floor.png-b3ddf097e2a18f6d1b3a58d30f97cf37.ctex
+[  12% ] savepack | Storing File: res://assets/temporary_mystara/display/floor.png.import
+[  23% ] savepack | Storing File: res://.godot/imported/goblin_idle.png-5ae6036c0fc24202892458ec2616b087.ctex
+[  23% ] savepack | Storing File: res://assets/temporary_mystara/display/goblin_idle.png.import
+[  33% ] savepack | Storing File: res://.godot/imported/village.png-da147d7594e5dd867ca82f0bda53dbde.ctex
+[  33% ] savepack | Storing File: res://assets/temporary_mystara/display/village.png.import
+[  44% ] savepack | Storing File: res://.godot/imported/index.png-d03311572afeb237347e3aea48014cb0.ctex
+[  44% ] savepack | Storing File: res://exports/web/index.png.import
+[  55% ] savepack | Storing File: res://.godot/exported/133200997/export-9c5caa5520d59fe0de9c03fd518d077b-launch_test.scn
+[  66% ] savepack | Storing File: res://.godot/exported/133200997/export-0b4c642a1f5771f5099ede2780cde788-visual_preview.scn
+[  76% ] savepack | Storing File: res://scripts/launch_test.gdc
+[  87% ] savepack | Storing File: res://scripts/visual_preview.gdc
+[  87% ] savepack | Storing File: res://scenes/launch_test.tscn.remap
+[  87% ] savepack | Storing File: res://scenes/visual_preview.tscn.remap
+[  87% ] savepack | Storing File: res://scripts/launch_test.gd.remap
+[  87% ] savepack | Storing File: res://scripts/visual_preview.gd.remap
+[  87% ] savepack | Storing File: res://.godot/global_script_class_cache.cfg
+[  87% ] savepack | Storing File: res://.godot/uid_cache.bin
+[  87% ] savepack | Storing File: res://project.binary
+[ DONE ] savepack

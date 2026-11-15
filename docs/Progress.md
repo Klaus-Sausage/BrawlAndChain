@@ -2,7 +2,13 @@
 
 Updated 2026-11-16 (Australia/Melbourne).
 
-## Current state — local Godot launch setup
+## Current state — private visual study
+
+2026-11-16: Implemented the owner-approved static Mystara visual study as the default scene. Preserved original source sheets and credits, created transparent crops, placed Fighter/Barbarian stand-in and goblin facing each other on a shared foot baseline, and composed the Trintan village/floor. Replaceable visual child nodes, fixed camera, nearest filtering, 480×270 internal canvas with 960×540 desktop window and integer scaling. Original launch test remains available with its own content-scale restoration.
+
+PASS: import, non-headless native frame capture, release web export and visual browser inspection; preserved launch-check scene still captures 960×540 successfully. Native/browser show matching composition, clean transparency and pixel scaling. Browser console returned no warnings/errors. Native retains the known X11 IME warning. See [Visual Preview](Visual-Preview.md) for source provenance, screenshots, commands and limitations. No gameplay or public release created. Next: owner feedback on scale/framing, then agree a first-combat objective.
+
+## Previous state — local Godot launch setup
 
 2026-11-16: Installed and verified standard Godot **4.7.2.stable.official.ed1daf0bf** with GDScript and matching **4.7.2.stable** web export templates on the owner's Pop!_OS 24.04 x86_64 PC. Compatibility rendering is configured. A minimal technical project now exists: one scene, typed GDScript, version/renderer/platform text, timer and launch-check button. No gameplay exists and this is not playable 0.0.1.
 
