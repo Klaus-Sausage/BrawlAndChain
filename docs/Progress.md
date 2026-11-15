@@ -6,7 +6,9 @@ Updated 2026-11-16 (Australia/Melbourne).
 
 Owner request: read project guidance and set up private GitHub backup. Working folder is `/home/klaus/Documents/BrawlAndChain`. Inspected the folder before initialization: no working Git repository or history existed. GitHub CLI network-authenticated as `Klaus-Sausage`; target repository did not exist. Initialized `main` and added ignore rules for local assistant/credential directories and generated Unity files, preserving source documents and `.meta` files.
 
-Remote target: `https://github.com/Klaus-Sausage/BrawlAndChain`. Creation, push, privacy and fresh-clone verification are pending. Automatic sync and cloud persistence remain unconfigured. No gameplay work performed.
+Private remote created: `https://github.com/Klaus-Sausage/BrawlAndChain`; `origin/main` tracks local `main`. Initial commit `6c4b358` pushed successfully. GitHub API confirmed `isPrivate: true`; a fresh HTTPS clone into `/tmp/brawl-and-chain-backup-check-20261116` matched all 12 tracked files byte-for-byte, including the original PDF. `git diff --cached --check` passed before the initial commit. Repository-local commit identity uses the account’s GitHub noreply address.
+
+Next action: commit/push future changes and pull before moving between separate checkouts. Automatic sync and cloud persistence remain unconfigured. No gameplay work performed.
 
 ## Historical state — 2026-11-15
 

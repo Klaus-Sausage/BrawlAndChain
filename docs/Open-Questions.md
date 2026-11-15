@@ -1,14 +1,14 @@
 # Open Questions and Playtest Backlog
 
-Updated 2026-11-15 (Australia/Melbourne). These are remaining details, not permission to redesign recovered systems. Read [GDD](GDD.md) before asking the owner. Only resolve what the next task needs.
+Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permission to redesign recovered systems. Read [GDD](GDD.md) before asking the owner. Only resolve what the next task needs.
 
 ## Cloud/project setup — immediate next work
 
 | Item | Status | Needed outcome |
 | --- | --- | --- |
 | Codex project/environment organization | OPEN | Identify current app options and selected environment; avoid assuming chats/files sync across machines. |
-| Repository and external backup | OPEN | Choose/create remote under owner direction, preserve files/history, verify actual push/pull. No remote currently configured. |
-| Local Linux checkout | DEFERRED until cloud setup | Pop!_OS 24.04 x86_64 with Git available. Suggested folder only: `~/Projects/BrawlAndChain`. |
+| Repository and external backup | CURRENT | Private `Klaus-Sausage/BrawlAndChain` created; initial push and fresh clone verified 2026-11-16. Automatic sync is not configured. |
+| Local Linux checkout | CURRENT | Working repository at `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Cloud checkout/setup remains separate. |
 | Unity tooling/version/template | OPEN | Verify available tools, pick supported release and browser-compatible rendering/build configuration. No editor version selected. |
 | First prototype | OPEN | One agreed playable question and minimal acceptance criteria. No detailed numbered roadmap approved. |
 
