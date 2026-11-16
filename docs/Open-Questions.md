@@ -11,7 +11,7 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
 | Godot tooling/version/export templates | CURRENT local / OPEN cloud | Standard Godot 4.7.2 stable, matching web templates, typed GDScript technical project and Compatibility configured/launch-verified locally. See Godot-Setup.md. Cloud engine installation still unverified. |
 | Browser export validation | CURRENT launch / OPEN gameplay/audio | Minimal single-threaded release export rendered and handled an actual click in the in-app Chromium browser using WebGL 2.0. Other browsers, performance and MONEY SHOT music/slowdown timing remain untested. See Godot-Setup.md. |
-| First prototype | CURRENT 0.0.1 implemented; PLAYTEST REQUIRED | Owner approved basic movement, one-hit feel and a hero walk/attack animation pass. Private Mystara test supports provisional WASD, idle/walk, and contact-frame J strike. Owner feel feedback is still needed before tuning or expanding scope. No detailed numbered roadmap approved. See [Visual Preview](Visual-Preview.md). |
+| First prototype | CURRENT 0.0.1 implemented; PLAYTEST REQUIRED | Owner approved basic movement, one-hit feel, hero walk/attack animation and Ax Battler art. Native technical checks pass, but the owner reports the revised walk still looks janky. Resolve and review it locally before any Ax Battler web export; movement/hit feel review remains open. No detailed numbered roadmap approved. See [Visual Preview](Visual-Preview.md). |
 
 ## Mechanics needing specification before their implementation
 
@@ -59,3 +59,7 @@ These IDs organize future tests; no tests have been run. Numerical criteria or o
 ## Explicitly deferred, not accidentally forgotten
 
 Amazon and Warlock directions; adaptive party-aware enemy director; town gambling/minigames; full online co-op implementation (slice stretch goal only). Adaptive MONEY SHOT music is **not deferred**.
+
+## Armed Fighter review — 2026-11-16
+
+PLAYTEST REQUIRED: judge the separate ROM-captured candidate's weapons, original walk cadence, one-pixel source scale and very fast sword strike (~0.1845 s). Existing reach is unchanged; assess its agreement with the visible sword separately. Owner approved the candidate on 2026-11-16; Ax Battler is superseded as the default preview hero. Browser iteration is now enabled.

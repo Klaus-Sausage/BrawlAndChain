@@ -138,3 +138,35 @@ Owner approved the current private preview composition (“yeah thats perfect”
 **CURRENT scope / EXPERIMENTAL implementation:** Use transparent, foot-aligned frames extracted from the preserved temporary Fighter sheet for one looping walk and one one-shot attack. WASD movement selects walk/idle; every accepted J plays its attack, even if it misses. Capture attack facing when accepted; keep movement active while attacking; resolve the strike on the visible contact frame. Ignore further J input until the animation finishes, while the existing repeat delay remains a minimum. Provisional tuning: 12 walk frames at 8 fps, 9 attack frames at 16 fps, contact at frame 8; editable in the animation node. No goblin animation/AI/attack, combo, or new gameplay system. Mystara reuse permission remains unverified and the preview private.
 
 **Reason and boundary:** Let the owner judge whether the temporary artwork communicates movement and impact before more combat work. Intent, outcome and sprite playback remain separate. Supersedes only D-060’s “no player attack animation” exclusion for this private experiment. Affected: Visual Preview, asset notes, GDD technical state, handoff, Open Questions and Progress. Native and browser result checks are recorded in [Visual Preview](Visual-Preview.md); owner feel review remains pending.
+
+## D-062 — Ax Battler temporary hero art, 2026-11-16
+
+**Source:** Owner explicitly requested replacing the preview hero with the weapon-bearing Ax Battler sheet from Golden Axe II after viewing the Spriters Resource page, then approved implementation of this exact swap.
+
+**CURRENT for the private preview:** Ax Battler replaces only the active Mystara Fighter hero art. Use its original sword-bearing idle, walk and sword-attack frames; do not add a weapon overlay. Keep the goblin, Village of Trintan, arena, framing and gameplay behavior. Preserve all earlier Mystara originals and derivatives. The hero visual remains a replaceable child node.
+
+**Provenance and limits:** [Spriters Resource asset 36388](https://www.spriters-resource.com/sega_genesis/goldenaxe2/asset/36388/), uploaded/contributed by Yawackhary; original image is 496×544 and SHA-256 is recorded in `assets/temporary_golden_axe/sources.json`. The sheet footer asks that the art not be stolen. Reuse permission is **unverified** and the project/build must remain private; attribution is not a licence.
+
+**EXPERIMENTAL animation mapping:** source-keyed transparent 96×96 cells; idle frame 0, walk frames 1–4 and sword attack frames 5–8; common footline y=80. The visible slash/trail is attack frame 2 (atlas frame 7) and is the provisional hit-contact frame. Existing movement, attack intent, hit detection, goblin reaction, 480×270 canvas and 960×540 window are unchanged. Supersedes only the active-hero-art portions of D-059, D-060 and D-061; it does not change Barbarian identity, the art direction, setting or licensing requirements.
+
+**Reason and boundary:** Owner identified the Fighter as the wrong hero art and selected the actual weapon-bearing original. This is an art-source and frame-mapping change to the existing private 0.0.1 experiment, not a gameplay change, final character design, or public-release asset choice. Affected: GDD, asset notes/manifest, visual-preview notes, handoff and progress. Native verification is required before owner review; the owner's local approval gates web export/testing. Actual results and eventual commit are recorded in [Progress](Progress.md) and [Visual Preview](Visual-Preview.md).
+
+## D-063 — Keep idle out of walk animation, 2026-11-16
+
+**Source:** Owner reviewed the Ax Battler local build and reported that the walk seemed to cycle through the idle pose, specifying that idle should return only when movement stops.
+
+**CURRENT private-preview behavior:** Keep the source idle pose only in atlas frame 0. The walking loop uses the three distinct remaining walking poses (atlas frames 1–3); stopping restores frame 0. Sword frames now occupy atlas frames 4–7; the visible slash remains attack frame 2 / atlas frame 6 for hit resolution. Provisional walk/attack speeds remain 8/16 fps. Movement and hit rules do not change.
+
+**Reason and boundary:** The first walk cell duplicated the idle pose pixel-for-pixel, which made the moving loop visibly repeat idle. Remove that duplicate while preserving the existing source art and strike contact. This supersedes D-062's initial nine-frame atlas indexing only. Native runtime check passes; owner review of the corrected local animation is pending. Web export/testing and commit/push remain gated on owner approval. Details: [Visual Preview](Visual-Preview.md).
+
+## D-064 — Original armed Fighter candidate and browser iteration, 2026-11-16
+
+**Source:** Owner approved “Extract and review the armed Mystara Fighter” and explicitly restored browser checks during iteration after the Ax walk remained janky.
+
+**EXPERIMENTAL:** Capture original idle, complete walk and one sword attack with original sword/shield from the supplied MAME ROM; retain source timing and origin. Build a separate candidate, preserve Ax as default until owner approval. No gameplay expansion or weapon overlay. D-063's Ax-specific removal of idle does not authorize removing any original Mystara timing. Supersedes D-062/D-063's local-only gate on web verification; approval still gates activation and completed backup. Preserve private asset provenance and unverified reuse permission. Affected: GDD, Progress, Visual Preview, asset notes and handoff. Native/browser results are recorded in Progress; candidate feel review remains pending.
+
+## D-065 — Activate armed Fighter candidate, 2026-11-16
+
+**Source:** Owner reviewed the extracted armed Fighter candidate and replied “perfect.”
+
+**CURRENT for the private preview:** Activate the original ROM-captured sword-and-shield Fighter as the default hero and retain the separate candidate scene path for continued asset review. Preserve the extracted source timing, original weapon assembly, existing combat rules and private-use status. Supersedes Ax Battler as the active preview hero only. This does not resolve final licensing or declare the combat timing/range tuned. Native and browser launch verification and backup are recorded in Progress.

@@ -12,13 +12,33 @@ func _ready() -> void:
 	$Hero/HeroAnimation.strike_contact.connect($CombatResolver.resolve_strike)
 	$Hero/HeroAnimation.attack_finished.connect($Hero.finish_attack)
 	$CombatResolver.strike_resolved.connect(_show_result)
-	if "--capture-preview" in OS.get_cmdline_user_args():
+	var user_args := OS.get_cmdline_user_args()
+	if "--capture-walk-sequence" in user_args:
+		$Hero.set_process(false)
+		$Hero.movement_state_changed.emit(true, 1.0)
+		await _capture_walk_sequence()
+	elif "--capture-preview" in user_args:
 		await get_tree().create_timer(1.0).timeout
 		await RenderingServer.frame_post_draw
 		var frame := get_viewport().get_texture().get_image()
 		var result := frame.save_png("/tmp/brawl-combat-native.png")
 		print("COMBAT_CAPTURE result=%s size=%s" % [result, frame.get_size()])
 		get_tree().quit(result)
+
+func _capture_walk_sequence() -> void:
+	var viewport_size := Vector2i(get_viewport_rect().size)
+	var sequence := Image.create(viewport_size.x * 3, viewport_size.y, false, Image.FORMAT_RGBA8)
+	var frame_indices: Array[int] = []
+	for index in range(3):
+		await RenderingServer.frame_post_draw
+		var frame := get_viewport().get_texture().get_image()
+		frame_indices.append($Hero/Visual.frame)
+		sequence.blit_rect(frame, Rect2i(Vector2i.ZERO, viewport_size), Vector2i(index * viewport_size.x, 0))
+		if index < 2:
+			await get_tree().create_timer(0.126).timeout
+	var result := sequence.save_png("/tmp/brawl-ax-native-walk.png")
+	print("COMBAT_WALK_CAPTURE result=%s viewport=%s frames=%s" % [result, viewport_size, frame_indices])
+	get_tree().quit(result)
 
 func _show_result(did_hit: bool) -> void:
 	_feedback_revision += 1

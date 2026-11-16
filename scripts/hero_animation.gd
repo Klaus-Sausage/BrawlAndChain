@@ -2,12 +2,12 @@ extends Node
 ## Presents movement and one-shot attack animation without owning combat outcomes.
 
 @export var walk_first_frame: int = 1
-@export var walk_frame_count: int = 12
+@export var walk_frame_count: int = 3
 @export var walk_frames_per_second: float = 8.0
-@export var attack_first_frame: int = 13
-@export var attack_frame_count: int = 9
+@export var attack_first_frame: int = 4
+@export var attack_frame_count: int = 4
 @export var attack_frames_per_second: float = 16.0
-@export var attack_contact_frame: int = 8
+@export var attack_contact_frame: int = 2
 
 signal strike_contact(facing_direction: float)
 signal attack_finished

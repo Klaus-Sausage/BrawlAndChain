@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/village.png" id="1"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/floor.png" id="2"]
-[ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/fighter_animations.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/temporary_golden_axe/display/ax_battler_animations.png" id="3"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/goblin_idle.png" id="4"]
 [ext_resource type="Script" path="res://scripts/visual_preview.gd" id="5"]
 [ext_resource type="Script" path="res://scripts/hero_intent.gd" id="6"]
@@ -34,8 +34,8 @@ script = ExtResource("6")
 [node name="Visual" type="Sprite2D" parent="Hero"]
 texture = ExtResource("3")
 centered = false
-offset = Vector2(-96, -160)
-hframes = 24
+offset = Vector2(-48, -80)
+hframes = 8
 flip_h = true
 
 [node name="HeroAnimation" type="Node" parent="Hero"]

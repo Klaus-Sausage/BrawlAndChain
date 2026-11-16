@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+WARNING: Failed to create wd.xic as the input method or its xim server may not have started yet.
+     at: _create_xic (platform/linuxbsd/x11/display_server_x11.cpp:6347)
+OpenGL API 3.3.0 NVIDIA 595.104.02 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080
+
+Movie Maker mode enabled, recording movie in 480×270 @ 60 FPS...
+COMBAT_TEST_READY platform=Linux renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J
+WALK_OBSERVED [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] stopped_frame=0
+CANDIDATE_CHECK walk_all_poses_then_idle=true
+CANDIDATE_CHECK face_right=true
+CANDIDATE_CHECK face_left=true
+STRIKE_RESULT hit=true
+CANDIDATE_CHECK close_hit=true
+STRIKE_RESULT hit=false
+CANDIDATE_CHECK distant_miss=true
+STRIKE_RESULT hit=false
+CANDIDATE_CHECK facing_away_miss=true
+STRIKE_RESULT hit=false
+CANDIDATE_CHECK wrong_lane_miss=true
+STRIKE_RESULT hit=true
+CANDIDATE_CHECK moving_swing_repeat_lock_facing=true
+STRIKE_RESULT hit=true
+CANDIDATE_CHECK next_swing_after_finish=true
+CANDIDATE_CHECK contact_at_atlas_22=true
+CANDIDATE_CHECK arena_bounds=true
+CANDIDATE_RESULTS hits=[true, false, false, false, true, true] contacts=[22, 22, 22, 22, 22, 22] failures=[]
+--------------------------------------------------------------------------------
+Done recording movie at path: /tmp/fighter-candidate.avi
+461 frames at 60 FPS (movie length: 00:00:07:41), recorded in 00:00:07 (100% of real-time speed).
+CPU render time: 0.06 seconds (average: 0.13 ms/frame)
+GPU render time: 0.03 seconds (average: 0.07 ms/frame)
+Encoding time: 0.72 seconds (average: 1.56 ms/frame)
+--------------------------------------------------------------------------------

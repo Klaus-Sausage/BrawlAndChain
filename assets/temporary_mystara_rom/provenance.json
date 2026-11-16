@@ -1,0 +1,87 @@
+{
+  "source": "Owner-supplied ddsomur1 USA 960209 ROM",
+  "emulator": "MAME 0.264",
+  "rights": "Capcom; reuse permission unverified; private review only",
+  "files": [
+    {
+      "file": "dd2.01",
+      "sha256": "68a2eb3fc9b93e17888bd9edcd7143079fe6df46044d7abf3a9350120797f56f"
+    },
+    {
+      "file": "dd2.02",
+      "sha256": "927ead832f6d547ba9bdba3a5025d65d224387f0b00ef5ddebf1ca6c36171b4d"
+    },
+    {
+      "file": "dd2.05d",
+      "sha256": "279b742656afd50fe5bc45d56b20b28573f4b7175051368b936107e182de4ee4"
+    },
+    {
+      "file": "dd2.06d",
+      "sha256": "02d40eb888202679746c5b995b8943e9f1ddc169798bc1516a4f4da00914c52d"
+    },
+    {
+      "file": "dd2.07",
+      "sha256": "d05d9b80306c4cd97a9a73359636022d93e90f3d85493bcd44aaa57d33db4182"
+    },
+    {
+      "file": "dd2.08",
+      "sha256": "d2ba05ee9a5c6ca806adee09dec5aa5f4cc11f01914950806bb877aa826ea8c6"
+    },
+    {
+      "file": "dd2.09",
+      "sha256": "af422cd72da6c08caf567be42c5ded24ffb8d0686ec9978dc008fbd0600845de"
+    },
+    {
+      "file": "dd2.10",
+      "sha256": "a41079330cee7912f79b34cce9932c4c16e354d7402fb3e46f876b92ebc2bc74"
+    },
+    {
+      "file": "dd2.11m",
+      "sha256": "cdd919a0ec8ca80c85d96be40bcba1fe577271b0acca6b3c12f2669db3f3c11b"
+    },
+    {
+      "file": "dd2.12m",
+      "sha256": "b631ad411a04b3bd653fddb4c061fa6f0a207f6b1fac86550d5fff42f8b45f49"
+    },
+    {
+      "file": "dd2.13m",
+      "sha256": "2781122fa531305fcd69a3c1f14b34a17869aa33b221b3a072ca94e8614ca7d5"
+    },
+    {
+      "file": "dd2.14m",
+      "sha256": "c53e96044cd81277d06d2b34ef04557ddbe8bbebec3fb2fe458bb9201b379b3e"
+    },
+    {
+      "file": "dd2.15m",
+      "sha256": "ad76570dccbdb6bcc0580cbae36858b8f2fa8506b8a606773fa0246b76d75e9f"
+    },
+    {
+      "file": "dd2.16m",
+      "sha256": "28ba4dde8b5cf326458f748676de00000c06a550dc3f710147b3d24b42f707c7"
+    },
+    {
+      "file": "dd2.17m",
+      "sha256": "3b826b4261b199698f90a8977d2cd3ff326ad3c0ae59b8a2d21977b1739d0aa4"
+    },
+    {
+      "file": "dd2.18m",
+      "sha256": "92a39fb40c10a2150254819d8e8b28bb14353ac2295e1dabb1867a420da0a6d0"
+    },
+    {
+      "file": "dd2.19m",
+      "sha256": "083a61bba739a3b092a8b93b8340b6f6906bc60240963b3e2373885ee1dc7a2f"
+    },
+    {
+      "file": "dd2.20m",
+      "sha256": "ab3810cdb610b25ddd5f370e617d98c7299941d6ea23adbc72666b7111b0e1a6"
+    },
+    {
+      "file": "dd2u.03d",
+      "sha256": "db777f7b971da48cbf3dadf65a1933a428101d7e0da7d86f3d7a92f4df0ece7f"
+    },
+    {
+      "file": "dd2u.04d",
+      "sha256": "05c7f0de43b2f05f72f42fc45dfd6024c81ac909d1c576d0f152f98f4b069402"
+    }
+  ]
+}

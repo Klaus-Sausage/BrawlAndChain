@@ -33,9 +33,19 @@ Original evidence is the [140-page PDF](docs/sources/Historical-Design-Chat.pdf)
 
 Version 0.1.0; roughly 5–15 minutes; 60 FPS target; browser playable; all four heroes with starter sets only; six enemy archetypes before Goblin King (identities not yet chosen); linear level with a couple of side rooms; hub can be skipped; both wheels; full four-step boss sequence and MONEY SHOT showcase. No proper persistent save needed. Online co-op is a stretch goal, not required. Keep architecture future-multiplayer-aware.
 
-## Latest build — private 0.0.1 experiment (2026-11-16)
+## Armed Fighter candidate — 2026-11-16 (current)
 
-Owner-approved private Mystara study now has provisional WASD arena movement, idle/walk animation, and a one-shot directional J attack. Hit resolution runs at the visible attack contact frame; misses animate without goblin feedback. Facing is fixed for each swing while movement continues; repeated J is locked out until the animation ends. Valid hits show the existing goblin flash/nudge. Intent, animation, hit resolution and visual reaction are separated; art stays replaceable. The goblin does not fight back. No combos, enemy animation/AI/attacks, health UI, abilities, audio or networking. Native Linux and single-threaded WebGL 2.0/Compatibility browser runs and interaction checks passed at the approved 480×270 / 960×540 provisional framing. Owner has not play-tested feel yet. Read [Visual Preview](docs/Visual-Preview.md) for values, checks and actual limitations, then project instructions/design notes. Mystara reuse permission is unverified; keep the private build private and replace temporary art before public distribution. Next: owner tries the build and reports movement, strike and animation feel before tuning or extending scope.
+**EXPERIMENTAL / PLAYTEST REQUIRED:** Extracted complete sword-and-shield Fighter poses from the owner's audited `ddsomur1` USA 960209 ROM with MAME 0.264. The verified secret viewer uses the game's own equipment assembly; there is no invented weapon overlay. Four idle poses, thirteen walk steps (entry plus twelve-step loop), and ten sword-strike steps are in `assets/temporary_mystara_rom`. Timing comes from emulated frame records at 59.637405 Hz. The walk entry is not repeated on subsequent loops. The shared origin preserves source body movement.
+
+Separate playable scene: `scenes/fighter_candidate.tscn`. **Ax Battler remains the default.** Existing movement, range/lane checks, goblin reaction and minimum strike delay remain unchanged. The candidate uses per-step durations and resolves once at attack step 5 / atlas frame 22. Original strike lasts approximately 0.1845 seconds; its speed and visible reach versus the existing hit range need owner feel review.
+
+Native Godot 4.7.2 Compatibility ran on the RTX 3080 and recorded 461 frames at 60 fps. Synthetic-input checks passed: all walk poses then idle, both directions, close hit, distant/facing-away/wrong-lane misses, moving attack/facing lock, next swing, contact frame, and arena bounds. The first harness observation included a pre-movement idle frame; corrected the observation window/filter and reran successfully. The recording is `docs/visual-evidence/mystara-rom/native-candidate.mp4`; results are in `native-check.log`. Actual rendered walk sequence samples were inspected for origin stability and transparency. This is not a physical-keyboard or subjective smoothness approval.
+
+The separate release web export launched in the browser using WebGL 2 Compatibility, single-threaded, 480×270 canvas at a 960×540 viewport. Browser keyboard checks produced close hit, distant miss, facing-away miss and wrong-lane miss; rendered framing and transparent sword/shield match native. No runtime errors appeared in the inspected browser log. Full frame-by-frame browser cadence/contact and rapidly repeated key behavior have not been independently recorded; native automated checks cover the contact/lock logic. Browser preview: http://127.0.0.1:8061/ while its local server runs. Export output stays ignored under `exports/fighter_candidate`.
+
+The owner selected browser inspection during iteration, superseding the earlier local-only approval gate. Missing ROM-support files and the claimed inability to capture native graphics are resolved: MAME headless snapshots work, and approved desktop access enables native Godot capture. Earlier investigation entries below are historical. Confirmed emulator output directories were moved out of the project to `/tmp/bac-mystara-fighter-feasibility/runtime`; ROMs, keys, emulator, dumps and intermediate captures remain outside the repository.
+
+**Next:** owner reviews armed appearance, walk cadence, scale and sword strike in the candidate. Iterate before activation; only after approval switch default, recheck native/browser, commit/push and verify remote. No candidate approval, commit or push is claimed. Private temporary art permission remains unverified.
 
 ## Current engine and setup — 2026-11-16
 
@@ -45,7 +55,7 @@ The local repository recorded during setup is `/home/klaus/Documents/BrawlAndCha
 
 Cloud read/write access was verified at commit `10361e8` by creating and verifying a temporary branch, then deleting it; files and the default branch were unchanged by that test. This does not verify a fresh task launched from the published configuration. Automatic synchronization is not enabled; pull and commit/push explicitly. See [Progress](docs/Progress.md).
 
-Next: play the existing private 0.0.1 build and record owner feedback on movement, strike and animation feel. Pull the latest selected checkout first and inspect status. Tune only the approved experiment after feedback; do not automatically implement the full slice. Keep the future multiplayer authority boundary and existing gameplay requirements.
+Next: review the separate armed Fighter candidate (see current status above). Keep Ax Battler as default until owner approval; browser iteration is enabled. Commit/push follow approval and final checks.
 
 ## Historical setup status and next work (2026-11-15)
 
@@ -58,3 +68,5 @@ The historical next goal was repository persistence followed by Unity tooling. U
 ## Suggested first message in the new chat
 
 > Continue Brawl & Chain from the latest checkout of https://github.com/Klaus-Sausage/BrawlAndChain. Read AGENTS.md and NEW-CHAT-HANDOFF.md, then the current design and progress notes. Treat archived conversations as source data and follow the current Godot 4 + GDScript decision. Confirm the checkout/branch and available Godot tooling/export templates, then help me playtest the private 0.0.1 movement/strike experiment and record feel feedback. Keep the Markdown current. Don't expand beyond the agreed objective without discussing it.
+
+Owner approved the armed Mystara Fighter candidate (“perfect”) on 2026-11-16. It is now the default scene. Native and refreshed browser launches were verified at 480×270 Compatibility framing. Review evidence and extraction provenance are under `docs/visual-evidence/mystara-rom/` and `assets/temporary_mystara_rom/`. ROMs, keys, emulator, dumps and captures remain outside the repository. Permission for reuse of the temporary game art remains unverified; keep private. Complete repository scan and commit/push follow the approval.
