@@ -93,3 +93,7 @@ Repeat export: `godot --headless --path . --export-release Web exports/web/index
 Owner reviewed the armed Fighter preview and replied “perfect” on 2026-11-16. It is now the default. Native and refreshed browser default launches both show the same armed character, goblin and approved framing. The browser canvas is 480×270 and uses WebGL2 Compatibility; its in-app tab was left as a deliverable at localhost during review. See `docs/visual-evidence/mystara-rom/native-candidate.mp4` for the native sequence and `native-check.log` for the synthetic checks.
 
 **D-066 result:** Verified in native and browser. Held J plus simulated native echo events produced one swing; releasing and pressing again after the lock/delay produced one more. In browser, a 1.8-second held press produced one result and a new tap after release produced the second. The test started out of range, so both recorded outcomes were misses. Original animation speed was unchanged.
+
+### Debugging strike positions
+
+Press **F2** to toggle a live hit-check overlay in the default scene. The green outlined rectangle shows where the goblin origin must be: in front of the hero, within 78 horizontal pixels and within 18 vertical pixels of the hero origin. The line/dot turns green only when all checks pass; the upper-left readout reports FRONT, RANGE and LANE separately. This visualizes the resolver's current point-to-point checks; it is not a character-body collision shape. Press F2 again to hide it. Verified in the browser: at the initial positions, FRONT=YES, RANGE=NO, LANE=YES.

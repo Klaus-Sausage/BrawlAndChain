@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/village.png" id="1"]
 [ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/floor.png" id="2"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scripts/goblin_reaction.gd" id="7"]
 [ext_resource type="Script" path="res://scripts/combat_resolver.gd" id="8"]
 [ext_resource type="Script" path="res://scripts/fighter_candidate_animation.gd" id="9"]
+[ext_resource type="Script" path="res://scripts/hitbox_debug.gd" id="10"]
 
 [node name="FighterCandidate" type="Node2D"]
 texture_filter = 1
@@ -66,3 +67,6 @@ offset_right = 90.0
 offset_bottom = 38.0
 text = "HIT"
 theme_override_font_sizes/font_size = 14
+
+[node name="HitboxDebug" type="Node2D" parent="."]
+script = ExtResource("10")
