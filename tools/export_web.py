@@ -63,7 +63,11 @@ def add_lab_route(html_path: Path) -> None:
         "\tGODOT_CONFIG.args = ['--', '--combat-exchange'];\n"
         "}\n"
     )
-    html_path.write_text(html.replace(marker, route + marker), encoding="utf-8")
+    # Official templates contain trailing spaces/blank lines. Keep generated
+    # text clean so a refreshed checked-in preview passes git diff --check.
+    routed = html.replace(marker, route + marker)
+    normalized = "\n".join(line.rstrip() for line in routed.splitlines()).rstrip() + "\n"
+    html_path.write_text(normalized, encoding="utf-8")
 
 
 def update_preview(export_directory: Path) -> None:
