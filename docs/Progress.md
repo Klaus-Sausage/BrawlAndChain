@@ -130,3 +130,7 @@ At the owner's request, added the Godot Web export to web-preview/ so the privat
 ## Attack input adjustment — 2026-11-16
 
 Changed J from per-frame held polling to fresh key-down input, ignoring OS/browser echo events. A held attack button can no longer trigger additional swings; distinct fast taps remain subject to the current swing lock and 0.32-second minimum delay. Per owner feel feedback, animation speed remains unchanged. Runtime recheck and refreshed browser export are pending. See D-066.
+
+## Hold-versus-tap verification — 2026-11-16
+
+PASS: Native Godot synthetic input held J across 70 frames and injected repeated echo key-down events; only one attack was accepted. After release, a distinct press after the attack lock and delay started exactly one more swing. All candidate checks passed (failures=[]), including original movement/facing/range/contact checks. Browser WebGL2 Compatibility: held J for 1.8 seconds produced one STRIKE_RESULT; a separate tap after release produced the second result. Renderer initialized at 480×270 with no browser warning/error logs. The browser check used the real input path; both strikes were misses from the starting distance, as expected. This verifies repeat behavior, not hit feel.

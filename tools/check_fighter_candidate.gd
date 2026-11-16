@@ -8,10 +8,11 @@ var failures: Array[String] = []
 func _initialize() -> void:
 	_run.call_deferred()
 
-func key(code: Key, pressed: bool) -> void:
+func key(code: Key, pressed: bool, echo: bool = false) -> void:
 	var event := InputEventKey.new()
 	event.keycode = code
 	event.pressed = pressed
+	event.echo = echo
 	Input.parse_input_event(event)
 
 func frames(count: int) -> void:
@@ -92,6 +93,19 @@ func _run() -> void:
 	key(KEY_D,false);key(KEY_S,false)
 	check(hero.position.x <=456 and hero.position.y<=246, "arena_bounds")
 	hero.position = Vector2(140,226)
+	await frames(45)
+	var held_before := accepted
+	key(KEY_J, true)
+	for i in range(7):
+		await frames(10)
+		key(KEY_J, true, true)
+	check(accepted == held_before + 1, "hold_j_only_one_attack")
+	key(KEY_J, false)
+	await frames(25)
+	key(KEY_J, true)
+	await frames(1)
+	key(KEY_J, false)
+	check(accepted == held_before + 2, "separate_tap_starts_next_attack")
 	await frames(45)
 	print("CANDIDATE_RESULTS hits=%s contacts=%s failures=%s" % [hits,contacts,failures])
 	quit(0 if failures.is_empty() else 1)
