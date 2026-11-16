@@ -32,10 +32,12 @@ func _process(delta: float) -> void:
 		_last_reported_moving = is_moving
 		_last_reported_facing = facing_direction
 		movement_state_changed.emit(is_moving, facing_direction)
-	if Input.is_key_pressed(KEY_J) and _strike_cooldown <= 0.0 and not _attack_locked:
-		_strike_cooldown = strike_repeat_delay
-		_attack_locked = true
-		strike_requested.emit(facing_direction)
+func _input(event: InputEvent) -> void:
+	if event is InputEventKey and event.keycode == KEY_J and event.pressed and not event.echo:
+		if _strike_cooldown <= 0.0 and not _attack_locked:
+			_strike_cooldown = strike_repeat_delay
+			_attack_locked = true
+			strike_requested.emit(facing_direction)
 
 func finish_attack() -> void:
 	_attack_locked = false

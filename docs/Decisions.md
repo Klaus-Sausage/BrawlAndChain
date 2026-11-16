@@ -170,3 +170,9 @@ Owner approved the current private preview composition (“yeah thats perfect”
 **Source:** Owner reviewed the extracted armed Fighter candidate and replied “perfect.”
 
 **CURRENT for the private preview:** Activate the original ROM-captured sword-and-shield Fighter as the default hero and retain the separate candidate scene path for continued asset review. Preserve the extracted source timing, original weapon assembly, existing combat rules and private-use status. Supersedes Ax Battler as the active preview hero only. This does not resolve final licensing or declare the combat timing/range tuned. Native and browser launch verification and backup are recorded in Progress.
+
+## D-066 — Attack is press-triggered, not hold-repeat, 2026-11-16
+
+**Source:** Owner says holding the attack button repeats too quickly, while very fast separate taps feel right.
+
+**CURRENT for the private 0.0.1 preview:** Start one strike only on a fresh J key-down. Ignore held-key autorepeat; a later distinct press may start another swing after the existing animation lock and 0.32-second minimum delay permit it. Keep the original strike speed, visual timing and hit resolution. This changes attack input repeat behavior only; it does not add a combo system. Native/browser result recheck follows this change.

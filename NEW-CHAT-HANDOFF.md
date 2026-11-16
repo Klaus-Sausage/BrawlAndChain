@@ -72,3 +72,6 @@ The historical next goal was repository persistence followed by Unity tooling. U
 Owner approved the armed Mystara Fighter candidate (“perfect”) on 2026-11-16. It is now the default scene. Native and refreshed browser launches were verified at 480×270 Compatibility framing. Review evidence and extraction provenance are under `docs/visual-evidence/mystara-rom/` and `assets/temporary_mystara_rom/`. ROMs, keys, emulator, dumps and captures remain outside the repository. Permission for reuse of the temporary game art remains unverified; keep private. Complete repository scan and commit/push follow the approval.
 
 The approved browser export is now versioned in web-preview/ (commit after 2026-11-16). Clone the private repo, run python3 -m http.server 8000 from that folder, and open localhost:8000. For same-network testing, bind to 0.0.0.0 and use the host LAN IP. GitHub does not serve this folder as a playable site automatically; testers need private repository access. Art reuse permission remains unverified.
+
+
+Latest input feedback: owner likes the original sword-strike speed and appearance, but wants holding J not to auto-repeat; rapid separate taps feel right. scripts/hero_intent.gd now accepts only non-echo J key-down events; D-066 records this. Regenerate/refresh native and Web preview checks, then commit/push the input change.

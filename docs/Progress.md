@@ -125,3 +125,8 @@ Owner reviewed the armed Fighter candidate and replied “perfect.” The candid
 ## Browser build checked into private Git — 2026-11-16
 
 At the owner's request, added the Godot Web export to web-preview/ so the private build can be cloned and served on other computers. It includes the generated HTML, JavaScript, WebAssembly, PCK, icon and audio worklets (about 39 MB before Git compression). web-preview/README.md gives the local HTTP server steps and same-network testing option. This is a downloadable/cloneable build; the commit does not itself host a public playable URL. The repository remains private.
+
+
+## Attack input adjustment — 2026-11-16
+
+Changed J from per-frame held polling to fresh key-down input, ignoring OS/browser echo events. A held attack button can no longer trigger additional swings; distinct fast taps remain subject to the current swing lock and 0.32-second minimum delay. Per owner feel feedback, animation speed remains unchanged. Runtime recheck and refreshed browser export are pending. See D-066.

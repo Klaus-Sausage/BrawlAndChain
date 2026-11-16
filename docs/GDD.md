@@ -316,3 +316,6 @@ This repository includes a minimal technical launch test and the private 0.0.1 m
 ### Current private art experiment — 2026-11-16
 
 **EXPERIMENTAL / PLAYTEST REQUIRED (D-064):** Separate ROM-captured armed Mystara Fighter candidate preserves original sword/shield, per-frame cadence and shared origin. Owner approved the candidate on 2026-11-16; it is the active private preview hero. Browser and native inspection happen during iteration; no new gameplay scope or final asset decision. See Progress for actual results and remaining review.
+
+
+**Private 0.0.1 input feel update (D-066, 2026-11-16):** Basic J attack is press-triggered and does not auto-repeat while held. Rapid separate taps remain possible subject to the current attack lock/minimum delay. Animation speed is owner-approved and unchanged.
