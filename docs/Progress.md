@@ -18,7 +18,17 @@ The prototype has provisional WASD floor movement, idle/walk and one sword attac
 
 ## Current next action
 
-The 0.0.1 hit-position check (D-071) and first hold-guard [reciprocal exchange](Combat-Experiment.md) feel review (D-073) are accepted. After the combat playtest instructions, the owner reported “feels great.” Next, listen to the audio lab; its subjective musical gate remains open. Light/Heavy branches, Thief comparison, starter kits/slots, enemy roster and wheel rules remain separate staged work under the authorized [14-step private roadmap](Roadmap.md).
+The 0.0.1 hit-position check (D-071), first hold-guard exchange (D-073), and audio lab rhythm/resolution proof (D-074) are accepted. The owner requested continuation and selected knockback for a first Light/Heavy finisher (D-075). The separate [combo experiment](Combo-Experiment.md) passes automated checks and awaits owner feel review. Thief comparison, starter kits/slots, enemy roster and wheel rules remain separate staged work under the [private roadmap](Roadmap.md).
+
+## Light/Heavy combo experiment — 2026-11-16
+
+The owner accepted the placeholder audio rhythm/resolution proof (D-074), requested continuation, and selected knockback to create space for the Heavy finisher (D-075). The separate scene is scenes/combo_experiment.tscn, exported at ?lab=combos. J–J–J provides pressure; J–J–L creates persistent space with a committed Heavy. Temporary controls are J Light, L Heavy, K guard, R reset and F2 diagnostics. The original preview and first exchange remain separate references.
+
+All five pinned Godot 4.7.2 harnesses pass (`PROJECT_CHECKS_PASS harnesses=5`), including all 34 new combo checks. They cover shared openings, one queued input, three-action limit, expiry, exact contact/health, guard interaction, Heavy movement/recovery, punishable misses, bounded persistent knockback and reset. Existing preview, authority, exchange and audio checks remain green. [Headless output](combo-evidence/headless-checks.log).
+
+Chromium 156 software WebGL 2 passed all four scenes. Real combo input verified an early buffered Light, the three-Light branch, the Heavy third-step branch with 48 px knockback, held-input suppression and reset during Heavy without a later stale hit. Godot/JavaScript/HTTP errors were absent. [Browser results](combo-evidence/browser-results.json), [Light frame](combo-evidence/combo-light.png), [Heavy frame](combo-evidence/combo-heavy.png). A missing arrow glyph found during visual review was replaced with plain text before final export.
+
+Numerical tuning, standalone/early Heavy fallback and buffer rules are experimental technical settings in [Combo Experiment](Combo-Experiment.md). The new combo's owner feel review is pending. Thief comparison, final kits, gamepad, real focus loss, full-slice FPS and steps 5–14 remain open. The current versioned Web export's source-manifest.json records its exact clean runtime inputs; documentation-only commits can follow that runtime commit.
 
 ## Private full-slice foundations — implementation and checks, 2026-11-16
 
@@ -26,9 +36,9 @@ The 0.0.1 hit-position check (D-071) and first hold-guard [reciprocal exchange](
 - Expanded the maintained roadmap to the approved 14-step private-first sequence; added the reciprocal exchange brief and D-072, and aligned assistant instructions, GDD, README/handoff and open gates. Public production/release follows private gameplay proof.
 - Minimum authority extraction is implemented: input/AI intent, action acceptance/contact/outcomes and visual playback are separated while preserving accepted preview behavior. The original scene remains the default.
 - The separate hold-guard exchange is implemented with hidden 3 HP per actor, stationary goblin, 90 px enemy range/18 px lane, 0.70 s windup, 0.65 s recovery and 0.42 s small-goblin flinch. K guard plants the hero, covers the front and prevents a new strike; it does not cancel a committed strike. R resets the encounter. These are provisional experiment rules, not final starter-kit decisions.
-- The separate MONEY SHOT lab uses locally generated original placeholder audio with Stream playback. It schedules a crescendo/resolution from the music clock while simulation time slows, then restores camera/time. It does not implement the final boss or demonstrate human approval of the musical quality.
+- The separate MONEY SHOT lab uses original placeholder audio with Stream playback. The owner confirmed its rhythm remains steady during slowdown and its crescendo resolves smoothly into the loop (D-074). This accepts the existing feasibility proof; final music and boss integration remain separate work.
 
-Gameplay source was committed as `6d0467c`; `d2fd9f9` additionally normalizes generated HTML whitespace. The regenerated Web build's source-manifest.json identifies `d2fd9f9`, engine 4.7.2 and clean runtime inputs (`git_dirty=false`); source SHA-256 is `8539f2ff0aef4e378cd253b34c7d6069995daa99f410366e3908c6f8b76084d8`. The later documentation/build commit retains that source identity.
+Foundation checkpoint provenance: gameplay source was committed as `6d0467c`, followed by HTML normalization in `d2fd9f9`. That checkpoint's Web source SHA-256 was `8539f2ff0aef4e378cd253b34c7d6069995daa99f410366e3908c6f8b76084d8`. The later combo export has its own current source-manifest.json; the saved foundation evidence below describes the earlier checkpoint.
 
 ### Verification completed this session
 
@@ -38,12 +48,12 @@ Gameplay source was committed as `6d0467c`; `d2fd9f9` additionally normalizes ge
 | Web export | PASS: the pinned matching templates produce a single-threaded Compatibility build. `tools/export_web.py` records source/artifact hashes and only replaces checked-in preview artifacts with `--update-preview`. |
 | Headless Chromium preview | PASS: Chromium 156.0.8078.79 with software WebGL 2 loaded the export. Actual keyboard input verified one held strike, another distinct tap, movement and a close hit. [Frame](foundation-evidence/preview.png). |
 | Headless Chromium exchange | PASS: guard caused no hero damage; releasing it allowed damage through defeat; R reset; three subsequent strikes defeated the goblin; another reset worked. [Guard frame](foundation-evidence/exchange-guard.png). |
-| Headless Chromium audio lab | PASS objective proof: Start audio gesture unlocked Stream playback; Web Audio measured nonzero output (peak approximately 0.2095); two resolution events, interrupt/reset and return to preview worked. Human listening and musical quality remain pending. [Active lab frame](foundation-evidence/money-shot-active.png). |
+| Headless Chromium audio lab | PASS objective proof: Start audio gesture unlocked Stream playback; Web Audio measured nonzero output (peak approximately 0.2095); two resolution events, interrupt/reset and return to preview worked. Owner listening subsequently accepted rhythm/resolution (D-074). [Active lab frame](foundation-evidence/money-shot-active.png). |
 | Browser errors | No Godot, JavaScript or HTTP errors in the automated three-scene run. [Browser results](foundation-evidence/browser-results.json). |
 
-The shared visible Chrome attempt was blocked by unsupported WebGL 2; it did not display a playable game. A pinned native capture attempt could not access the managed X11 display (authorization unavailable); Wayland fallback was also unavailable, so no new native-window render is claimed. The independent headless Chromium renderer produced the captured frames above. Real browser focus loss could not be generated in that headless run; focus notification behavior passed harness checks only. The owner subsequently accepted the local browser exchange feel (D-073). New native-window gameplay, human musical listening, gamepad support, full-run behavior and 60 FPS performance remain unverified.
+The shared visible Chrome lacked WebGL 2; native capture could not access the managed X11/Wayland display. The independent headless Chromium renderer produced the frames above. Real browser focus loss was not generated; notification behavior passed harness checks only. The owner accepted local browser exchange feel (D-073) and placeholder musical rhythm/resolution (D-074). New native-window gameplay, gamepad support, full-run behavior and 60 FPS performance remain unverified.
 
-Roadmap status: steps 1 and 3 technically complete for this foundation; step 2 implemented/objective checks passed with listening pending; step 4's first reciprocal exchange has passed objective checks and owner feel review (D-073). Light/Heavy and Thief comparison work within step 4 is still unimplemented. Steps 5–14 have not started. The private full slice is not complete.
+Roadmap status: steps 1 and 3 technically complete for this foundation; step 2's placeholder feasibility proof is accepted (D-074); step 4's first exchange is accepted (D-073), with its Light/Heavy experiment implemented/automatically verified and awaiting owner feel review; Thief comparison is unimplemented. Steps 5–14 have not started. The private full slice is not complete.
 
 ### Repeat these checks
 
@@ -81,7 +91,8 @@ The supplied ROM support files resolved the earlier MAME blockers. The verified 
 | Build | Primary question | Current result | Next |
 | --- | --- | --- | --- |
 | 0.0.1 private preview | Do basic movement and one satisfying strike work with readable original Mystara Fighter animation? | Owner approves the armed look, cadence, speed, and current 95 px range/hit positions. Native/browser checks pass. | Preserve as regression baseline. |
-| Unnumbered foundation experiments | Can authoritative combat preserve the preview while a reciprocal exchange and browser music/slowdown proof work separately? | Four headless harnesses and three-scene browser checks pass. Owner says the exchange “feels great” (D-073); musical listening remains pending. No later slice systems are implemented. | Listen to the lab, then scope the next combat brief. |
+| Unnumbered foundation experiments | Can authoritative combat preserve the preview while a reciprocal exchange and browser music/slowdown proof work separately? | Automated checks pass; owner accepts exchange feel (D-073) and musical rhythm/resolution (D-074). | Preserve these proofs; verify the separate combo experiment (D-075). |
+| Unnumbered combo experiment | Does a common Light-Light opening support pressure versus a committed space-making finish? | Five headless harnesses and four-scene browser checks pass; new combo owner feel is pending. | Owner compares J–J–J and J–J–L; tune from feedback before class contrast. |
 
 
 ## Cleanup and final verification — 2026-11-16

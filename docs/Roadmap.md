@@ -12,7 +12,7 @@ Keep each 0.0.x build focused on one primary proof. Preserve the accepted 0.0.1 
 
 ## Fourteen implementation steps
 
-Current evidence (2026-11-16): steps 1 and 3 are technically complete for this foundation; step 2's lab passes objective scheduling/nonzero browser-audio checks, with human listening pending. Step 4's first hold-guard exchange passes automated checks and owner feel review (“feels great,” D-073); its Light/Heavy branches and Thief comparison remain unimplemented. Steps 5–14 have not started. See [Progress](Progress.md) for evidence and limitations.
+Current evidence (2026-11-16): steps 1 and 3 are technically complete for this foundation; step 2's placeholder audio rhythm/resolution proof is accepted (D-074). Step 4's first hold-guard exchange is accepted (D-073); its knockback Light/Heavy experiment passes automated checks and awaits owner feel review (D-075), while Thief comparison remains unimplemented. Steps 5–14 have not started. See [Progress](Progress.md) for evidence and limitations.
 
 ### 1. Reconcile the baseline and define the private slice contract
 
@@ -31,6 +31,8 @@ Current evidence (2026-11-16): steps 1 and 3 are technically complete for this f
 
 **Gate:** A browser-observed example demonstrates a coherent musical payoff during slowdown and reliable restoration, or a concrete alternative is agreed. Run this alongside early combat; integrate the full feature at step 13.
 
+**Lab result:** Owner listening confirmed steady rhythm during slowdown and smooth crescendo resolution into the loop (D-074). Preserve the placeholder feasibility approach; final music selection and boss integration remain future work.
+
 ### 3. Establish the minimum authoritative combat foundation
 
 - Separate human/AI intent, authoritative action acceptance/contact/outcomes, and presentation. Introduce only the actor/action state and observable outcomes required by the preview and next exchange.
@@ -48,7 +50,7 @@ Current evidence (2026-11-16): steps 1 and 3 are technically complete for this f
 
 **Gate:** Owner review finds the exchange readable and responsive, with understandable hit/defeat outcomes and reliable repetition. Record actual feedback before extending the model.
 
-**First-exchange result:** Accepted by the owner (“feels great,” D-073). Preserve the current proof; scope later combat branches and class comparison separately. This does not complete those unbuilt experiments.
+**First-exchange result:** Accepted by the owner (“feels great,” D-073). The next separate [combo experiment](Combo-Experiment.md) follows the owner's knockback choice (D-075); its new feel and later class comparison need their own review.
 
 ### 5. Agree the four starter-kit and six enemy briefs
 

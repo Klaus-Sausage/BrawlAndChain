@@ -230,6 +230,7 @@ def check_combos(browser, url, output):
     page.keyboard.down("l")  # Hold the accepted Heavy instead of pressing again later.
     wait_log(page, logs, "COMBO_ACTION kind=heavy step=3")
     wait_log(page, logs, "COMBO_KNOCKBACK distance=48")
+    page.wait_for_timeout(100)  # Let the frame present the resolved displacement.
     page.screenshot(path=str(output / "combo-heavy.png"))
     page.wait_for_timeout(900)
     page.keyboard.down("l")

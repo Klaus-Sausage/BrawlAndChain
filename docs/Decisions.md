@@ -227,3 +227,15 @@ Owner approved the current private preview composition (“yeah thats perfect”
 **CURRENT:** The first reciprocal combat experiment's owner-feel gate is accepted. Preserve the current experiment as a working reference and do not request the same review again without new evidence. This approval applies to the existing exchange; it does not settle final starter kits/balance, unbuilt Light/Heavy branches, Thief comparison or the audio lab's listening result.
 
 **Reason and boundary:** Record the observed owner judgment so subsequent work starts from the accepted proof. No runtime tuning or new automated test result accompanies this decision. Affected: Progress, Roadmap, Combat Experiment, Open Questions, GDD, visual notes, README/handoff and assistant instructions.
+
+## D-074 — Owner accepts placeholder music/slowdown feasibility, 2026-11-16
+
+**Source:** Asked whether the lab's music keeps its rhythm during slowdown and its crescendo resolves smoothly into the loop, the owner answered “yes it does.”
+
+**CURRENT:** The existing placeholder lab's listening/timing feasibility gate is accepted. Retain its Stream playback/music-clock approach as the basis for later integration. This does not select a final genre, soundtrack or composition, establish measured audible latency, or complete the Goblin King/MONEY SHOT integration. No new automated test result accompanies this owner judgment.
+
+## D-075 — First Light/Heavy branch creates space, 2026-11-16
+
+**Source:** The owner requested continuation, then selected “Knock enemies back to create space” for a proposed first test of three Lights for pressure or two Lights followed by a committed Heavy finisher.
+
+**CURRENT experiment objective:** Build a separate Light/Heavy combo proof with the common Light-Light opening and a knockback Heavy finish. Preserve the accepted preview and hold-guard exchange. The prototype's temporary J Light/L Heavy mapping, one-input buffer, standalone Heavy fallback, damage, recovery and numerical knockback are explicitly EXPERIMENTAL technical choices for review, not final kits or approved balance. See [Combo Experiment](Combo-Experiment.md). New combo feel requires its own owner playtest.

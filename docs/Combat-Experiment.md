@@ -36,7 +36,7 @@ The original preview remains the default regression reference. Web exports inclu
 
 **Exit:** the owner reviews this reciprocal exchange and its limitations. Resolve basic feel failures before combo branches or party expansion. This does not lock production balance, starter kits, final controls or final enemy animation.
 
-**Owner result:** After instructions to try the goblin tell, hold-guard, strikes and reset, the owner replied “feels great.” The initial exchange's feel gate is accepted (D-073). Audio listening and later Light/Heavy/class-comparison proofs remain separate.
+**Owner result:** After instructions to try the goblin tell, hold-guard, strikes and reset, the owner replied “feels great” (D-073). The owner subsequently accepted the audio lab's rhythm/resolution (D-074). The separate [Light/Heavy experiment](Combo-Experiment.md) follows D-075; its feel and later class comparison are separate proofs.
 
 ## Actual checks — 2026-11-16
 

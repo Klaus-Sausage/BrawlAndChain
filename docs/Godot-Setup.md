@@ -100,7 +100,7 @@ python3 tools/check_project.py --godot "$GODOT_BIN"
 python3 tools/export_web.py --godot "$GODOT_BIN"
 ```
 
-The check wrapper rejects a different editor before import. All four current harnesses passed with fixed-60 execution: preview, authority (including varied/absent visuals), music scheduling/restoration and 22 exchange checks; final marker PROJECT_CHECKS_PASS harnesses=4. Fixed-60 execution is not a measured 60 FPS result. The export wrapper writes ignored exports/private-preview/ and records runtime-source/artifact hashes; --update-preview explicitly refreshes generated files in web-preview/ without changing the default scene.
+The check wrapper rejects a different editor before import. At the foundation checkpoint, four harnesses passed with fixed-60 execution: preview, authority (including varied/absent visuals), music scheduling/restoration and 22 exchange checks; final marker PROJECT_CHECKS_PASS harnesses=4. Fixed-60 execution is not a measured 60 FPS result. The export wrapper writes ignored exports/private-preview/ and records runtime-source/artifact hashes; --update-preview explicitly refreshes generated files in web-preview/ without changing the default scene.
 
 Serve exports/private-preview/ over HTTP, then run the browser check in another terminal:
 
@@ -113,5 +113,7 @@ python3 tools/check_browser_preview.py --url http://127.0.0.1:8060/
 ```
 
 Browser automation requires Python Playwright and Chromium; BRAWL_BROWSER_BIN can select an installed executable. This session used Chromium 156.0.8078.79 headless with software WebGL 2. The three-scene check passed real input, exchange outcomes and nonzero Web Audio plus music-event/reset/return behavior. It does not verify listening quality, owner feel, gamepad, real focus-loss handling or FPS. A visible Chrome attempt lacked WebGL 2 and native rendering could not access the managed display; no new native-window gameplay result is claimed.
+
+Subsequent owner review accepted first-exchange feel (D-073), then the placeholder lab's steady rhythm and smooth resolution (D-074). D-075 selects knockback for the separate [combo experiment](Combo-Experiment.md), which adds a fifth headless harness. All five and the four-scene browser checks pass; new combo owner feel remains pending. These proofs do not select final music/kits or complete boss integration. See Progress for the latest evidence.
 
 Saved evidence: [headless output](foundation-evidence/headless-checks.log), [browser results](foundation-evidence/browser-results.json), and frames linked from [Visual Preview](Visual-Preview.md). The original local results above remain historical evidence for that machine, not proof that a cloud/native path works.
