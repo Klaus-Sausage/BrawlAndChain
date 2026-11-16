@@ -77,3 +77,6 @@ The approved browser export is now versioned in web-preview/ (commit after 2026-
 Latest input feedback: owner likes the original sword-strike speed and appearance, but wants holding J not to auto-repeat; rapid separate taps feel right. scripts/hero_intent.gd now accepts only non-echo J key-down events; D-066 records this. Regenerate/refresh native and Web preview checks, then commit/push the input change.
 
 D-066 hold-versus-tap input verification is complete: native injected held-key echo events yielded exactly one swing, and a distinct post-release press yielded the next. Browser held J for 1.8 s yielded one strike result; a fresh tap yielded a second. Full native candidate checks passed. See latest Progress entry.
+
+
+Latest owner tuning: CombatResolver.strike_range is 95 px (was 78), changed via the F2 hit-zone overlay review. Lane tolerance is still 18 px; default hero/goblin origins remain (140,226)/(340,226). The browser build in web-preview/ has been refreshed to this scene before commit.

@@ -138,3 +138,8 @@ PASS: Native Godot synthetic input held J across 70 frames and injected repeated
 ## Strike-zone debug overlay — 2026-11-16
 
 Added F2 toggle to the default Fighter scene. The overlay draws the resolver's exact front-facing rectangle (78 px reach × 36 px lane) from the hero's origin, marks the goblin origin, and reports FRONT/RANGE/LANE individually as YES/NO. Tested in the refreshed 480×270 WebGL2 Compatibility browser build: F2 shows the box/status, and at the initial positions the display correctly reports FRONT YES, RANGE NO, LANE YES. This makes the current failure visible: the starting hero-to-goblin x gap is 200 px against a 78 px reach. Adjust positions or tunings while watching which check changes. F2 hides the overlay. Native scene parse/import completed; interactive visual verification was in browser. The refreshed versioned export is in web-preview/.
+
+
+## Strike range tuning — 2026-11-16
+
+Owner changed the scene's exported CombatResolver strike_range from 78 to 95 px after using the F2 hit-zone readout. Hero and goblin stay at (140,226) and (340,226), respectively; lane tolerance remains 18 px. Refreshed the versioned browser export so it matches the native scene. At the default positions, their 200 px origin gap still exceeds the range; close-distance hits should now register with the wider provisional reach. This is owner-tuned private preview state, not locked game balance.

@@ -31,7 +31,7 @@ Owner-approved 2026-11-16. This private experiment asks whether floor-depth move
 
 - **WASD:** A/D across the arena, W/S along the floor; movement is clamped to scene bounds. Horizontal movement changes facing. The active Ax Battler frames are flipped according to their source orientation.
 - **J:** one strike in the current facing direction. A miss shows MISS but does not flash or move the goblin. A hit briefly colors and nudges the goblin, then it settles back to its starting point.
-- **Editable tuning:** `movement_speed` (90 px/s), horizontal margin (24 px), floor range (185–246 px), strike range (78 px), lane tolerance (18 px), strike repeat delay (0.32 s), flash (0.12 s), knockback (12 px), settle speed (90 px/s) and feedback duration (0.45 s). These are test values, not game-design commitments.
+- **Editable tuning:** `movement_speed` (90 px/s), horizontal margin (24 px), floor range (185–246 px), strike range (95 px), lane tolerance (18 px), strike repeat delay (0.32 s), flash (0.12 s), knockback (12 px), settle speed (90 px/s) and feedback duration (0.45 s). These are test values, not game-design commitments.
 - **Not included:** combos, enemy AI/attacks or animation, health display, damage numbers, abilities, networking, production art, or audio.
 
 ### Previous hero animation pass — Mystara Fighter (superseded)
@@ -96,4 +96,4 @@ Owner reviewed the armed Fighter preview and replied “perfect” on 2026-11-16
 
 ### Debugging strike positions
 
-Press **F2** to toggle a live hit-check overlay in the default scene. The green outlined rectangle shows where the goblin origin must be: in front of the hero, within 78 horizontal pixels and within 18 vertical pixels of the hero origin. The line/dot turns green only when all checks pass; the upper-left readout reports FRONT, RANGE and LANE separately. This visualizes the resolver's current point-to-point checks; it is not a character-body collision shape. Press F2 again to hide it. Verified in the browser: at the initial positions, FRONT=YES, RANGE=NO, LANE=YES.
+Press **F2** to toggle a live hit-check overlay in the default scene. The green outlined rectangle shows where the goblin origin must be: in front of the hero, within 95 horizontal pixels and within 18 vertical pixels of the hero origin. The line/dot turns green only when all checks pass; the upper-left readout reports FRONT, RANGE and LANE separately. This visualizes the resolver's current point-to-point checks; it is not a character-body collision shape. Press F2 again to hide it. Verified in the browser: at the initial positions, FRONT=YES, RANGE=NO, LANE=YES.
