@@ -20,7 +20,7 @@ func frames(count: int) -> void:
 		await process_frame
 
 func check(ok: bool, label: String) -> void:
-	print("CANDIDATE_CHECK %s=%s" % [label, ok])
+	print("PREVIEW_CHECK %s=%s" % [label, ok])
 	if not ok:
 		failures.append(label)
 
@@ -38,7 +38,7 @@ func strike_at(pos: Vector2, facing: float, expected: bool, label: String) -> vo
 	check(hits.size() == before + 1 and hits.back() == expected, label)
 
 func _run() -> void:
-	scene = load("res://scenes/fighter_candidate.tscn").instantiate()
+	scene = load("res://scenes/visual_preview.tscn").instantiate()
 	root.add_child(scene)
 	current_scene = scene
 	await frames(2)
@@ -107,5 +107,5 @@ func _run() -> void:
 	key(KEY_J, false)
 	check(accepted == held_before + 2, "separate_tap_starts_next_attack")
 	await frames(45)
-	print("CANDIDATE_RESULTS hits=%s contacts=%s failures=%s" % [hits,contacts,failures])
+	print("PREVIEW_RESULTS hits=%s contacts=%s failures=%s" % [hits,contacts,failures])
 	quit(0 if failures.is_empty() else 1)

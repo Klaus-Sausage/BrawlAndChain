@@ -1,4 +1,4 @@
-# Temporary armed Mystara Fighter — private candidate
+# Temporary armed Mystara Fighter — private preview
 
 Original artwork: Capcom, Dungeons & Dragons: Shadow over Mystara (1996). Source is the owner's local `ddsomur1` USA 960209 ROM set, audited successfully with MAME 0.264. This is a separate ROM-derived extraction, **not** the downloaded Fighter sheet credited elsewhere. No sheet uploader is credited for these captures. Reuse permission is unverified; keep this project and preview private. ROM chips, keys and emulator binaries are not included. `provenance.json` records local source filenames and SHA-256 values.
 
@@ -20,7 +20,7 @@ The script records every emulated frame (240 per clip), screen-frame counter, an
 
 ## Timing and origin
 
-`display/animations.json` is authoritative. Refresh 59.637405 Hz; 27 atlas cells, each 256×192, origin (128,160), source crop (64,0) to (320,192). Original facing is left. No per-pose lowest-pixel alignment. One source pixel equals one candidate canvas pixel.
+`display/animations.json` is authoritative. Refresh 59.637405 Hz; 27 atlas cells, each 256×192, origin (128,160), source crop (64,0) to (320,192). Original facing is left. No per-pose lowest-pixel alignment. One source pixel equals one preview canvas pixel.
 
 - Idle: four steps, ticks 32/10/32/10, loop at step 0.
 - Walk: entry 5 ticks, then twelve steps of 3 ticks each. Subsequent loops begin at step 1. Capture covers more than two complete loops.
@@ -28,4 +28,4 @@ The script records every emulated frame (240 per clip), screen-frame counter, an
 
 Animation records start at 0x122526 (idle), 0x1225ee (walk; loop target 0x122606), and 0x1244a2 (attack); records are 24 bytes. Only derived images and numeric timing metadata are included, not decrypted code dumps.
 
-GIF previews round to GIF's 10 ms time unit and are approximate; the Godot candidate uses exact tick durations. The walk GIF shows only the repeating cycle; the labelled contact sheet includes the entry pose and every sword pose without cropping the weapon. Ax Battler remains default. See `docs/Progress.md` for actual checks, recording and owner-review gate.
+GIF previews round to GIF's 10 ms time unit and are approximate; the Godot preview uses exact tick durations. The walk GIF shows only the repeating cycle; the labelled contact sheet includes the entry pose and every sword pose without cropping the weapon. This is the active preview art. See `docs/Progress.md` for actual checks and known limitations.

@@ -139,11 +139,11 @@ Owner approved the current private preview composition (“yeah thats perfect”
 
 **Reason and boundary:** Let the owner judge whether the temporary artwork communicates movement and impact before more combat work. Intent, outcome and sprite playback remain separate. Supersedes only D-060’s “no player attack animation” exclusion for this private experiment. Affected: Visual Preview, asset notes, GDD technical state, handoff, Open Questions and Progress. Native and browser result checks are recorded in [Visual Preview](Visual-Preview.md); owner feel review remains pending.
 
-## D-062 — Ax Battler temporary hero art, 2026-11-16
+## D-062 — SUPERSEDED: Ax Battler temporary hero art, 2026-11-16
 
 **Source:** Owner explicitly requested replacing the preview hero with the weapon-bearing Ax Battler sheet from Golden Axe II after viewing the Spriters Resource page, then approved implementation of this exact swap.
 
-**CURRENT for the private preview:** Ax Battler replaces only the active Mystara Fighter hero art. Use its original sword-bearing idle, walk and sword-attack frames; do not add a weapon overlay. Keep the goblin, Village of Trintan, arena, framing and gameplay behavior. Preserve all earlier Mystara originals and derivatives. The hero visual remains a replaceable child node.
+**Historical decision, superseded by D-064 and D-065:** Ax Battler temporarily replaced the active Mystara Fighter hero art. Use its original sword-bearing idle, walk and sword-attack frames; do not add a weapon overlay. Keep the goblin, Village of Trintan, arena, framing and gameplay behavior. Preserve all earlier Mystara originals and derivatives. The hero visual remains a replaceable child node.
 
 **Provenance and limits:** [Spriters Resource asset 36388](https://www.spriters-resource.com/sega_genesis/goldenaxe2/asset/36388/), uploaded/contributed by Yawackhary; original image is 496×544 and SHA-256 is recorded in `assets/temporary_golden_axe/sources.json`. The sheet footer asks that the art not be stolen. Reuse permission is **unverified** and the project/build must remain private; attribution is not a licence.
 
@@ -151,28 +151,47 @@ Owner approved the current private preview composition (“yeah thats perfect”
 
 **Reason and boundary:** Owner identified the Fighter as the wrong hero art and selected the actual weapon-bearing original. This is an art-source and frame-mapping change to the existing private 0.0.1 experiment, not a gameplay change, final character design, or public-release asset choice. Affected: GDD, asset notes/manifest, visual-preview notes, handoff and progress. Native verification is required before owner review; the owner's local approval gates web export/testing. Actual results and eventual commit are recorded in [Progress](Progress.md) and [Visual Preview](Visual-Preview.md).
 
-## D-063 — Keep idle out of walk animation, 2026-11-16
+## D-063 — SUPERSEDED: Ax Battler walk indexing, 2026-11-16
 
 **Source:** Owner reviewed the Ax Battler local build and reported that the walk seemed to cycle through the idle pose, specifying that idle should return only when movement stops.
 
-**CURRENT private-preview behavior:** Keep the source idle pose only in atlas frame 0. The walking loop uses the three distinct remaining walking poses (atlas frames 1–3); stopping restores frame 0. Sword frames now occupy atlas frames 4–7; the visible slash remains attack frame 2 / atlas frame 6 for hit resolution. Provisional walk/attack speeds remain 8/16 fps. Movement and hit rules do not change.
+**Historical Ax-only correction:** The source idle pose was kept out of the Ax Battler walk loop. The walking loop uses the three distinct remaining walking poses (atlas frames 1–3); stopping restores frame 0. Sword frames now occupy atlas frames 4–7; the visible slash remains attack frame 2 / atlas frame 6 for hit resolution. Provisional walk/attack speeds remain 8/16 fps. Movement and hit rules do not change.
 
 **Reason and boundary:** The first walk cell duplicated the idle pose pixel-for-pixel, which made the moving loop visibly repeat idle. Remove that duplicate while preserving the existing source art and strike contact. This supersedes D-062's initial nine-frame atlas indexing only. Native runtime check passes; owner review of the corrected local animation is pending. Web export/testing and commit/push remain gated on owner approval. Details: [Visual Preview](Visual-Preview.md).
 
-## D-064 — Original armed Fighter candidate and browser iteration, 2026-11-16
+## D-064 — SUPERSEDED: Extract armed Mystara Fighter, 2026-11-16
 
 **Source:** Owner approved “Extract and review the armed Mystara Fighter” and explicitly restored browser checks during iteration after the Ax walk remained janky.
 
-**EXPERIMENTAL:** Capture original idle, complete walk and one sword attack with original sword/shield from the supplied MAME ROM; retain source timing and origin. Build a separate candidate, preserve Ax as default until owner approval. No gameplay expansion or weapon overlay. D-063's Ax-specific removal of idle does not authorize removing any original Mystara timing. Supersedes D-062/D-063's local-only gate on web verification; approval still gates activation and completed backup. Preserve private asset provenance and unverified reuse permission. Affected: GDD, Progress, Visual Preview, asset notes and handoff. Native/browser results are recorded in Progress; candidate feel review remains pending.
+**Historical plan, completed by D-065:** Capture original idle, complete walk and one sword attack with original sword/shield from the supplied MAME ROM; retain source timing and origin. A separate preview was built and approved. No gameplay expansion or weapon overlay. D-063's Ax-specific removal of idle does not authorize removing any original Mystara timing. Supersedes D-062/D-063's local-only gate on web verification; approval still gates activation and completed backup. Preserve private asset provenance and unverified reuse permission. Affected: GDD, Progress, Visual Preview, asset notes and handoff. Native/browser results are recorded in Progress; candidate feel review remains pending.
 
-## D-065 — Activate armed Fighter candidate, 2026-11-16
+## D-065 — Activate armed Mystara Fighter, 2026-11-16
 
 **Source:** Owner reviewed the extracted armed Fighter candidate and replied “perfect.”
 
-**CURRENT for the private preview:** Activate the original ROM-captured sword-and-shield Fighter as the default hero and retain the separate candidate scene path for continued asset review. Preserve the extracted source timing, original weapon assembly, existing combat rules and private-use status. Supersedes Ax Battler as the active preview hero only. This does not resolve final licensing or declare the combat timing/range tuned. Native and browser launch verification and backup are recorded in Progress.
+**CURRENT:** The ROM-captured sword-and-shield Fighter is the approved default hero in scenes/visual_preview.tscn. The separate candidate scene was consolidated into the default scene during D-068 cleanup. Preserve the extracted source timing, original weapon assembly, existing combat rules and private-use status. Supersedes the Ax Battler selection; no Golden Axe assets remain in the current tree. This does not resolve final licensing or declare the combat timing/range tuned. Native and browser launch verification and backup are recorded in Progress.
 
 ## D-066 — Attack is press-triggered, not hold-repeat, 2026-11-16
 
 **Source:** Owner says holding the attack button repeats too quickly, while very fast separate taps feel right.
 
-**CURRENT for the private 0.0.1 preview:** Start one strike only on a fresh J key-down. Ignore held-key autorepeat; a later distinct press may start another swing after the existing animation lock and 0.32-second minimum delay permit it. Keep the original strike speed, visual timing and hit resolution. This changes attack input repeat behavior only; it does not add a combo system. Native/browser result recheck follows this change.
+**CURRENT for the private 0.0.1 preview:** Start one strike only on a fresh J key-down. Ignore held-key autorepeat; a later distinct press may start another swing after the existing animation lock and 0.32-second minimum delay permit it. Keep the original strike speed, visual timing and hit resolution. This changes attack input repeat behavior only; it does not add a combo system. Native and browser verification passed; see Progress.
+
+
+## D-067 — F2 strike-zone visualization, 2026-11-16
+
+**Source:** Owner asked how to inspect why expected hit positions were missing.
+
+**CURRENT private-preview tool:** F2 toggles a drawing of the exact front/range/lane check and displays each result for the goblin origin. It is a diagnostic for the prototype's point-to-point resolver, not a production collision design. The owner used it to set the provisional strike range to 95 px. This changes presentation/debugging only.
+
+## D-068 — Retire Golden Axe art experiment, 2026-11-16
+
+**Source:** Owner approved the armed Mystara Fighter and requested removal of Golden Axe art and experiment code.
+
+**CURRENT:** The ROM-derived Mystara Fighter is the only active preview hero. The obsolete Ax Battler assets, comparison scene, Ax-specific image preparation path, old scene/animation, and Ax-specific screenshots have been removed. The active scene and animation/check tooling use stable names. Dated decisions and archived source transcripts remain historical. This is project cleanup, not a game-design change. Temporary Mystara art remains private because reuse permission is unverified.
+
+## D-069 — Provisional strike range 95 px, 2026-11-16
+
+**Source:** Owner edited the resolver setting after reviewing the F2 hit-zone overlay and approved the resulting preview feel.
+
+**CURRENT / EXPERIMENTAL:** strike_range is 95 px; lane_tolerance remains 18 px and strike_repeat_delay remains 0.32 s. This supersedes the 78 px initial test value only. The owner will continue checking previously missed positions with the overlay; this is not locked combat balance.

@@ -1,68 +1,72 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene format=3 uid="uid://cl0m1wfpshwik"]
 
-[ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/village.png" id="1"]
-[ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/floor.png" id="2"]
-[ext_resource type="Texture2D" path="res://assets/temporary_golden_axe/display/ax_battler_animations.png" id="3"]
-[ext_resource type="Texture2D" path="res://assets/temporary_mystara/display/goblin_idle.png" id="4"]
-[ext_resource type="Script" path="res://scripts/visual_preview.gd" id="5"]
-[ext_resource type="Script" path="res://scripts/hero_intent.gd" id="6"]
-[ext_resource type="Script" path="res://scripts/goblin_reaction.gd" id="7"]
-[ext_resource type="Script" path="res://scripts/combat_resolver.gd" id="8"]
-[ext_resource type="Script" path="res://scripts/hero_animation.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://ce5j1udrgf450" path="res://assets/temporary_mystara/display/village.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bdqwk6hmygqrf" path="res://assets/temporary_mystara/display/floor.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://btmvhqvg0slh5" path="res://assets/temporary_mystara_rom/display/fighter_armed.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://jiulfh68emwy" path="res://assets/temporary_mystara/display/goblin_idle.png" id="4"]
+[ext_resource type="Script" uid="uid://8wbalhwvvayu" path="res://scripts/visual_preview.gd" id="5"]
+[ext_resource type="Script" uid="uid://isinb74j0v36" path="res://scripts/hero_intent.gd" id="6"]
+[ext_resource type="Script" uid="uid://c7u883wp8qy37" path="res://scripts/goblin_reaction.gd" id="7"]
+[ext_resource type="Script" uid="uid://tl54e7cjxglk" path="res://scripts/combat_resolver.gd" id="8"]
+[ext_resource type="Script" uid="uid://ph7x3faylsrl" path="res://scripts/fighter_animation.gd" id="9"]
+[ext_resource type="Script" uid="uid://byec177hlehak" path="res://scripts/hitbox_debug.gd" id="10"]
 
-[node name="CombatTest" type="Node2D"]
+[node name="VisualPreview" type="Node2D" unique_id=994278338]
 texture_filter = 1
 script = ExtResource("5")
 
-[node name="BackdropFill" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(0, 0, 480, 0, 480, 270, 0, 270)
+[node name="BackdropFill" type="Polygon2D" parent="." unique_id=1056158803]
 color = Color(0.56, 0.38, 0.13, 1)
+polygon = PackedVector2Array(0, 0, 480, 0, 480, 270, 0, 270)
 
-[node name="Village" type="Sprite2D" parent="."]
+[node name="Village" type="Sprite2D" parent="." unique_id=866305214]
 texture = ExtResource("1")
 centered = false
 
-[node name="Floor" type="Sprite2D" parent="."]
+[node name="Floor" type="Sprite2D" parent="." unique_id=227732534]
 position = Vector2(0, 46)
 texture = ExtResource("2")
 centered = false
 
-[node name="Hero" type="Node2D" parent="."]
+[node name="Hero" type="Node2D" parent="." unique_id=1952721178]
 position = Vector2(140, 226)
 script = ExtResource("6")
 
-[node name="Visual" type="Sprite2D" parent="Hero"]
+[node name="Visual" type="Sprite2D" parent="Hero" unique_id=1582071400]
 texture = ExtResource("3")
 centered = false
-offset = Vector2(-48, -80)
-hframes = 8
+offset = Vector2(-128, -160)
 flip_h = true
+hframes = 27
 
-[node name="HeroAnimation" type="Node" parent="Hero"]
+[node name="HeroAnimation" type="Node" parent="Hero" unique_id=757187766]
 script = ExtResource("9")
 
-[node name="Goblin" type="Node2D" parent="."]
+[node name="Goblin" type="Node2D" parent="." unique_id=1597357930]
 position = Vector2(340, 226)
 script = ExtResource("7")
 
-[node name="Visual" type="Sprite2D" parent="Goblin"]
+[node name="Visual" type="Sprite2D" parent="Goblin" unique_id=1910063195]
 texture = ExtResource("4")
 centered = false
 offset = Vector2(-32, -46)
 flip_h = true
 
-[node name="CombatResolver" type="Node" parent="."]
+[node name="CombatResolver" type="Node" parent="." unique_id=256174609]
 script = ExtResource("8")
+strike_range = 95.0
 
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera" type="Camera2D" parent="." unique_id=2085520921]
 position = Vector2(240, 135)
-position_smoothing_enabled = false
 
-[node name="Feedback" type="Label" parent="."]
+[node name="Feedback" type="Label" parent="." unique_id=2102789642]
 visible = false
 offset_left = 12.0
 offset_top = 10.0
 offset_right = 90.0
 offset_bottom = 38.0
-text = "HIT"
 theme_override_font_sizes/font_size = 14
+text = "HIT"
+
+[node name="HitboxDebug" type="Node2D" parent="." unique_id=198425215]
+script = ExtResource("10")

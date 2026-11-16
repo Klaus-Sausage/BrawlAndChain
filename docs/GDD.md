@@ -245,12 +245,12 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 **CURRENT (pp. 90–102):**
 
 - Cleaned-up 80s/90s pulp fantasy, Mystara mixed with Heavy Metal; exaggerated muscles and curves, not anime proportions.
-- Palette direction: darker than Mystara, lighter than Golden Axe.
+- Palette direction: darker than Mystara, lighter than classic arcade fantasy art.
 - Dark/mythic world with excessive, campy/badass heroes. Full pulp gore: decapitation, dismemberment, shattering, etc.
 - Responsive arcade combat with strong impact, varied by hero. Strong silhouettes identify characters/sets without GUI labels.
 - Camera baseline between Mystara and TMNT framing, dynamically adjusting for party spread and narrative space. Can move from wide/open to claustrophobic dungeon framing.
 - Rich illustrated atmosphere with TMNT-like modern readability. Pulp town/interior scenes. VFX must not obscure silhouettes, enemy tells, hazards, or tactical information.
-- **CURRENT — owner confirmation, 2026-11-16:** 2D fantasy sprite art with an 80s/90s appearance. Mystara goblin and Trintan setting remain in the first private preview; the owner later replaced only the temporary Fighter hero with the sword-bearing Ax Battler from Golden Axe II. Both art sources remain temporary, permission-unverified and private. **EXPERIMENTAL:** 480×270 visual-study canvas displayed at 960×540, fixed framing and source pixel proportions. **OPEN:** final resolution, production asset pipeline, camera bounds, animation counts and final assets. See [Visual Preview](Visual-Preview.md); this is not approval of final character designs or gameplay.
+- **CURRENT — owner confirmation, 2026-11-16:** 2D fantasy sprite art with an 80s/90s appearance. The private preview uses a ROM-derived armed Mystara Fighter, Mystara goblin and Trintan setting. Reuse permission for these temporary assets is unverified, so keep the project private. **EXPERIMENTAL:** 480×270 visual-study canvas displayed at 960×540, fixed framing and source pixel proportions. **OPEN:** final resolution, production asset pipeline, camera bounds, animation counts and final assets. See [Visual Preview](Visual-Preview.md); this is not approval of final character designs or gameplay.
 
 **MONEY SHOT — CURRENT feature:** Select significant finishes get a brief cinematic zoom/push-in and exaggerated slowdown to enjoy the impact/gore. Last-enemy tactical finishes are a core example; bosses/elites may qualify before all enemies are dead. Exact trigger frequency/eligible kills is PLAYTEST REQUIRED; it must not become automatic/repetitive.
 
@@ -272,7 +272,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 
 **CURRENT (pp. 105–116 and later Codex setup):**
 
-- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and temporary hero animation experiment is implemented; owner feel review remains pending. Cloud engine installation, add-ons and physics model remain OPEN.
+- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and ROM-derived Fighter animation preview is implemented and approved visually; owner playtesting of the current 95 px strike range remains in progress. Cloud engine installation, add-ons and physics model remain OPEN.
 - Planned browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify export behavior against the selected release. Test browser builds early, especially audio/music timing during MONEY SHOT slowdown. Sample versus Stream playback has feature/latency tradeoffs; the playback strategy is OPEN, not already implemented.
 - Console aspirations remain current, but Godot's standard download does not contain official console exporters. Platform approval, SDK access, and suitable third-party console tooling/porting services (or custom platform work) are required. Provider, budget, version compatibility, and platform support remain OPEN.
 - Target **60 FPS**, including browser. Test hardware/browser and measurable budget are OPEN; this is a target, not a verified result.
@@ -280,7 +280,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 - Solo + AI slice. Online co-op implementation DEFERRED, possible stretch goal only.
 - **LOCKED architecture constraint:** Keep future multiplayer in mind for every system and coding brief. Separate input/AI intent, authoritative game outcomes, and presentation sufficiently to avoid obvious rewrite traps. Framework/topology/tick/reconciliation choices remain OPEN.
 - Frequent playable 0.0.x builds, each with one primary proof; 0.1.0 first public slice. If a build feels poor, iterate on it rather than advance the feature schedule.
-- Rough placeholders acceptable during development. Public asset choices and licensing must be verified; no rights or production assets are established by the source. Both currently used private-preview sources (Mystara and Golden Axe II) have unverified reuse permission and must stay private. This is a delivery constraint, not a claim of a separate owner-approved art pipeline.
+- Rough placeholders acceptable during development. Public asset choices and licensing must be verified; no rights or production assets are established by the source. The current private preview uses temporary Mystara art with unverified reuse permission and must stay private. This is a delivery constraint, not a claim of a separate owner-approved art pipeline.
 - Default to deferring features that delay the demo unless they directly prove its core combat/tactical identity. Do not silently remove explicit slice inclusions; record any owner-approved scope change.
 
 Technical references checked 2026-11-16: [Godot web export and audio constraints](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [Godot console support](https://godotengine.org/consoles/). Recheck these against the release chosen during setup; these references do not verify this game's exports or performance.
@@ -313,9 +313,9 @@ See [Open Questions](Open-Questions.md). The historical source now supplies the 
 
 This repository includes a minimal technical launch test and the private 0.0.1 movement/one-strike experiment. Actual development state and verification are in [Progress](Progress.md).
 
-### Current private art experiment — 2026-11-16
+### Current private 0.0.1 preview
 
-**EXPERIMENTAL / PLAYTEST REQUIRED (D-064):** Separate ROM-captured armed Mystara Fighter candidate preserves original sword/shield, per-frame cadence and shared origin. Owner approved the candidate on 2026-11-16; it is the active private preview hero. Browser and native inspection happen during iteration; no new gameplay scope or final asset decision. See Progress for actual results and remaining review.
+**CURRENT / PLAYTEST REQUIRED:** The approved default uses the ROM-derived sword-and-shield Mystara Fighter with original cadence, shared origin, goblin and village. The owner approves the appearance and strike speed. The current open test is whether the owner-adjusted 95 px strike range covers intended positions. This is not production art or the public 0.1.0 slice; see Progress for actual results.
 
 
 **Private 0.0.1 input feel update (D-066, 2026-11-16):** Basic J attack is press-triggered and does not auto-repeat while held. Rapid separate taps remain possible subject to the current attack lock/minimum delay. Animation speed is owner-approved and unchanged.
