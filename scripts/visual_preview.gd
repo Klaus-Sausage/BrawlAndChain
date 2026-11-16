@@ -6,6 +6,10 @@ extends Node2D
 var _feedback_revision: int = 0
 
 func _ready() -> void:
+	if "--combo-lab" in OS.get_cmdline_user_args() and not get_tree().has_meta(&"combo_lab_opened"):
+		get_tree().set_meta(&"combo_lab_opened", true)
+		get_tree().change_scene_to_file.call_deferred("res://scenes/combo_experiment.tscn")
+		return
 	if "--money-shot-lab" in OS.get_cmdline_user_args() and not get_tree().has_meta(&"money_shot_lab_opened"):
 		get_tree().set_meta(&"money_shot_lab_opened", true)
 		get_tree().change_scene_to_file.call_deferred("res://scenes/money_shot_lab.tscn")

@@ -45,7 +45,7 @@ func request_action(action: StringName) -> bool:
 	is_attacking = true
 	attack_elapsed = 0.0
 	attack_facing_direction = facing_direction
-	strike_cooldown = strike_repeat_delay
+	strike_cooldown = action_repeat_delay()
 	_contact_emitted = false
 	strike_started.emit(attack_facing_direction)
 	return true
@@ -63,18 +63,35 @@ func advance(delta: float) -> void:
 	goblin_position.x = move_toward(goblin_position.x, goblin_home_x, settle_speed * delta)
 	if not is_attacking:
 		return
-	attack_elapsed = minf(attack_elapsed + delta, ATTACK_DURATION)
-	if not _contact_emitted and attack_elapsed >= CONTACT_TIME:
+	attack_elapsed = minf(attack_elapsed + delta, action_duration())
+	if not _contact_emitted and attack_elapsed >= action_contact_time():
 		_contact_emitted = true
 		strike_contact.emit(attack_facing_direction)
 		var checks := hit_checks(attack_facing_direction)
 		var did_hit: bool = checks.front and checks.range and checks.lane
 		if did_hit:
-			goblin_position.x += attack_facing_direction * knockback_distance
+			goblin_position.x += attack_facing_direction * action_knockback()
 		strike_resolved.emit(did_hit)
-	if attack_elapsed >= ATTACK_DURATION:
+	if attack_elapsed >= action_duration():
 		is_attacking = false
 		attack_finished.emit()
+
+# The accepted preview keeps these defaults. Separate experiments can describe
+# other actions without giving presentation control over their timing.
+func action_contact_time() -> float:
+	return CONTACT_TIME
+
+func action_duration() -> float:
+	return ATTACK_DURATION
+
+func action_repeat_delay() -> float:
+	return strike_repeat_delay
+
+func action_knockback() -> float:
+	return knockback_distance
+
+func presentation_attack_elapsed() -> float:
+	return attack_elapsed
 
 func hit_checks(facing: float) -> Dictionary:
 	var offset := goblin_position - hero_position

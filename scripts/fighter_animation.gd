@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 	if _mode == "attack":
 		# Sample the accepted source frames at authoritative elapsed action time.
 		_step = 0
-		var remaining := _simulation.attack_elapsed
+		var remaining := _simulation.presentation_attack_elapsed()
 		while _step < clip.frames.size() - 1:
 			var duration := float(clip.ticks[_step]) / float(_data.capture_fps)
 			if remaining < duration:

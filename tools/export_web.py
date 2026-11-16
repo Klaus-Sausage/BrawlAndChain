@@ -61,6 +61,8 @@ def add_lab_route(html_path: Path) -> None:
         "\tGODOT_CONFIG.args = ['--', '--money-shot-lab'];\n"
         "} else if (new URLSearchParams(window.location.search).get('lab') === 'combat-exchange') {\n"
         "\tGODOT_CONFIG.args = ['--', '--combat-exchange'];\n"
+        "} else if (new URLSearchParams(window.location.search).get('lab') === 'combos') {\n"
+        "\tGODOT_CONFIG.args = ['--', '--combo-lab'];\n"
         "}\n"
     )
     # Official templates contain trailing spaces/blank lines. Keep generated

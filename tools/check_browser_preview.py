@@ -195,6 +195,60 @@ def check_exchange(browser, url, output):
             "guard_damage_defeat_victory_reset": True}
 
 
+def check_combos(browser, url, output):
+    page, logs, errors = new_page(browser)
+    page.goto(url + "?lab=combos", wait_until="domcontentloaded")
+    wait_log(page, logs, "COMBO_LAB_READY")
+    canvas_click(page, 240, 135)
+    page.keyboard.press("F2")
+    page.keyboard.down("d")
+    page.wait_for_timeout(1600)
+    page.keyboard.up("d")
+    page.keyboard.press("j")
+    wait_log(page, logs, "COMBO_ACTION kind=light step=1")
+    page.wait_for_timeout(60)
+    page.keyboard.press("j")
+    wait_log(page, logs, "COMBO_BUFFER kind=light")
+    wait_log(page, logs, "COMBO_ACTION kind=light step=2")
+    page.keyboard.down("j")  # Hold the accepted third input through recovery.
+    wait_log(page, logs, "COMBO_ACTION kind=light step=3")
+    page.wait_for_timeout(120)
+    page.screenshot(path=str(output / "combo-light.png"))
+    page.wait_for_timeout(800)
+    page.keyboard.down("j")
+    page.keyboard.up("j")
+    assert sum("COMBO_ACTION" in line for line in logs) == 3, logs
+    page.keyboard.press("r")
+    wait_log(page, logs, "EXCHANGE_RESET")
+    page.keyboard.down("d")
+    page.wait_for_timeout(1600)
+    page.keyboard.up("d")
+    page.keyboard.press("j")
+    page.wait_for_timeout(360)
+    page.keyboard.press("j")
+    page.wait_for_timeout(360)
+    page.keyboard.down("l")  # Hold the accepted Heavy instead of pressing again later.
+    wait_log(page, logs, "COMBO_ACTION kind=heavy step=3")
+    wait_log(page, logs, "COMBO_KNOCKBACK distance=48")
+    page.screenshot(path=str(output / "combo-heavy.png"))
+    page.wait_for_timeout(900)
+    page.keyboard.down("l")
+    page.keyboard.up("l")
+    assert sum("COMBO_ACTION kind=heavy" in line for line in logs) == 1, logs
+    page.keyboard.press("l")  # Start another Heavy, then interrupt it with reset.
+    wait_log(page, logs, "COMBO_ACTION kind=heavy", count=2)
+    page.wait_for_timeout(80)
+    page.keyboard.press("r")
+    wait_log(page, logs, "EXCHANGE_RESET", count=2)
+    marker = max(index for index, line in enumerate(logs) if "EXCHANGE_RESET" in line)
+    page.wait_for_timeout(850)
+    assert not any("EXCHANGE_DAMAGED" in line for line in logs[marker + 1:]), logs
+    assert_clean(logs, errors)
+    page.close()
+    return {"logs": logs, "page_errors": errors,
+            "light_branch_buffer_heavy_knockback_hold_and_reset": True}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", default="http://127.0.0.1:8060/")
@@ -215,6 +269,7 @@ def main():
             results["preview"] = check_preview(browser, args.url, args.output)
             results["money_shot"] = check_audio_lab(browser, args.url, args.output)
             results["exchange"] = check_exchange(browser, args.url, args.output)
+            results["combos"] = check_combos(browser, args.url, args.output)
         except Exception as error:
             results["failure"] = str(error)
             for context in browser.contexts:

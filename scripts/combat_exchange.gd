@@ -29,6 +29,7 @@ func _ready() -> void:
 	_overlay.draw.connect(_draw_exchange_cues)
 	add_child(_overlay)
 	var help := Label.new()
+	help.name = "ExchangeHelp"
 	help.text = "WASD move  ·  J strike  ·  hold K guard  ·  R reset  ·  F2 hit zone"
 	help.position = Vector2(10, 254)
 	help.add_theme_font_size_override("font_size", 9)

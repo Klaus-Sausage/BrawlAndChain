@@ -53,6 +53,10 @@ reset_exchange={
 "deadzone": 0.5,
 "events": [Object(InputEventKey,"keycode":82,"unicode":114)]
 }
+heavy_strike={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":76,"unicode":108)]
+}
 
 [rendering]
 

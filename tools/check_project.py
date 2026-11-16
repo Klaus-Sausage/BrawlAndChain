@@ -15,6 +15,7 @@ HARNESS_RESULTS = {
     "tools/check_authority.gd": "AUTHORITY_RESULTS",
     "tools/check_money_shot_lab.gd": "MONEY_SHOT_RESULTS",
     "tools/check_combat_exchange.gd": "COMBAT_EXCHANGE_RESULTS",
+    "tools/check_combo_experiment.gd": "COMBO_RESULTS",
 }
 
 
