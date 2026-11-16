@@ -6,16 +6,21 @@ extends Node2D
 var _feedback_revision: int = 0
 
 func _ready() -> void:
+	if "--money-shot-lab" in OS.get_cmdline_user_args() and not get_tree().has_meta(&"money_shot_lab_opened"):
+		get_tree().set_meta(&"money_shot_lab_opened", true)
+		get_tree().change_scene_to_file.call_deferred("res://scenes/money_shot_lab.tscn")
+		return
+	if "--combat-exchange" in OS.get_cmdline_user_args() and not get_tree().has_meta(&"combat_exchange_opened"):
+		get_tree().set_meta(&"combat_exchange_opened", true)
+		get_tree().change_scene_to_file.call_deferred("res://scenes/combat_exchange.tscn")
+		return
 	print("COMBAT_TEST_READY platform=%s renderer=%s viewport=%s controls=WASD+J" % [OS.get_name(), RenderingServer.get_current_rendering_method(), get_viewport_rect().size])
-	$Hero.movement_state_changed.connect($Hero/HeroAnimation.set_movement_state)
-	$Hero.strike_requested.connect($Hero/HeroAnimation.play_attack)
-	$Hero/HeroAnimation.strike_contact.connect($CombatResolver.resolve_strike)
-	$Hero/HeroAnimation.attack_finished.connect($Hero.finish_attack)
 	$CombatResolver.strike_resolved.connect(_show_result)
 	var user_args := OS.get_cmdline_user_args()
 	if "--capture-walk-sequence" in user_args:
-		$Hero.set_process(false)
-		$Hero.movement_state_changed.emit(true, 1.0)
+		$CombatResolver.set_physics_process(false)
+		$CombatResolver.simulation.set_movement_intent(Vector2.RIGHT)
+		$CombatResolver.simulation.advance(1.0 / 60.0)
 		await _capture_walk_sequence()
 	elif "--capture-preview" in user_args:
 		await get_tree().create_timer(1.0).timeout
@@ -36,7 +41,7 @@ func _capture_walk_sequence() -> void:
 		sequence.blit_rect(frame, Rect2i(Vector2i.ZERO, viewport_size), Vector2i(index * viewport_size.x, 0))
 		if index < 2:
 			await get_tree().create_timer(0.126).timeout
-	var result := sequence.save_png("/tmp/brawl-ax-native-walk.png")
+	var result := sequence.save_png("/tmp/brawl-fighter-native-walk.png")
 	print("COMBAT_WALK_CAPTURE result=%s viewport=%s frames=%s" % [result, viewport_size, frame_indices])
 	get_tree().quit(result)
 
