@@ -2,7 +2,7 @@
 
 **Baseline:** PDF recovery, 2026-11-15 (Australia/Melbourne). **Game milestone:** public vertical slice 0.1.0. This document replaces incomplete summaries for working purposes; it does not claim all tuning or implementation decisions are complete.
 
-**Last updated:** 2026-11-16 (Australia/Melbourne): owner-approved Unity → Godot engine direction; gameplay scope unchanged. See D-057 in [Decisions](Decisions.md).
+**Last updated:** 2026-11-16 (Australia/Melbourne): Godot direction retained; owner approved private full-slice delivery first, rough readable stand-ins and staged design gates (D-072). Required slice gameplay is unchanged. See [Decisions](Decisions.md).
 
 Sources: [historical transcript](sources/Historical-Design-Chat.md), [original PDF](sources/Historical-Design-Chat.pdf), and [later owner confirmations](sources/Codex-Owner-Confirmations.md). References below are PDF page numbers. Individual historical turn dates are unknown.
 
@@ -161,6 +161,8 @@ Originally described as customizable through pause/pre-round menus, management w
 
 Communications, barks, and contextual commands must make voice chat unnecessary. Future human squadmates must remain autonomous. Full online implementation is DEFERRED / slice stretch goal, not a public-slice gate.
 
+**CURRENT delivery staging (D-072):** Prove sensible role defaults and feasible contextual requests in the private slice. Deeper conditional customization remains the full-game direction; a rich behavior editor is not an explicit slice requirement. Decide the minimum configuration depth at its implementation gate.
+
 ## 10. Enemies and encounter structure
 
 **CURRENT (pp. 63–74):**
@@ -272,16 +274,16 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 
 **CURRENT (pp. 105–116 and later Codex setup):**
 
-- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and ROM-derived Fighter animation preview is implemented and approved visually; the owner is satisfied with the current 95 px strike range/hit positions. This is not locked production combat balance. Cloud engine installation, add-ons and physics model remain OPEN.
-- Planned browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify export behavior against the selected release. Test browser builds early, especially audio/music timing during MONEY SHOT slowdown. Sample versus Stream playback has feature/latency tradeoffs; the playback strategy is OPEN, not already implemented.
+- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and ROM-derived Fighter animation preview is implemented and approved visually; the owner is satisfied with the current 95 px strike range/hit positions. This is not locked production combat balance. The current cloud baseline passed pinned-editor import and the fixed-60 headless preview harness; graphical/browser/audio validation is tracked separately in Progress. Add-ons and production physics model remain OPEN.
+- Browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify release-specific behavior. The separate audio lab now uses Stream playback, a music-driven clock and generated original placeholders; objective browser output/scheduling/restoration checks pass. Human listening and production music/playback choices remain OPEN; this is not the finished MONEY SHOT.
 - Console aspirations remain current, but Godot's standard download does not contain official console exporters. Platform approval, SDK access, and suitable third-party console tooling/porting services (or custom platform work) are required. Provider, budget, version compatibility, and platform support remain OPEN.
 - Target **60 FPS**, including browser. Test hardware/browser and measurable budget are OPEN; this is a target, not a verified result.
 - No proper persistent save needed for the short self-contained slice; session state is enough initially. Full-game persistence remains a separate requirement.
 - Solo + AI slice. Online co-op implementation DEFERRED, possible stretch goal only.
 - **LOCKED architecture constraint:** Keep future multiplayer in mind for every system and coding brief. Separate input/AI intent, authoritative game outcomes, and presentation sufficiently to avoid obvious rewrite traps. Framework/topology/tick/reconciliation choices remain OPEN.
 - Frequent playable 0.0.x builds, each with one primary proof; 0.1.0 first public slice. If a build feels poor, iterate on it rather than advance the feature schedule.
-- The owner requested a full 0.1.0 delivery roadmap on 2026-11-16. See [Roadmap](Roadmap.md); it proposes execution order without changing the required slice content or settling open design questions.
-- Rough placeholders acceptable during development. Public asset choices and licensing must be verified; no rights or production assets are established by the source. The current private preview uses temporary Mystara art with unverified reuse permission and must stay private. This is a delivery constraint, not a claim of a separate owner-approved art pipeline.
+- The owner approved the [14-step private full-slice roadmap](Roadmap.md) and authorized implementation (D-072). Build the required gameplay privately first, then scope public production/release. Use staged design gates for unspecified kits, slot counts, roster details and wheel rules instead of inventing them now. Each build still proves one primary question; game feel takes priority over advancing steps.
+- Rough readable stand-ins are the selected initial delivery approach (D-072). Public asset choices and licensing must be verified later; no rights are established by the source. The current Mystara preview remains private because reuse permission is unverified. Public asset replacement/rights and hosting follow private full-slice review; no polished art pipeline is locked.
 - Default to deferring features that delay the demo unless they directly prove its core combat/tactical identity. Do not silently remove explicit slice inclusions; record any owner-approved scope change.
 
 Technical references checked 2026-11-16: [Godot web export and audio constraints](https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html), [Godot console support](https://godotengine.org/consoles/). Recheck these against the release chosen during setup; these references do not verify this game's exports or performance.
@@ -308,6 +310,8 @@ Recovered explicit scope (pp. 106–119):
 
 Replayability/game feel remain current goals. Exact pass/fail release checks, tester sample, accessibility requirements, licenses, hardware targets, and distribution method must be agreed before public release. None has been tested or signed off yet.
 
+**CURRENT delivery milestone (D-072):** First prove this gameplay scope as a labelled private full-slice candidate with rough readable stand-ins. Adaptive music and all four boss actions remain required. Public 0.1.0, asset clearance/replacement and distribution follow separately. Passing the private candidate does not itself authorize publication.
+
 ## 18. What is not settled
 
 See [Open Questions](Open-Questions.md). The historical source now supplies the main design; do not describe Reacharound/Circle Jerk/MUM RULES as entirely missing again. Detailed class kits, physical controls, simulation/AI implementation, balancing, and asset production still need focused decisions and playtests.
@@ -320,3 +324,7 @@ This repository includes a minimal technical launch test and the private 0.0.1 m
 
 
 **Private 0.0.1 input feel update (D-066, 2026-11-16):** Basic J attack is press-triggered and does not auto-repeat while held. Rapid separate taps remain possible subject to the current attack lock/minimum delay. Animation speed is owner-approved and unchanged.
+
+### Current next experiment
+
+**CURRENT implemented experiment / PLAYTEST REQUIRED (D-072):** The separate one-goblin exchange adds hidden health, readable reaction/defeat, telegraphed melee, owner-selected temporary hold-guard and reset. Four pinned headless harnesses and three-scene software-WebGL browser checks pass; owner exchange feel and musical listening remain pending. Preserve the accepted preview as the default regression reference. Temporary K guard/R reset and tuning are experiment choices, not final kits/controls. Roadmap steps 5–14 are not started. See [Combat Experiment](Combat-Experiment.md) and Progress for precise evidence and limits.

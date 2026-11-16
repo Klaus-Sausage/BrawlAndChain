@@ -109,8 +109,14 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":213184,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":275984,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
+// Brawl & Chain: only the named technical lab can change startup arguments.
+if (new URLSearchParams(window.location.search).get('lab') === 'money-shot') {
+	GODOT_CONFIG.args = ['--', '--money-shot-lab'];
+} else if (new URLSearchParams(window.location.search).get('lab') === 'combat-exchange') {
+	GODOT_CONFIG.args = ['--', '--combat-exchange'];
+}
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {

@@ -4,7 +4,7 @@
 
 - **Fresh chat:** read [NEW-CHAT-HANDOFF.md](NEW-CHAT-HANDOFF.md).
 - **Design baseline:** [GDD](docs/GDD.md), [decisions](docs/Decisions.md), [open questions](docs/Open-Questions.md), and [progress](docs/Progress.md).
-- **Roadmap:** [proposed path to the 0.1.0 public slice](docs/Roadmap.md). The slice contents are established; the order is a proposal to revisit after playtests.
+- **Roadmap:** [14-step private full-slice delivery plan](docs/Roadmap.md). Prove the established slice gameplay with rough readable stand-ins; public assets and release follow separately.
 - **Original evidence:** [source index](docs/sources/README.md), [historical transcript](docs/sources/Historical-Design-Chat.md), and [original PDF](docs/sources/Historical-Design-Chat.pdf).
 - **Working rules:** [AGENTS.md](AGENTS.md).
 
@@ -19,3 +19,7 @@ The project uses Godot 4 with GDScript and Compatibility rendering. Local Godot 
 The default scene, scenes/visual_preview.tscn, is the approved 0.0.1 Mystara Fighter movement-and-strike preview. It uses a ROM-derived sword-and-shield Fighter, Mystara goblin and Trintan village. Press F5 to run; use WASD to move, J for a single press-triggered strike, and F2 to show/hide the strike range/lane diagnostics. Current range is 95 px and lane tolerance is 18 px. The canvas is 480×270 with a 960×540 local window.
 
 The matching Web export is checked into web-preview/. Serve that folder over HTTP as described in its README. Temporary Mystara art reuse permission is unverified; keep the repository and preview private. This is a focused 0.0.1 experiment, not the 0.1.0 public slice.
+
+## Current development
+
+The owner accepted the 95 px hit-position feel and authorized the private full-slice roadmap. The shared authority foundation, separate audio/slowdown lab and [one-goblin hold-guard exchange](docs/Combat-Experiment.md) are implemented. Four pinned headless harnesses and objective three-scene browser checks pass; owner exchange feel and human musical listening remain pending. The accepted preview remains the default; exported experiment routes are `?lab=combat-exchange` and `?lab=money-shot`. See [Progress](docs/Progress.md) for commands, evidence and limitations. Later starter-kit, enemy-roster and wheel decisions remain staged gates; the full slice is not built.

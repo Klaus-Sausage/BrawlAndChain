@@ -9,7 +9,7 @@ The provisional canvas is 480×270, shown in a 960×540 local window with neares
 ## Controls and strike checks
 
 - WASD moves horizontally and along the floor; the hero is clamped to the arena and faces horizontal movement.
-- J starts one directional sword strike on a fresh key press. Holding J does not repeat. A new press is accepted after the animation lock and minimum delay.
+- J starts one directional sword strike on a fresh key press. Holding J does not repeat. A new press is accepted after the gameplay action lock and minimum delay.
 - F2 toggles the debug overlay. It draws the exact front-facing range zone from the hero origin and displays FRONT/RANGE/LANE for the goblin origin. This is a point-to-point rule visualization, not a body-shaped collision volume.
 - Current tuning: strike_range 95 px; lane_tolerance 18 px; strike_repeat_delay 0.32 s. Movement speed is 90 px/s; horizontal margin 24 px; floor depth 185–246 px. Values are experimental.
 
@@ -21,6 +21,19 @@ Attack timing follows MAME emulated frames (59.637405 Hz). The sword clip has te
 - Browser: single-threaded WebGL 2 Compatibility loaded at 480×270. Hit and miss checks were observed. A 1.8-second held J press produced one strike result; a separate tap produced the next. F2 showed the range zone/readout. The browser build in web-preview/ matches the current 95 px range.
 - The owner reports the armed Fighter looks and feels right, and confirmed satisfaction with the current 95 px strike range/hit positions (“happy with all that”). The owner requested no further tuning. This confirms the current private preview feel; it does not lock production combat balance.
 - This prototype has no enemy AI or attacks, combos, health UI, damage numbers, abilities, audio, or networking.
+
+## New separate foundation experiments — 2026-11-16
+
+The accepted preview remains the default. Its combat outcomes now come from shared authoritative state, independent of visible sprite playback. Four pinned Godot 4.7.2 headless harnesses pass, including original regressions, 15/30/60/144 presentation-rate comparisons, absent/disabled presentation, audio scheduling and all 22 reciprocal-exchange checks.
+
+Two additional scenes are implemented:
+
+- scenes/combat_exchange.tscn: one stationary goblin, hidden health, telegraphed melee, temporary owner-selected hold-guard and defeat/reset. K held guards/stands still; R resets. Guard covers the front, prevents a new strike and does not cancel an active strike. See [Combat Experiment](Combat-Experiment.md) for provisional values and behavior.
+- scenes/money_shot_lab.tscn: generated original placeholder music, Stream playback, music-clock crescendo/resolution while simulation slows, and camera/time restoration. Click Start audio, then Test finish; Reset interrupts and Preview returns to the default.
+
+The export helper includes experiment routes ?lab=combat-exchange and ?lab=money-shot while retaining the original default. Headless Chromium 156.0.8078.79 software WebGL 2 passed real-input preview and exchange checks, including guard/no damage, defeat, reset, three-hit victory and reset. The lab produced nonzero Web Audio output (peak approximately 0.2095), repeated resolution events and reset/return behavior. No Godot/JavaScript/HTTP errors were reported. [Preview frame](foundation-evidence/preview.png), [guard frame](foundation-evidence/exchange-guard.png), [lab frame](foundation-evidence/money-shot-active.png), [browser results](foundation-evidence/browser-results.json).
+
+These new objective checks do not establish owner exchange feel, human musical judgment, gamepad support or FPS. Real browser focus loss was not produced; notification behavior has harness coverage only. Shared visible Chrome lacked WebGL 2 support and the attempted native capture could not access the managed display. See [Progress](Progress.md) for complete evidence and repeatable commands. Roadmap steps 5–14 are not implemented.
 
 ## Preserved launch test
 

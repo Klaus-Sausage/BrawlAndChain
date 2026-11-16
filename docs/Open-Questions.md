@@ -9,13 +9,23 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | Codex project/environment organization | CURRENT | Private `Default Cloud` connected to BrawlAndChain and published 2026-11-16; setup clone verified. Cloud read/write subsequently verified with a temporary branch created, checked, and deleted at `10361e8`. Fresh task launched from published configuration still untested. No automatic file sync. |
 | Repository and external backup | CURRENT | Private `Klaus-Sausage/BrawlAndChain` created; initial push and fresh clone verified 2026-11-16. Automatic sync is not configured. |
 | Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
-| Godot tooling/version/export templates | CURRENT local / OPEN cloud | Standard Godot 4.7.2 stable, matching web templates, typed GDScript technical project and Compatibility configured/launch-verified locally. See Godot-Setup.md. Cloud engine installation still unverified. |
-| Browser export validation | CURRENT launch / OPEN gameplay/audio | Minimal single-threaded release export rendered and handled an actual click in the in-app Chromium browser using WebGL 2.0. Other browsers, performance and MONEY SHOT music/slowdown timing remain untested. See Godot-Setup.md. |
+| Godot tooling/version/export templates | CURRENT local and cloud pinned checks | Godot 4.7.2 import, four headless harnesses and matching web export pass in this cloud task. Headless Chromium software WebGL 2 exercises all three scenes; new native-window play remains unverified. See Godot-Setup.md and Progress. |
+| Browser export validation | CURRENT objective experiments / OPEN feel, listening and FPS | Single-threaded export and Chromium 156.0.8078.79 software WebGL 2 checks pass for preview, reciprocal exchange and audio lab. Nonzero Web Audio and music events were measured; human musical quality, gamepad, real focus loss and performance remain unverified. See Progress. |
 | First prototype | CURRENT 0.0.1 implemented; initial feel check complete | Owner approved the ROM-derived armed Mystara Fighter appearance/cadence and is satisfied with the current 95 px strike range/hit positions. Native/browser checks pass. Further balance tuning is not locked and can be revisited if a later test identifies a problem. See [Visual Preview](Visual-Preview.md) and [Roadmap](Roadmap.md). |
 
 ## Current roadmap focus
 
-The 0.0.1 hit-position check is complete for the current preview. Next, select one primary proof question for the next private 0.0.x build using [Roadmap](Roadmap.md). Its later gates still depend on the open design and playtest questions in this file.
+The 0.0.1 hit-position check is complete. The owner authorized the [14-step private full-slice roadmap](Roadmap.md), rough readable stand-ins, and staged design gates (D-072). The authority foundation, audio/slowdown lab and [reciprocal exchange](Combat-Experiment.md) are implemented. Four headless harnesses and objective three-scene browser checks pass; owner exchange feel and human musical listening remain pending. Steps 5–14 have not started. The owner chose temporary hold-guard; no final starter defense, slot count or wheel rules follow from it.
+
+Before expanding each dependent system, prepare the relevant brief and settle its open decisions. Continue independent authorized work while awaiting an answer. Private full-slice acceptance precedes public art/rights/hosting decisions; neither candidate completion nor publication is claimed here.
+
+## Next design gates
+
+1. Review the one-goblin hold-guard exchange and its provisional interaction/tuning; decide the next combat proof from observed feel.
+2. Agree four starter-kit and six enemy briefs before implementing their abilities/states. All required boss actions must fit starter sets, including Executioner Axe.
+3. Specify two-hero switching/down/revive and minimum AI behavior; then Reacharound confirmation/targeting and paired Circle Jerk feasibility/feedback/anti-spam.
+4. Specify boss vulnerability/recovery and mission/session behavior as their proofs become actionable. Deeper companion customization remains current full-game direction; a rich editor is not an explicit slice gate.
+5. Name browser/hardware and measurable private acceptance checks before full-run performance review. Public distribution and replacement art follow private gameplay proof.
 
 ## Mechanics needing specification before their implementation
 
@@ -43,12 +53,12 @@ The 0.0.1 hit-position check is complete for the current preview. Next, select o
 | PT-06 | Anti-spam solution. | Anti-spam required; no chosen mechanism. |
 | PT-07 | Friendly status side effects. | No ordinary teammate chip damage. |
 | PT-08 | MONEY SHOT frequency and eligibility, camera/time restoration. | Selective significance; Goblin King showcase required. |
-| PT-09 | Adaptive music approach and overall music genre; early Godot browser music/slowdown synchronization check. | Musical payoff remains in slice; style not chosen. Sample/Stream playback mode, feature/latency tradeoffs, and scheduling remain open. No browser audio test run yet. |
+| PT-09 | Adaptive music approach, genre and browser slowdown synchronization. | Separate Stream lab passes objective music-clock scheduling/restoration and nonzero browser output checks. Human listening/musical quality and production strategy remain open; this does not complete full MONEY SHOT. |
 | PT-10 | Short-rest effects, locations, limits/costs. | No explicit long-rest mechanic. Not automatically a slice gate. |
 | PT-11 | Depth and usability of conditional companion AI settings. | Deeper-than-presets direction; exact rule set not fixed. |
 | PT-12 | Full boss-chain readability and overall run. | Four-step sequence required; observe actual duration and uncoached understanding. |
 
-These IDs organize future tests; no tests have been run. Numerical criteria or observer sample sizes have not been approved.
+These IDs organize focused tests. The accepted 0.0.1 movement/one-strike review covers only that preview, not completion of these broader experiments. Record new evidence in Progress; numerical criteria or observer sample sizes have not been approved.
 
 ## Later production and full-game questions
 
@@ -66,4 +76,4 @@ Amazon and Warlock directions; adaptive party-aware enemy director; town gamblin
 
 ## Completed private 0.0.1 playtest — 2026-11-16
 
-The owner confirmed satisfaction with the 95 px strike range/hit positions and requested no further tuning. The overlay remains available for future diagnosis. Lane tolerance is 18 px. The armed look, walk cadence, and original sword speed are approved. The next prototype question remains open; see [Roadmap](Roadmap.md).
+The owner confirmed satisfaction with the 95 px strike range/hit positions and requested no further tuning. The overlay remains available for future diagnosis. Lane tolerance is 18 px. The armed look, walk cadence, and original sword speed are approved. Continue the separately scoped reciprocal exchange and [Roadmap](Roadmap.md); do not repeat this completed feel check without new evidence.
