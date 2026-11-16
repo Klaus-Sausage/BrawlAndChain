@@ -219,3 +219,11 @@ Owner approved the current private preview composition (“yeah thats perfect”
 **CURRENT next experiment / EXPERIMENTAL mechanics:** One goblin, internal health, readable reaction/defeat, telegraphed melee, temporary hold-guard and reset in a separate exchange scene. K held for guard and R for reset are technical experiment mappings, retaining WASD/J/F2; they do not lock final controls or Barbarian defense. See [Combat Experiment](Combat-Experiment.md). Actual results and owner review belong in Progress, not in this authorization record.
 
 **Reason and boundary:** Prove the core squad-combat game before polished/public asset work, reduce browser audio risk early, and avoid scaling unproven systems. Required slice content is unchanged, including six archetypes, all four starter heroes, both wheels, the four-step Goblin King chain and adaptive MONEY SHOT music. No online implementation, full town, alternate gear, persistent save or public publication is added. Supersedes D-070's proposed ordering and moves its public-release gate after the private candidate; does not reverse gameplay rules. Affected: roadmap, experiment brief, GDD, assistant instructions, README/handoff, Open Questions and Progress.
+
+## D-073 — Owner accepts the first hold-guard exchange, 2026-11-16
+
+**Source:** After successfully opening the local preview and being asked to try the goblin windup, K hold-guard, J strikes and R reset, the owner replied “feels great.”
+
+**CURRENT:** The first reciprocal combat experiment's owner-feel gate is accepted. Preserve the current experiment as a working reference and do not request the same review again without new evidence. This approval applies to the existing exchange; it does not settle final starter kits/balance, unbuilt Light/Heavy branches, Thief comparison or the audio lab's listening result.
+
+**Reason and boundary:** Record the observed owner judgment so subsequent work starts from the accepted proof. No runtime tuning or new automated test result accompanies this decision. Affected: Progress, Roadmap, Combat Experiment, Open Questions, GDD, visual notes, README/handoff and assistant instructions.

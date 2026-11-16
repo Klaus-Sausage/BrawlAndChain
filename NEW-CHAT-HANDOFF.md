@@ -53,7 +53,7 @@ Minimum combat authority separation, a separate audio/slowdown lab and one-gobli
 
 Pinned Godot 4.7.2 import plus all four headless harnesses pass, including varied/absent presentation and 22 exchange checks. Export passes. Headless Chromium 156.0.8078.79 software WebGL 2 verified real keyboard input, guard/damage/defeat/victory/reset, and nonzero Stream audio with repeatable musical event/restoration/reset/return behavior. No Godot/JavaScript/HTTP errors were reported. See [Progress](docs/Progress.md) for commands, evidence and limits.
 
-Owner exchange feel, human musical listening, gamepad and FPS remain unverified. Real browser focus loss was not produced; notifications have harness coverage only. Shared visible Chrome could not run WebGL 2; native capture could not access the managed display. Do not claim playable visible-browser/native results from those attempts. Steps 1/3 are technically complete; 2/4 have objective proofs with listening/feel gates pending; 5–14 have not started.
+The owner played the first reciprocal exchange after combat-only instructions and said it “feels great” (D-073). That exchange's feel gate is accepted; this does not approve audio listening, final kits/balance, Light/Heavy branches or the Thief comparison. Human musical listening, gamepad and FPS remain unverified. Real browser focus loss was not produced; notifications have harness coverage only. Shared visible Chrome could not run WebGL 2; native capture could not access the managed display. Do not claim playable visible-browser/native results from those attempts. Steps 1/3 are technically complete; step 2 has objective proof with listening pending; step 4's first exchange is accepted while later combat proofs remain; steps 5–14 have not started.
 
 Starter kits/slot count, six enemy briefs and wheel/AI details remain staged design gates. Continue independent authorized work and ask only the next necessary creative question. The audio lab is not full boss integration or human approval of the music.
 
@@ -65,7 +65,15 @@ The local repository recorded during setup is `/home/klaus/Documents/BrawlAndCha
 
 Cloud read/write access was verified at commit `10361e8` by creating and verifying a temporary branch, then deleting it; files and the default branch were unchanged by that test. This does not verify a fresh task launched from the published configuration. Automatic synchronization is not enabled; pull and commit/push explicitly. See [Progress](docs/Progress.md).
 
-Next: owner plays the reciprocal exchange and listens to the lab; record observations before dependent expansion. The exported default is the accepted preview; use ?lab=combat-exchange or ?lab=money-shot for the experiments. Repeat checks with python3 tools/check_project.py --godot "$GODOT_BIN". Intentionally refresh versioned Web artifacts with python3 tools/export_web.py --godot "$GODOT_BIN" --update-preview and inspect the provenance manifest.
+Next practical action: owner listens to the audio lab; record whether its slowdown/crescendo/resolution sounds coherent before calling that listening gate passed. The first hold-guard exchange is accepted; later Light/Heavy and contrasting hero-feel proofs still need focused briefs. The exported default remains the accepted movement/strike preview. Repeat checks with python3 tools/check_project.py --godot "$GODOT_BIN". Intentionally refresh versioned Web artifacts with python3 tools/export_web.py --godot "$GODOT_BIN" --update-preview and inspect the provenance manifest.
+
+The owner reports that clicking localhost links in chat fails while pasting the address into the browser works. Supply copyable plain-text addresses for local previews, rather than relying on clickable chat links. With the documented local server on port 8060:
+
+```text
+http://127.0.0.1:8060/?lab=money-shot
+http://127.0.0.1:8060/?lab=combat-exchange
+http://127.0.0.1:8060/
+```
 
 ## Historical setup status and next work (2026-11-15)
 
@@ -77,4 +85,4 @@ The historical next goal was repository persistence followed by Unity tooling. U
 
 ## Suggested first message in the new chat
 
-> Continue Brawl & Chain from the current branch and read AGENTS.md, this handoff, the roadmap and progress. The 0.0.1 95 px hit-feel check is accepted. Implement the authorized private full-slice roadmap with rough readable stand-ins and staged creative gates. Inspect current source/tests before continuing the foundation, audio lab or reciprocal exchange; its temporary defense is hold-to-guard. Record actual verification and owner review, and ask only the next necessary design question.
+> Continue Brawl & Chain from the current branch and read AGENTS.md, this handoff, roadmap and progress. Both the 0.0.1 hit-feel check and first hold-guard exchange are accepted; musical listening is next. Implement the authorized private full-slice roadmap with rough readable stand-ins and staged creative gates. Inspect source/tests before continuing; do not infer approval of final kits, Light/Heavy or Thief comparison. Supply copyable plain-text local preview addresses. Record actual verification/review and ask only the next necessary design question.

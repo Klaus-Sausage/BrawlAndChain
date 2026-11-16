@@ -12,7 +12,7 @@ Keep each 0.0.x build focused on one primary proof. Preserve the accepted 0.0.1 
 
 ## Fourteen implementation steps
 
-Current evidence (2026-11-16): steps 1 and 3 are technically complete for this foundation; step 2's lab is implemented and objective scheduling/nonzero browser-audio checks pass, with human listening still pending; step 4's isolated exchange is implemented and automated checks pass, with owner feel review pending. Steps 5–14 have not started. These are implementation/check statuses, not claims of full-slice acceptance. See [Progress](Progress.md) for evidence and limitations.
+Current evidence (2026-11-16): steps 1 and 3 are technically complete for this foundation; step 2's lab passes objective scheduling/nonzero browser-audio checks, with human listening pending. Step 4's first hold-guard exchange passes automated checks and owner feel review (“feels great,” D-073); its Light/Heavy branches and Thief comparison remain unimplemented. Steps 5–14 have not started. See [Progress](Progress.md) for evidence and limitations.
 
 ### 1. Reconcile the baseline and define the private slice contract
 
@@ -47,6 +47,8 @@ Current evidence (2026-11-16): steps 1 and 3 are technically complete for this f
 - Compare Barbarian weight and Thief responsiveness with rough stand-ins when their actions are specified. The current sword Fighter is not a final Barbarian kit.
 
 **Gate:** Owner review finds the exchange readable and responsive, with understandable hit/defeat outcomes and reliable repetition. Record actual feedback before extending the model.
+
+**First-exchange result:** Accepted by the owner (“feels great,” D-073). Preserve the current proof; scope later combat branches and class comparison separately. This does not complete those unbuilt experiments.
 
 ### 5. Agree the four starter-kit and six enemy briefs
 

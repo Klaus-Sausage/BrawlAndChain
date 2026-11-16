@@ -10,18 +10,18 @@ Updated 2026-11-16 (Australia/Melbourne). These are remaining details, not permi
 | Repository and external backup | CURRENT | Private `Klaus-Sausage/BrawlAndChain` created; initial push and fresh clone verified 2026-11-16. Automatic sync is not configured. |
 | Local Linux checkout | CURRENT | Setup record identifies `/home/klaus/Documents/BrawlAndChain`; remote backup verified. Keep local/cloud checkouts separate and explicitly synchronized. Inspect actual paths and branches before work. |
 | Godot tooling/version/export templates | CURRENT local and cloud pinned checks | Godot 4.7.2 import, four headless harnesses and matching web export pass in this cloud task. Headless Chromium software WebGL 2 exercises all three scenes; new native-window play remains unverified. See Godot-Setup.md and Progress. |
-| Browser export validation | CURRENT objective experiments / OPEN feel, listening and FPS | Single-threaded export and Chromium 156.0.8078.79 software WebGL 2 checks pass for preview, reciprocal exchange and audio lab. Nonzero Web Audio and music events were measured; human musical quality, gamepad, real focus loss and performance remain unverified. See Progress. |
+| Browser export validation | CURRENT objective experiments and exchange feel / OPEN listening and FPS | Export and Chromium software WebGL 2 checks pass for all three scenes; owner exchange feel is accepted (D-073). Human musical quality, gamepad, real focus loss and performance remain unverified. See Progress. |
 | First prototype | CURRENT 0.0.1 implemented; initial feel check complete | Owner approved the ROM-derived armed Mystara Fighter appearance/cadence and is satisfied with the current 95 px strike range/hit positions. Native/browser checks pass. Further balance tuning is not locked and can be revisited if a later test identifies a problem. See [Visual Preview](Visual-Preview.md) and [Roadmap](Roadmap.md). |
 
 ## Current roadmap focus
 
-The 0.0.1 hit-position check is complete. The owner authorized the [14-step private full-slice roadmap](Roadmap.md), rough readable stand-ins, and staged design gates (D-072). The authority foundation, audio/slowdown lab and [reciprocal exchange](Combat-Experiment.md) are implemented. Four headless harnesses and objective three-scene browser checks pass; owner exchange feel and human musical listening remain pending. Steps 5–14 have not started. The owner chose temporary hold-guard; no final starter defense, slot count or wheel rules follow from it.
+The 0.0.1 hit-position check and first hold-guard [reciprocal exchange](Combat-Experiment.md) feel review are complete (D-071/D-073). The owner authorized the [private full-slice roadmap](Roadmap.md), rough stand-ins and staged gates (D-072). The foundation, audio lab and first exchange pass objective checks; human musical listening remains pending. Later Light/Heavy/class-comparison proofs and steps 5–14 are unimplemented. Temporary hold-guard does not settle final kits, slot count or wheel rules.
 
 Before expanding each dependent system, prepare the relevant brief and settle its open decisions. Continue independent authorized work while awaiting an answer. Private full-slice acceptance precedes public art/rights/hosting decisions; neither candidate completion nor publication is claimed here.
 
 ## Next design gates
 
-1. Review the one-goblin hold-guard exchange and its provisional interaction/tuning; decide the next combat proof from observed feel.
+1. The first hold-guard exchange is accepted (D-073). Listen to the audio lab, then prepare a focused Light/Heavy/class-comparison brief before implementing the next combat proof.
 2. Agree four starter-kit and six enemy briefs before implementing their abilities/states. All required boss actions must fit starter sets, including Executioner Axe.
 3. Specify two-hero switching/down/revive and minimum AI behavior; then Reacharound confirmation/targeting and paired Circle Jerk feasibility/feedback/anti-spam.
 4. Specify boss vulnerability/recovery and mission/session behavior as their proofs become actionable. Deeper companion customization remains current full-game direction; a rich editor is not an explicit slice gate.

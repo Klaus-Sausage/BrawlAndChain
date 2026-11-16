@@ -1,6 +1,6 @@
 # Next private combat experiment — reciprocal exchange brief
 
-Updated 2026-11-16 (Australia/Melbourne). **IMPLEMENTED private experiment; owner feel review pending.** Temporary hold-guard is owner-selected; mechanics/tuning and technical mappings remain EXPERIMENTAL. See [Roadmap step 4](Roadmap.md#4-prove-a-reciprocal-combat-exchange-in-focused-increments), D-072 and [Progress](Progress.md) for actual verification. The full slice is not implemented.
+Updated 2026-11-16 (Australia/Melbourne). **IMPLEMENTED private experiment; owner feel accepted (D-073).** Temporary hold-guard is owner-selected; mechanics/tuning and technical mappings remain EXPERIMENTAL. See [Roadmap step 4](Roadmap.md#4-prove-a-reciprocal-combat-exchange-in-focused-increments), D-072 and [Progress](Progress.md) for verification. The full slice is not implemented.
 
 ## Question and boundaries
 
@@ -36,8 +36,10 @@ The original preview remains the default regression reference. Web exports inclu
 
 **Exit:** the owner reviews this reciprocal exchange and its limitations. Resolve basic feel failures before combo branches or party expansion. This does not lock production balance, starter kits, final controls or final enemy animation.
 
+**Owner result:** After instructions to try the goblin tell, hold-guard, strikes and reset, the owner replied “feels great.” The initial exchange's feel gate is accepted (D-073). Audio listening and later Light/Heavy/class-comparison proofs remain separate.
+
 ## Actual checks — 2026-11-16
 
 All 22 exchange harness checks passed with pinned Godot 4.7.2. Headless Chromium 156.0.8078.79 with software WebGL 2 exercised real keyboard input: approach/guard with no hero damage, release guard and take damage through defeat, R reset, three J contacts to goblin defeat, then reset again. Godot/JavaScript/HTTP errors were absent. See [saved browser results](foundation-evidence/browser-results.json) and [headless checks](foundation-evidence/headless-checks.log).
 
-Owner feel, human-visible native play, gamepad behavior and performance/FPS remain unverified for this new exchange. Real browser focus loss was not produced in headless testing; notification behavior has harness coverage only. Review the telegraph, guard, reactions and defeat/reset before expanding dependent combat.
+Owner feel is accepted for this exchange (D-073). Human-visible native play, gamepad behavior and performance/FPS remain unverified. Real browser focus loss was not produced in headless testing; notification behavior has harness coverage only. No additional automated checks or musical listening results were reported with the owner's approval.

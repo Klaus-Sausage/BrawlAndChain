@@ -18,7 +18,7 @@ The prototype has provisional WASD floor movement, idle/walk and one sword attac
 
 ## Current next action
 
-The 0.0.1 hit-position feel check is accepted (D-071); do not repeat it without new evidence. The foundation, audio lab and [reciprocal exchange](Combat-Experiment.md) are implemented with objective checks below. Next, have the owner play the hold-guard exchange and listen to the audio lab before treating those subjective gates as passed. Starter kits/slots, enemy roster and wheel rules remain later staged gates under the authorized [14-step private roadmap](Roadmap.md).
+The 0.0.1 hit-position check (D-071) and first hold-guard [reciprocal exchange](Combat-Experiment.md) feel review (D-073) are accepted. After the combat playtest instructions, the owner reported “feels great.” Next, listen to the audio lab; its subjective musical gate remains open. Light/Heavy branches, Thief comparison, starter kits/slots, enemy roster and wheel rules remain separate staged work under the authorized [14-step private roadmap](Roadmap.md).
 
 ## Private full-slice foundations — implementation and checks, 2026-11-16
 
@@ -41,9 +41,9 @@ Gameplay source was committed as `6d0467c`; `d2fd9f9` additionally normalizes ge
 | Headless Chromium audio lab | PASS objective proof: Start audio gesture unlocked Stream playback; Web Audio measured nonzero output (peak approximately 0.2095); two resolution events, interrupt/reset and return to preview worked. Human listening and musical quality remain pending. [Active lab frame](foundation-evidence/money-shot-active.png). |
 | Browser errors | No Godot, JavaScript or HTTP errors in the automated three-scene run. [Browser results](foundation-evidence/browser-results.json). |
 
-The shared visible Chrome attempt was blocked by unsupported WebGL 2; it did not display a playable game. A pinned native capture attempt could not access the managed X11 display (authorization unavailable); Wayland fallback was also unavailable, so no new native-window render is claimed. The independent headless Chromium renderer produced the captured frames above. Real browser focus loss could not be generated in that headless run; focus notification behavior passed harness checks only. New native-window gameplay, human listening/feel, gamepad support, full-run behavior and 60 FPS performance are not verified.
+The shared visible Chrome attempt was blocked by unsupported WebGL 2; it did not display a playable game. A pinned native capture attempt could not access the managed X11 display (authorization unavailable); Wayland fallback was also unavailable, so no new native-window render is claimed. The independent headless Chromium renderer produced the captured frames above. Real browser focus loss could not be generated in that headless run; focus notification behavior passed harness checks only. The owner subsequently accepted the local browser exchange feel (D-073). New native-window gameplay, human musical listening, gamepad support, full-run behavior and 60 FPS performance remain unverified.
 
-Roadmap status: steps 1 and 3 technically complete for this foundation; step 2 implemented/objective checks passed with listening pending; step 4 implemented/objective checks passed with owner feel review pending. Steps 5–14 have not started. The private full slice is not complete and public publication is not authorized by this work.
+Roadmap status: steps 1 and 3 technically complete for this foundation; step 2 implemented/objective checks passed with listening pending; step 4's first reciprocal exchange has passed objective checks and owner feel review (D-073). Light/Heavy and Thief comparison work within step 4 is still unimplemented. Steps 5–14 have not started. The private full slice is not complete.
 
 ### Repeat these checks
 
@@ -80,8 +80,8 @@ The supplied ROM support files resolved the earlier MAME blockers. The verified 
 
 | Build | Primary question | Current result | Next |
 | --- | --- | --- | --- |
-| 0.0.1 private preview | Do basic movement and one satisfying strike work with readable original Mystara Fighter animation? | Owner approves the armed look, cadence, speed, and current 95 px range/hit positions. Native/browser checks pass. | Preserve as regression baseline; review the implemented separate reciprocal exchange. |
-| Unnumbered foundation experiments | Can authoritative combat preserve the preview while a reciprocal exchange and browser music/slowdown proof work separately? | Four headless harnesses and three-scene browser checks pass; owner exchange feel and human musical listening remain pending. No later slice systems are implemented. | Owner plays exchange/listens to lab; record observations before dependent expansion. |
+| 0.0.1 private preview | Do basic movement and one satisfying strike work with readable original Mystara Fighter animation? | Owner approves the armed look, cadence, speed, and current 95 px range/hit positions. Native/browser checks pass. | Preserve as regression baseline. |
+| Unnumbered foundation experiments | Can authoritative combat preserve the preview while a reciprocal exchange and browser music/slowdown proof work separately? | Four headless harnesses and three-scene browser checks pass. Owner says the exchange “feels great” (D-073); musical listening remains pending. No later slice systems are implemented. | Listen to the lab, then scope the next combat brief. |
 
 
 ## Cleanup and final verification — 2026-11-16
