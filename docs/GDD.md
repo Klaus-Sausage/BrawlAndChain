@@ -272,7 +272,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 
 **CURRENT (pp. 105–116 and later Codex setup):**
 
-- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and ROM-derived Fighter animation preview is implemented and approved visually; owner playtesting of the current 95 px strike range remains in progress. Cloud engine installation, add-ons and physics model remain OPEN.
+- Godot 4 with GDScript; browser-playable slice, later Steam/PC and PS5/Switch 2 aspirations. Owner approved replacing the historical Unity direction on 2026-11-16. Typed GDScript is the recommended initial coding convention. Local technical setup is pinned to standard Godot 4.7.2 stable with matching web export templates; Compatibility launch checks passed on Linux and the in-app Chromium browser (2026-11-16). See [Godot setup](Godot-Setup.md). The private 0.0.1 movement, single-strike and ROM-derived Fighter animation preview is implemented and approved visually; the owner is satisfied with the current 95 px strike range/hit positions. This is not locked production combat balance. Cloud engine installation, add-ons and physics model remain OPEN.
 - Planned browser baseline: Compatibility rendering (WebGL 2.0). Standard Godot 4 web exports currently do not support C#; use GDScript and verify export behavior against the selected release. Test browser builds early, especially audio/music timing during MONEY SHOT slowdown. Sample versus Stream playback has feature/latency tradeoffs; the playback strategy is OPEN, not already implemented.
 - Console aspirations remain current, but Godot's standard download does not contain official console exporters. Platform approval, SDK access, and suitable third-party console tooling/porting services (or custom platform work) are required. Provider, budget, version compatibility, and platform support remain OPEN.
 - Target **60 FPS**, including browser. Test hardware/browser and measurable budget are OPEN; this is a target, not a verified result.
@@ -280,6 +280,7 @@ Originally provisional, this sequence was later explicitly required for 0.1.0. E
 - Solo + AI slice. Online co-op implementation DEFERRED, possible stretch goal only.
 - **LOCKED architecture constraint:** Keep future multiplayer in mind for every system and coding brief. Separate input/AI intent, authoritative game outcomes, and presentation sufficiently to avoid obvious rewrite traps. Framework/topology/tick/reconciliation choices remain OPEN.
 - Frequent playable 0.0.x builds, each with one primary proof; 0.1.0 first public slice. If a build feels poor, iterate on it rather than advance the feature schedule.
+- The owner requested a full 0.1.0 delivery roadmap on 2026-11-16. See [Roadmap](Roadmap.md); it proposes execution order without changing the required slice content or settling open design questions.
 - Rough placeholders acceptable during development. Public asset choices and licensing must be verified; no rights or production assets are established by the source. The current private preview uses temporary Mystara art with unverified reuse permission and must stay private. This is a delivery constraint, not a claim of a separate owner-approved art pipeline.
 - Default to deferring features that delay the demo unless they directly prove its core combat/tactical identity. Do not silently remove explicit slice inclusions; record any owner-approved scope change.
 
@@ -315,7 +316,7 @@ This repository includes a minimal technical launch test and the private 0.0.1 m
 
 ### Current private 0.0.1 preview
 
-**CURRENT / PLAYTEST REQUIRED:** The approved default uses the ROM-derived sword-and-shield Mystara Fighter with original cadence, shared origin, goblin and village. The owner approves the appearance and strike speed. The current open test is whether the owner-adjusted 95 px strike range covers intended positions. This is not production art or the public 0.1.0 slice; see Progress for actual results.
+**CURRENT:** The approved default uses the ROM-derived sword-and-shield Mystara Fighter with original cadence, shared origin, goblin and village. The owner approves the appearance and strike speed and is satisfied with the current 95 px strike range/hit positions. The initial 0.0.1 hit-position feel check is complete; this remains experimental tuning, not locked production balance or public 0.1.0 content. See Progress for actual results.
 
 
 **Private 0.0.1 input feel update (D-066, 2026-11-16):** Basic J attack is press-triggered and does not auto-repeat while held. Rapid separate taps remain possible subject to the current attack lock/minimum delay. Animation speed is owner-approved and unchanged.

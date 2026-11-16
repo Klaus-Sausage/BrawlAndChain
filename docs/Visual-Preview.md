@@ -19,7 +19,7 @@ Attack timing follows MAME emulated frames (59.637405 Hz). The sword clip has te
 
 - Native Godot 4.7.2 Compatibility on RTX 3080: scene rendered at 480×270; synthetic checks passed idle/walk poses, both facings, close hit, distant/facing-away/wrong-lane misses, contact frame, moving swing/facing lock, hold-repeat suppression, follow-up tap, and arena bounds. Recording and output: docs/visual-evidence/mystara-rom/native-preview.mp4 and native-check.log.
 - Browser: single-threaded WebGL 2 Compatibility loaded at 480×270. Hit and miss checks were observed. A 1.8-second held J press produced one strike result; a separate tap produced the next. F2 showed the range zone/readout. The browser build in web-preview/ matches the current 95 px range.
-- The owner reports the armed Fighter looks and feels right. The 95 px range was adjusted by the owner. Next playtest is to inspect specific misses with F2 and adjust from observed results.
+- The owner reports the armed Fighter looks and feels right, and confirmed satisfaction with the current 95 px strike range/hit positions (“happy with all that”). The owner requested no further tuning. This confirms the current private preview feel; it does not lock production combat balance.
 - This prototype has no enemy AI or attacks, combos, health UI, damage numbers, abilities, audio, or networking.
 
 ## Preserved launch test

@@ -76,7 +76,7 @@ Updated 2026-11-16 (Australia/Melbourne). D-057 supersedes the engine portion of
 | D-051 | Hub can be skipped; both wheels represented, simplified implementations allowed; full Goblin King interaction and MONEY SHOT. | Required scope / hub optional | p. 119. |
 | D-052 | Adaptive MONEY SHOT musical crescendo must be in slice, rough example acceptable. | LOCKED slice inclusion | pp. 113–114, 119; owner explicitly rejects proposed deferral. |
 | D-053 | Amazon, Warlock, adaptive enemy director, town minigames parked; full online implementation deferred/stretch. | DEFERRED / EXPERIMENTAL | pp. 112–114. Adaptive music specifically excluded from deferrals. |
-| D-054 | Frequent playable 0.0.x builds, one primary proof; first public slice 0.1.0; game feel first. | LOCKED workflow | pp. 107–109, 115–116; detailed example roadmap not approved. |
+| D-054 | Frequent playable 0.0.x builds, one primary proof; first public slice 0.1.0; game feel first. | LOCKED workflow | pp. 107–109, 115–116; no roadmap existed when recorded. Owner later requested the proposed delivery sequence in D-070. |
 | D-055 | Build log Version/Date/Goal/Changes/Test Notes/Next Step; separate owner/other tester feedback. | CURRENT | pp. 114–116. |
 | D-056 | Persistent Markdown documentation; private GitHub backup and separate cloud/Linux checkouts with explicit pull/commit/push. | CURRENT operational workflow | Later Codex owner requests and setup. Private repository, initial push/fresh clone, and local checkout were recorded during setup; subsequent cloud read/write test created, verified, and deleted a temporary branch at `10361e8`. Automatic sync is not configured; a fresh task from the published cloud configuration remains untested. See Progress. |
 | D-057 | Godot 4 + GDScript replaces Unity; typed GDScript recommended initially, Compatibility rendering planned for browser. | CURRENT engine/language; recommended technical defaults, exact release OPEN | Owner approved implementing the Godot documentation plan in Codex on 2026-11-16. Rationale: 2D/browser-first suitability, lighter Linux/cloud setup, open-source engine licensing, and GDScript iteration. Tradeoffs: standard Godot 4 web export lacks C# support; consoles need approved access plus appropriate third-party tooling/services or custom work. No engine project or install/export test yet. |
@@ -194,4 +194,16 @@ Owner approved the current private preview composition (“yeah thats perfect”
 
 **Source:** Owner edited the resolver setting after reviewing the F2 hit-zone overlay and approved the resulting preview feel.
 
-**CURRENT / EXPERIMENTAL:** strike_range is 95 px; lane_tolerance remains 18 px and strike_repeat_delay remains 0.32 s. This supersedes the 78 px initial test value only. The owner will continue checking previously missed positions with the overlay; this is not locked combat balance.
+**CURRENT / EXPERIMENTAL:** strike_range is 95 px; lane_tolerance remains 18 px and strike_repeat_delay remains 0.32 s. This supersedes the 78 px initial test value only. At the time this entry was recorded, the owner intended to check previously missed positions with the overlay; D-071 records the later approval. This is not locked production combat balance.
+
+## D-071 — Owner accepts current 0.0.1 hit range, 2026-11-16
+
+**Source:** After being invited to check positions that previously missed, the owner said they were happy with the current result and requested no further tuning.
+
+**CURRENT for the private preview:** The 0.0.1 hit-position feel check is complete at `strike_range = 95 px`, with `lane_tolerance = 18 px`. Keep F2 available for diagnosis. This records owner satisfaction with the current preview, not specific FRONT/RANGE/LANE readings, a new technical test, or locked production combat balance. Supersedes D-069's pending owner check. Affected: Roadmap, GDD, Open Questions, Visual Preview, handoff and Progress.
+
+## D-070 — Proposed 0.1.0 delivery roadmap, 2026-11-16
+
+**Source:** Owner asked to make a roadmap and selected a full 0.1.0 delivery plan.
+
+**CURRENT project-planning artifact:** [Roadmap](Roadmap.md) records a proposed sequence from finishing the private 0.0.1 hit-feel test through core combat, the four-hero party, squad wheels, enemy/boss proof, mission assembly, MONEY SHOT, and public-slice hardening. This sequences the slice scope already defined by D-048–D-052 and GDD §17; it does not add, remove, or lock gameplay requirements. Intermediate build numbers, dates, detailed acceptance thresholds, and open mechanics remain unsettled. Revisit sequence based on playtest evidence and owner decisions. Affected: README, handoff, GDD, Open Questions, and Progress.

@@ -4,6 +4,7 @@
 
 - **Fresh chat:** read [NEW-CHAT-HANDOFF.md](NEW-CHAT-HANDOFF.md).
 - **Design baseline:** [GDD](docs/GDD.md), [decisions](docs/Decisions.md), [open questions](docs/Open-Questions.md), and [progress](docs/Progress.md).
+- **Roadmap:** [proposed path to the 0.1.0 public slice](docs/Roadmap.md). The slice contents are established; the order is a proposal to revisit after playtests.
 - **Original evidence:** [source index](docs/sources/README.md), [historical transcript](docs/sources/Historical-Design-Chat.md), and [original PDF](docs/sources/Historical-Design-Chat.pdf).
 - **Working rules:** [AGENTS.md](AGENTS.md).
 

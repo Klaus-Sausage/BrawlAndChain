@@ -18,7 +18,13 @@ The prototype has provisional WASD floor movement, idle/walk and one sword attac
 
 ## Current next action
 
-Continue owner playtesting the 95 px strike range with F2 at positions that were previously missing. Check which of FRONT/RANGE/LANE fails and tune only from observed feel. No further feature queue is approved; after this basic hit test feels right, choose the next prototype question with the owner.
+The owner confirmed satisfaction with the current 95 px strike range/hit positions and requested no further tuning. The next step is to choose one focused proof question for the next private 0.0.x build using the proposed [0.1.0 roadmap](Roadmap.md).
+
+## Roadmap planning — 2026-11-16
+
+At the owner's request, added [Roadmap](Roadmap.md), a proposed full delivery sequence for 0.1.0. It uses the slice requirements already in the GDD, keeps open mechanics and content decisions as gates, and assigns no dates or 0.0.x build numbers. Linked it from the README, handoff, GDD, decision register, and open questions. This was documentation work only; no game code or build was changed and no gameplay verification was run.
+
+The owner then confirmed satisfaction with the current 95 px strike range/hit positions and requested no further tuning. Marked the 0.0.1 hit-position check complete in the roadmap, GDD, Open Questions, Visual Preview, and handoff. No specific overlay diagnostic readings or new gameplay test were reported; the approval records the owner's feel judgment only.
 
 ## Superseded art experiment and extraction history
 
@@ -31,13 +37,13 @@ The supplied ROM support files resolved the earlier MAME blockers. The verified 
 - Godot 4.7.2 stable, GDScript and matching web templates are installed locally; Compatibility rendering and minimal native/browser launch were verified. Cloud Godot setup is unverified. See docs/Godot-Setup.md.
 - The repository is private at https://github.com/Klaus-Sausage/BrawlAndChain. Push/pull are explicit; cloud and PC checkouts do not sync automatically.
 - The initial visual study established the provisional 480×270 canvas, 960×540 window, nearest filtering and Trintan arena. These settings remain provisional.
-- Public milestone is 0.1.0. The project has no approved detailed feature roadmap. Each 0.0.x build should answer one primary playtest question.
+- Public milestone is 0.1.0. A proposed full delivery sequence is now recorded in [Roadmap](Roadmap.md); its milestones and order are adjustable, and each 0.0.x build should still answer one primary playtest question.
 
 ## Build log
 
 | Build | Primary question | Current result | Next |
 | --- | --- | --- | --- |
-| 0.0.1 private preview | Do basic movement and one satisfying strike work with readable original Mystara Fighter animation? | Owner approves the armed look, cadence and speed. Native/browser checks pass. Strike range is currently 95 px; owner is checking positions with F2. | Finish range/hit-position playtest, then agree the next prototype question. |
+| 0.0.1 private preview | Do basic movement and one satisfying strike work with readable original Mystara Fighter animation? | Owner approves the armed look, cadence, speed, and current 95 px range/hit positions. Native/browser checks pass. | Choose the next focused prototype question using Roadmap.md. |
 
 
 ## Cleanup and final verification — 2026-11-16
