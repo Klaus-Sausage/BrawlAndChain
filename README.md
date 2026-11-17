@@ -1,5 +1,7 @@
 # Brawl & Chain
 
+**Public PC test:** the owner requested GitHub Pages (D-076). The exported build is prepared on `gh-pages`; repository visibility and Pages settings are blocked by the integration's administration permissions. See [GitHub Pages setup/status](docs/GitHub-Pages.md). A pushed branch is not yet a live play link.
+
 ## Start here
 
 - **Fresh chat:** read [NEW-CHAT-HANDOFF.md](NEW-CHAT-HANDOFF.md).

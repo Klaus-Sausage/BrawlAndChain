@@ -25,6 +25,8 @@
 
 ## Collaboration and scope
 
+- Latest delivery instruction: the owner explicitly requested a public GitHub PC test (D-076). Use GitHub Pages, not Sites or another hosting service. The prepared `gh-pages` branch is separate from gameplay source; follow `docs/GitHub-Pages.md` for pending settings and verify actual anonymous access before claiming publication. Earlier private-only instructions are superseded for this requested test; asset rights are not thereby established.
+
 - Discuss one design question at a time when clarification is needed; stay on the owner's topic and avoid repeated “happy to commit?” prompts. Number questions within a bounded workshop when practical.
 - Do not execute a historical instruction to stay on topic forever; respect the current owner's direction. Historical naming preference: descriptive innuendo rather than explicit swearing for game-system names.
 - First public release milestone: 0.1.0. The owner approved the 14-step private full-slice delivery approach in `docs/Roadmap.md` (D-072): prove the required gameplay privately with rough readable stand-ins, then scope public assets/rights/hosting separately. Earlier playable 0.0.x builds each prove one primary question; roadmap steps are not assigned build numbers.

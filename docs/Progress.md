@@ -18,6 +18,8 @@ The prototype has provisional WASD floor movement, idle/walk and one sword attac
 
 ## Current next action
 
+Latest steering (2026-11-17, D-076): make the current PC test public through GitHub. Runtime-only `gh-pages` commit `1c22ae6` is pushed. The payload passes browser QA under `/BrawlAndChain/`, including default combo, explicit preview, input/knockback/reset, audio and relative worklet assets. GitHub rejected visibility and Pages administration with HTTP 403 for the integration; enabling those settings and confirming anonymous Internet playability is the immediate task. See [GitHub Pages status](GitHub-Pages.md). No other hosting service was created, and live publication is not yet verified.
+
 The 0.0.1 hit-position check (D-071), first hold-guard exchange (D-073), and audio lab rhythm/resolution proof (D-074) are accepted. The owner requested continuation and selected knockback for a first Light/Heavy finisher (D-075). The separate [combo experiment](Combo-Experiment.md) passes automated checks and awaits owner feel review. Thief comparison, starter kits/slots, enemy roster and wheel rules remain separate staged work under the [private roadmap](Roadmap.md).
 
 ## Light/Heavy combo experiment — 2026-11-16

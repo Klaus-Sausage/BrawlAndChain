@@ -1,5 +1,7 @@
 # Brawl & Chain — reconciled working GDD
 
+**Delivery update, 2026-11-17 (D-076):** the owner requests public GitHub Pages access for the current PC playtest. This supersedes private-only delivery restrictions for that test; it does not establish asset rights, complete the slice or change gameplay. See [publication status](GitHub-Pages.md).
+
 **Baseline:** PDF recovery, 2026-11-15 (Australia/Melbourne). **Game milestone:** public vertical slice 0.1.0. This document replaces incomplete summaries for working purposes; it does not claim all tuning or implementation decisions are complete.
 
 **Last updated:** 2026-11-16 (Australia/Melbourne): Godot direction retained; owner approved private full-slice delivery first, rough readable stand-ins and staged design gates (D-072). Required slice gameplay is unchanged. See [Decisions](Decisions.md).

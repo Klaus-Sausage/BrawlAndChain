@@ -1,6 +1,6 @@
-# Private browser previews
+# Browser playtests
 
-Godot 4.7.2 single-threaded WebGL 2 Compatibility export. The accepted 0.0.1 preview remains the default; the guard, audio and combo experiments are separate entries in the same build. Keep this build private: temporary Mystara asset reuse rights remain unverified.
+Godot 4.7.2 single-threaded WebGL 2 Compatibility export. The accepted local preview remains the default; guard, audio and combo experiments are separate entries. The owner requested a public GitHub Pages PC test (D-076). Its prepared branch opens combos by default, but visibility/Pages settings need owner administration access. See [publication status](../docs/GitHub-Pages.md). Temporary asset reuse rights remain unverified.
 
 From the repository root:
 

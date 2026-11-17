@@ -239,3 +239,11 @@ Owner approved the current private preview composition (“yeah thats perfect”
 **Source:** The owner requested continuation, then selected “Knock enemies back to create space” for a proposed first test of three Lights for pressure or two Lights followed by a committed Heavy finisher.
 
 **CURRENT experiment objective:** Build a separate Light/Heavy combo proof with the common Light-Light opening and a knockback Heavy finish. Preserve the accepted preview and hold-guard exchange. The prototype's temporary J Light/L Heavy mapping, one-input buffer, standalone Heavy fallback, damage, recovery and numerical knockback are explicitly EXPERIMENTAL technical choices for review, not final kits or approved balance. See [Combo Experiment](Combo-Experiment.md). New combo feel requires its own owner playtest.
+
+## D-076 — Public GitHub PC test, 2026-11-17
+
+**Source:** The owner requested “make it public, need to test on a pc” and clarified “NO, JUST THE GITHUB SO I CAN PLAY THERE.”
+
+**CURRENT delivery:** Publish the current exported playtest through GitHub Pages and make the repository public as needed for that request. This supersedes the earlier private-only delivery restriction for this test. No Sites or other hosting service is requested. Gameplay/source work remains on its existing branch; Pages uses a runtime-only `gh-pages` branch. Public testing does not establish asset rights, approve the new combo feel or constitute the complete 0.1.0 release.
+
+**Observed limitation:** The integration can push content but repository visibility and Pages administration return HTTP 403. Prepare and verify the branch, then obtain the necessary owner-side settings; do not claim public visibility or a live Pages URL until verified. See [GitHub Pages](GitHub-Pages.md).

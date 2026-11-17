@@ -4,6 +4,8 @@ Prepared 2026-11-15; updated 2026-11-16 (Australia/Melbourne). This is the opera
 
 ## Owner's goal
 
+Latest steering, 2026-11-17: publish the current PC playtest publicly through **GitHub only** (D-076). The `gh-pages` runtime branch is pushed; visibility/Pages administration returned HTTP 403 for the integration. Complete/verify those settings before claiming a live URL. See [GitHub Pages](docs/GitHub-Pages.md); this instruction supersedes earlier private-only delivery language for this test. No Site was created.
+
 Make a browser-playable tactical squad beat-'em-up using **Godot 4 + GDScript**, later targeting Steam/PC and aspiring to PS5/Switch 2. Current delivery goal is the complete slice gameplay **privately first**, using rough readable stand-ins and staged design gates. Public assets, rights, hosting and release follow separately. Implementation of the 14-step roadmap is authorized (D-072). Preserve design decisions in Markdown so context loss does not require redesigning the game.
 
 The owner is moving to a fresh chat to remove setup chatter. They have already spent time recovering historical rules; do not ask them to explain known mechanics again.
