@@ -2,6 +2,8 @@
 
 Verified 2026-11-16 (Australia/Melbourne), on the owner's Pop!_OS 24.04 LTS x86_64 PC at `/home/klaus/Documents/BrawlAndChain`.
 
+The original local launch record below is preserved. Current managed-cloud foundation tools/results are appended separately; read [Progress](Progress.md) for current gameplay status.
+
 ## Pinned tools
 
 - Standard **Godot 4.7.2 stable**, GDScript, not .NET. CLI reports `4.7.2.stable.official.ed1daf0bf`.
@@ -78,3 +80,40 @@ Open `http://127.0.0.1:8060/`, then click **Run launch check**. Stop the server 
 The native/editor logs contain `Failed to create wd.xic ... xim server may not have started yet`. Rendering and startup succeeded despite this X11 input-method warning. Text entry/IME is untested. The first sandboxed web export generated output but logged blocked socket/editor-settings writes; the repeated export with normal local permissions completed cleanly, and that clean log is the saved evidence.
 
 This is a technical launch check, not playable version 0.0.1. No gameplay, assets, audio, MONEY SHOT, control scheme, physics model, performance target, networking or console export was implemented or validated. Next: owner agrees one focused first-playable question; separately test browser audio/music/slowdown timing before substantial content.
+
+## Managed cloud foundation checks — 2026-11-16
+
+This session verified the same pinned standard editor and matching web templates in the managed cloud checkout /workspace/BrawlAndChain. These paths are temporary environment tools, not repository backups:
+
+- Editor: /tmp/brawl-godot-install/editor/Godot_v4.7.2-stable_linux.x86_64.
+- Web templates: /tmp/brawl-godot-data/godot/export_templates/4.7.2.stable/.
+- Writable editor configuration/cache: /tmp/brawl-config and /tmp/brawl-cache.
+
+Set these explicitly in a new shell for this environment; other machines must install their own matching editor/templates:
+
+```bash
+export GODOT_BIN=/tmp/brawl-godot-install/editor/Godot_v4.7.2-stable_linux.x86_64
+export XDG_DATA_HOME=/tmp/brawl-godot-data
+export XDG_CONFIG_HOME=/tmp/brawl-config
+export XDG_CACHE_HOME=/tmp/brawl-cache
+python3 tools/check_project.py --godot "$GODOT_BIN"
+python3 tools/export_web.py --godot "$GODOT_BIN"
+```
+
+The check wrapper rejects a different editor before import. At the foundation checkpoint, four harnesses passed with fixed-60 execution: preview, authority (including varied/absent visuals), music scheduling/restoration and 22 exchange checks; final marker PROJECT_CHECKS_PASS harnesses=4. Fixed-60 execution is not a measured 60 FPS result. The export wrapper writes ignored exports/private-preview/ and records runtime-source/artifact hashes; --update-preview explicitly refreshes generated files in web-preview/ without changing the default scene.
+
+Serve exports/private-preview/ over HTTP, then run the browser check in another terminal:
+
+```bash
+python3 -m http.server 8060 --bind 127.0.0.1 --directory exports/private-preview
+```
+
+```bash
+python3 tools/check_browser_preview.py --url http://127.0.0.1:8060/
+```
+
+Browser automation requires Python Playwright and Chromium; BRAWL_BROWSER_BIN can select an installed executable. This session used Chromium 156.0.8078.79 headless with software WebGL 2. The three-scene check passed real input, exchange outcomes and nonzero Web Audio plus music-event/reset/return behavior. It does not verify listening quality, owner feel, gamepad, real focus-loss handling or FPS. A visible Chrome attempt lacked WebGL 2 and native rendering could not access the managed display; no new native-window gameplay result is claimed.
+
+Subsequent owner review accepted first-exchange feel (D-073), then the placeholder lab's steady rhythm and smooth resolution (D-074). D-075 selects knockback for the separate [combo experiment](Combo-Experiment.md), which adds a fifth headless harness. All five and the four-scene browser checks pass; new combo owner feel remains pending. These proofs do not select final music/kits or complete boss integration. See Progress for the latest evidence.
+
+Saved evidence: [headless output](foundation-evidence/headless-checks.log), [browser results](foundation-evidence/browser-results.json), and frames linked from [Visual Preview](Visual-Preview.md). The original local results above remain historical evidence for that machine, not proof that a cloud/native path works.

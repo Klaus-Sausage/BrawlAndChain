@@ -23,6 +23,41 @@ window/size/window_height_override=540
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
+[input]
+
+move_left={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":65,"unicode":97)]
+}
+move_right={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":68,"unicode":100)]
+}
+move_up={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":87,"unicode":119)]
+}
+move_down={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":83,"unicode":115)]
+}
+strike={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":74,"unicode":106)]
+}
+guard={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":75,"unicode":107)]
+}
+reset_exchange={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":82,"unicode":114)]
+}
+heavy_strike={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"keycode":76,"unicode":108)]
+}
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

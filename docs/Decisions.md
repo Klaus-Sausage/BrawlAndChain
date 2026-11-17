@@ -76,7 +76,7 @@ Updated 2026-11-16 (Australia/Melbourne). D-057 supersedes the engine portion of
 | D-051 | Hub can be skipped; both wheels represented, simplified implementations allowed; full Goblin King interaction and MONEY SHOT. | Required scope / hub optional | p. 119. |
 | D-052 | Adaptive MONEY SHOT musical crescendo must be in slice, rough example acceptable. | LOCKED slice inclusion | pp. 113–114, 119; owner explicitly rejects proposed deferral. |
 | D-053 | Amazon, Warlock, adaptive enemy director, town minigames parked; full online implementation deferred/stretch. | DEFERRED / EXPERIMENTAL | pp. 112–114. Adaptive music specifically excluded from deferrals. |
-| D-054 | Frequent playable 0.0.x builds, one primary proof; first public slice 0.1.0; game feel first. | LOCKED workflow | pp. 107–109, 115–116; detailed example roadmap not approved. |
+| D-054 | Frequent playable 0.0.x builds, one primary proof; first public slice 0.1.0; game feel first. | LOCKED workflow | pp. 107–109, 115–116; no roadmap existed when recorded. D-070 introduced a proposed sequence; D-072 authorizes the private-first 14-step delivery approach while retaining this workflow. |
 | D-055 | Build log Version/Date/Goal/Changes/Test Notes/Next Step; separate owner/other tester feedback. | CURRENT | pp. 114–116. |
 | D-056 | Persistent Markdown documentation; private GitHub backup and separate cloud/Linux checkouts with explicit pull/commit/push. | CURRENT operational workflow | Later Codex owner requests and setup. Private repository, initial push/fresh clone, and local checkout were recorded during setup; subsequent cloud read/write test created, verified, and deleted a temporary branch at `10361e8`. Automatic sync is not configured; a fresh task from the published cloud configuration remains untested. See Progress. |
 | D-057 | Godot 4 + GDScript replaces Unity; typed GDScript recommended initially, Compatibility rendering planned for browser. | CURRENT engine/language; recommended technical defaults, exact release OPEN | Owner approved implementing the Godot documentation plan in Codex on 2026-11-16. Rationale: 2D/browser-first suitability, lighter Linux/cloud setup, open-source engine licensing, and GDScript iteration. Tradeoffs: standard Godot 4 web export lacks C# support; consoles need approved access plus appropriate third-party tooling/services or custom work. No engine project or install/export test yet. |
@@ -194,4 +194,56 @@ Owner approved the current private preview composition (“yeah thats perfect”
 
 **Source:** Owner edited the resolver setting after reviewing the F2 hit-zone overlay and approved the resulting preview feel.
 
-**CURRENT / EXPERIMENTAL:** strike_range is 95 px; lane_tolerance remains 18 px and strike_repeat_delay remains 0.32 s. This supersedes the 78 px initial test value only. The owner will continue checking previously missed positions with the overlay; this is not locked combat balance.
+**CURRENT / EXPERIMENTAL:** strike_range is 95 px; lane_tolerance remains 18 px and strike_repeat_delay remains 0.32 s. This supersedes the 78 px initial test value only. At the time this entry was recorded, the owner intended to check previously missed positions with the overlay; D-071 records the later approval. This is not locked production combat balance.
+
+## D-071 — Owner accepts current 0.0.1 hit range, 2026-11-16
+
+**Source:** After being invited to check positions that previously missed, the owner said they were happy with the current result and requested no further tuning.
+
+**CURRENT for the private preview:** The 0.0.1 hit-position feel check is complete at `strike_range = 95 px`, with `lane_tolerance = 18 px`. Keep F2 available for diagnosis. This records owner satisfaction with the current preview, not specific FRONT/RANGE/LANE readings, a new technical test, or locked production combat balance. Supersedes D-069's pending owner check. Affected: Roadmap, GDD, Open Questions, Visual Preview, handoff and Progress.
+
+## D-070 — Proposed 0.1.0 delivery roadmap, 2026-11-16
+
+**Source:** Owner asked to make a roadmap and selected a full 0.1.0 delivery plan.
+
+**Historical planning step; ordering superseded by D-072:** The original roadmap proposed a broad sequence from the 0.0.1 feel test through combat, party, wheels, enemies/boss, mission, MONEY SHOT and public hardening. It sequenced the established D-048–D-052/GDD §17 content without locking open mechanics, dates, thresholds or future build numbers. The maintained [Roadmap](Roadmap.md) now carries the approved private-first sequence. Affected: README, handoff, GDD, Open Questions, and Progress.
+
+## D-072 — Private full-slice delivery and staged design gates, 2026-11-16
+
+**Source:** During the repository/roadmap review, the owner selected a private full slice first, rough readable stand-ins, and staged design gates, then authorized implementation of the resulting plan. For the first reciprocal exchange, the owner subsequently selected hold-to-guard.
+
+**CURRENT delivery approach:** Implement the complete established slice gameplay privately before public production/release. [Roadmap](Roadmap.md) records the 14-step dependency order: reconciled baseline/contract → early audio risk proof → authority foundation → reciprocal combat → four starter/six enemy briefs → required abilities/states → two-hero party → both wheels → four heroes → rough boss chain → six archetypes → mission → full MONEY SHOT → private acceptance. Public assets/rights, hosting and distribution are separately scoped after that candidate. First public release remains 0.1.0; no private-candidate version or future 0.0.x numbers are assigned.
+
+**CURRENT working rule:** Use rough readable stand-ins and implement authorized independent work. Before dependent systems, settle only their necessary creative choices through a concrete brief. Starter kits, equal slot count, selected enemy roster, wheel interaction details and numerical acceptance thresholds remain OPEN until their gates. Do not treat implementation authorization as approval of invented gameplay rules or repeatedly ask general permission to continue. Preserve completed 0.0.1 feel acceptance (D-071).
+
+**CURRENT next experiment / EXPERIMENTAL mechanics:** One goblin, internal health, readable reaction/defeat, telegraphed melee, temporary hold-guard and reset in a separate exchange scene. K held for guard and R for reset are technical experiment mappings, retaining WASD/J/F2; they do not lock final controls or Barbarian defense. See [Combat Experiment](Combat-Experiment.md). Actual results and owner review belong in Progress, not in this authorization record.
+
+**Reason and boundary:** Prove the core squad-combat game before polished/public asset work, reduce browser audio risk early, and avoid scaling unproven systems. Required slice content is unchanged, including six archetypes, all four starter heroes, both wheels, the four-step Goblin King chain and adaptive MONEY SHOT music. No online implementation, full town, alternate gear, persistent save or public publication is added. Supersedes D-070's proposed ordering and moves its public-release gate after the private candidate; does not reverse gameplay rules. Affected: roadmap, experiment brief, GDD, assistant instructions, README/handoff, Open Questions and Progress.
+
+## D-073 — Owner accepts the first hold-guard exchange, 2026-11-16
+
+**Source:** After successfully opening the local preview and being asked to try the goblin windup, K hold-guard, J strikes and R reset, the owner replied “feels great.”
+
+**CURRENT:** The first reciprocal combat experiment's owner-feel gate is accepted. Preserve the current experiment as a working reference and do not request the same review again without new evidence. This approval applies to the existing exchange; it does not settle final starter kits/balance, unbuilt Light/Heavy branches, Thief comparison or the audio lab's listening result.
+
+**Reason and boundary:** Record the observed owner judgment so subsequent work starts from the accepted proof. No runtime tuning or new automated test result accompanies this decision. Affected: Progress, Roadmap, Combat Experiment, Open Questions, GDD, visual notes, README/handoff and assistant instructions.
+
+## D-074 — Owner accepts placeholder music/slowdown feasibility, 2026-11-16
+
+**Source:** Asked whether the lab's music keeps its rhythm during slowdown and its crescendo resolves smoothly into the loop, the owner answered “yes it does.”
+
+**CURRENT:** The existing placeholder lab's listening/timing feasibility gate is accepted. Retain its Stream playback/music-clock approach as the basis for later integration. This does not select a final genre, soundtrack or composition, establish measured audible latency, or complete the Goblin King/MONEY SHOT integration. No new automated test result accompanies this owner judgment.
+
+## D-075 — First Light/Heavy branch creates space, 2026-11-16
+
+**Source:** The owner requested continuation, then selected “Knock enemies back to create space” for a proposed first test of three Lights for pressure or two Lights followed by a committed Heavy finisher.
+
+**CURRENT experiment objective:** Build a separate Light/Heavy combo proof with the common Light-Light opening and a knockback Heavy finish. Preserve the accepted preview and hold-guard exchange. The prototype's temporary J Light/L Heavy mapping, one-input buffer, standalone Heavy fallback, damage, recovery and numerical knockback are explicitly EXPERIMENTAL technical choices for review, not final kits or approved balance. See [Combo Experiment](Combo-Experiment.md). New combo feel requires its own owner playtest.
+
+## D-076 — Public GitHub PC test, 2026-11-17
+
+**Source:** The owner requested “make it public, need to test on a pc” and clarified “NO, JUST THE GITHUB SO I CAN PLAY THERE.”
+
+**CURRENT delivery:** Publish the current exported playtest through GitHub Pages and make the repository public as needed for that request. This supersedes the earlier private-only delivery restriction for this test. No Sites or other hosting service is requested. Gameplay/source work remains on its existing branch; Pages uses a runtime-only `gh-pages` branch. Public testing does not establish asset rights, approve the new combo feel or constitute the complete 0.1.0 release.
+
+**Observed limitation:** The integration can push content but repository visibility and Pages administration return HTTP 403. Prepare and verify the branch, then obtain the necessary owner-side settings; do not claim public visibility or a live Pages URL until verified. See [GitHub Pages](GitHub-Pages.md).

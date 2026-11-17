@@ -26,7 +26,7 @@ func _draw() -> void:
 		return
 	var h := to_local(hero.global_position)
 	var g := to_local(goblin.global_position)
-	var facing := float(hero.get("facing_direction"))
+	var facing: float = resolver.simulation.facing_direction
 	var reach := float(resolver.get("strike_range"))
 	var lane := float(resolver.get("lane_tolerance"))
 	var start_x := h.x if facing > 0.0 else h.x - reach
@@ -34,9 +34,10 @@ func _draw() -> void:
 	draw_rect(zone, fill_color, true)
 	draw_rect(zone, edge_color, false, 1.0)
 	draw_line(Vector2(h.x, h.y - lane - 5.0), Vector2(h.x, h.y + lane + 5.0), edge_color, 1.0)
-	var in_front: bool = (g.x - h.x) * facing > 0.0
-	var in_range: bool = absf(g.x - h.x) <= reach
-	var in_lane: bool = absf(g.y - h.y) <= lane
+	var checks: Dictionary = resolver.simulation.hit_checks(facing)
+	var in_front: bool = checks.front
+	var in_range: bool = checks.range
+	var in_lane: bool = checks.lane
 	var valid := in_front and in_range and in_lane
 	draw_line(h, g, hit_color if valid else miss_color, 1.0)
 	draw_circle(g, 3.0, hit_color if valid else miss_color)

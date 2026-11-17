@@ -1,0 +1,159 @@
+{
+  "observations": [
+    {
+      "url": "http://127.0.0.1:8060/",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+        "log: STRIKE_RESULT hit=false",
+        "log: STRIKE_RESULT hit=false",
+        "log: STRIKE_RESULT hit=true"
+      ],
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:8060/?lab=money-shot",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: MONEY_SHOT_LAB_READY platform=Web playback=Stream bpm=120 original_audio=true",
+        "log: MONEY_SHOT_AUDIO_STARTED gesture=true",
+        "log: MONEY_SHOT_REQUEST music=1.5995 resolve=4.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=2.0149 seek=0.0149",
+        "log: MONEY_SHOT_RESOLUTION count=1 music=4.0020 target=4.0000 event_late_ms=2.04",
+        "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_REQUEST music=4.9676 resolve=6.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=4.9676 seek=0.9676",
+        "log: MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_REQUEST music=5.2644 resolve=6.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=5.2644 seek=1.2644",
+        "log: MONEY_SHOT_RESOLUTION count=2 music=6.0089 target=6.0000 event_late_ms=8.86",
+        "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_RESTORED reason=reset interrupted=false time_scale=1.0000 zoom=1.0000",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J"
+      ],
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:8060/?lab=combat-exchange",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+        "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_ENEMY_RESULT outcome=guarded",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=hero",
+        "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=hero",
+        "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=hero",
+        "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+        "log: EXCHANGE_FINISHED winner=goblin",
+        "log: EXCHANGE_RESET",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: EXCHANGE_FINISHED winner=hero",
+        "log: STRIKE_RESULT hit=true",
+        "log: EXCHANGE_RESET"
+      ],
+      "errors": []
+    }
+  ],
+  "browser": "156.0.8078.79",
+  "preview": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+      "log: STRIKE_RESULT hit=false",
+      "log: STRIKE_RESULT hit=false",
+      "log: STRIKE_RESULT hit=true"
+    ],
+    "page_errors": [],
+    "held_attack_once": true,
+    "separate_tap": true,
+    "movement_to_close_hit": true
+  },
+  "money_shot": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: MONEY_SHOT_LAB_READY platform=Web playback=Stream bpm=120 original_audio=true",
+      "log: MONEY_SHOT_AUDIO_STARTED gesture=true",
+      "log: MONEY_SHOT_REQUEST music=1.5995 resolve=4.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=2.0149 seek=0.0149",
+      "log: MONEY_SHOT_RESOLUTION count=1 music=4.0020 target=4.0000 event_late_ms=2.04",
+      "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_REQUEST music=4.9676 resolve=6.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=4.9676 seek=0.9676",
+      "log: MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_REQUEST music=5.2644 resolve=6.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=5.2644 seek=1.2644",
+      "log: MONEY_SHOT_RESOLUTION count=2 music=6.0089 target=6.0000 event_late_ms=8.86",
+      "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_RESTORED reason=reset interrupted=false time_scale=1.0000 zoom=1.0000",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J"
+    ],
+    "page_errors": [],
+    "audio": {
+      "peak": 0.214019775390625,
+      "samples": 89344,
+      "states": [
+        "running",
+        "running"
+      ]
+    },
+    "completion_reset_repeat_and_return": true
+  },
+  "exchange": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+      "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_ENEMY_RESULT outcome=guarded",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=hero",
+      "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=hero",
+      "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=hero",
+      "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+      "log: EXCHANGE_FINISHED winner=goblin",
+      "log: EXCHANGE_RESET",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: EXCHANGE_FINISHED winner=hero",
+      "log: STRIKE_RESULT hit=true",
+      "log: EXCHANGE_RESET"
+    ],
+    "page_errors": [],
+    "guard_damage_defeat_victory_reset": true
+  }
+}

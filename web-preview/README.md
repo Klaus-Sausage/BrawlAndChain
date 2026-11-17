@@ -1,12 +1,54 @@
-# Private browser preview build
+# Browser playtests
 
-This is the Godot 4.7.2 single-threaded Web export of the approved armed Fighter preview. It uses the Compatibility renderer and keeps the provisional 480×270 canvas.
+Godot 4.7.2 single-threaded WebGL 2 Compatibility export. The accepted local preview remains the default; guard, audio and combo experiments are separate entries. The owner requested a public GitHub Pages PC test (D-076). Its prepared branch opens combos by default, but visibility/Pages settings need owner administration access. See [publication status](../docs/GitHub-Pages.md). Temporary asset reuse rights remain unverified.
 
-Godot web exports need to be served over HTTP; opening index.html directly from the filesystem is not supported. After cloning the private repository on a test computer:
+From the repository root:
 
-    cd web-preview
-    python3 -m http.server 8000
+```bash
+python3 -m http.server 8060 --bind 127.0.0.1 --directory web-preview
+```
 
-Open http://localhost:8000 in a current desktop browser with WebAssembly and WebGL 2 support. Click the game canvas before using WASD and J. Press F2 to show or hide the strike range/lane debug overlay; its FRONT/RANGE/LANE readout shows why a target position misses. If testing from a second computer on the same network, run the server on the host computer with python3 -m http.server 8000 --bind 0.0.0.0, then open http://HOST-LAN-IP:8000 on the test computer. Stop the server with Ctrl+C.
+Copy an address below into a current browser with WebAssembly and WebGL 2 support. The owner reports that clicking localhost links in chat fails while pasting the address works, so keep local preview addresses as copyable plain text:
 
-The GitHub repository is private, so testers also need repository access to clone/download this folder. This folder is a versioned build artifact; regenerate it from the Godot project after future changes.
+| Entry | URL | Controls |
+| --- | --- | --- |
+| Accepted movement/strike reference | `http://127.0.0.1:8060/` | WASD, fresh-press J, F2 diagnostics |
+| Reciprocal combat experiment | `http://127.0.0.1:8060/?lab=combat-exchange` | WASD, J, hold K to guard, R reset, F2 diagnostics |
+| Light/Heavy combo experiment | `http://127.0.0.1:8060/?lab=combos` | J Light, L Heavy, K guard, R reset; try J–J–J and J–J–L |
+| MONEY SHOT audio/time lab | `http://127.0.0.1:8060/?lab=money-shot` | Click Start audio, then Test finish; Reset interrupts; Preview returns to the reference |
+
+Click the game canvas before keyboard input. In the exchange, approach the goblin; its amber tell precedes one melee attack. Guard faces forward and plants the hero. The owner said this first exchange “feels great” (D-073), accepting its feel gate. Hidden health, mechanics and tuning remain experimental; this does not lock the Barbarian kit/balance or approve later Light/Heavy and Thief comparison work. See [the exchange brief](../docs/Combat-Experiment.md).
+
+The owner accepted the lab's steady rhythm and smooth resolution (D-074), without selecting final music or completing boss integration. Its UI reports scheduling lateness rather than measured audible latency. The separate [combo experiment](../docs/Combo-Experiment.md) follows the selected knockback Heavy finish (D-075); its tuning and feel need review. These previews do not establish controller support or the full slice's 60 FPS performance target. See [verification](../docs/Progress.md).
+
+## Update an existing playtest checkout
+
+The earlier worktree instructions create a detached playtest checkout. In a second terminal, with the server still running, update the dedicated folder using:
+
+```bash
+git -C /home/klaus/Documents/BrawlAndChain-playtest fetch origin
+git -C /home/klaus/Documents/BrawlAndChain-playtest switch --detach origin/feat/private-slice-foundation
+```
+
+Reload the browser after the update. These commands do not force-discard local edits; they update only the dedicated playtest checkout.
+
+Opening HTML directly with `file://` is unsupported. GitHub stores this private build but does not host a playable page. Stop the local server with Ctrl+C.
+
+## Rebuild from source
+
+Install the pinned editor and matching Web templates as described in [Godot setup](../docs/Godot-Setup.md). Set `GODOT_BIN` if `godot` points to another version.
+
+```bash
+python3 tools/check_project.py
+python3 tools/export_web.py --update-preview
+```
+
+The tools reject a mismatched editor. Export without `--update-preview` writes only `exports/private-preview/`. `source-manifest.json` records runtime input and exported artifact hashes, the source commit, dirty status, and engine version. The source commit can precede the later commit containing these generated files; the input hashes identify the exact runtime content.
+
+For repeatable browser checks, install Python Playwright and provide Chromium on PATH (or set `BRAWL_BROWSER_BIN`), serve the export, and run:
+
+```bash
+python3 tools/check_browser_preview.py --url http://127.0.0.1:8060/
+```
+
+Results and screenshots are written to ignored `exports/browser-evidence/`.

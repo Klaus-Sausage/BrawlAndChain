@@ -1,0 +1,234 @@
+{
+  "url": "http://127.0.0.1:8064/BrawlAndChain/",
+  "observations": [
+    {
+      "url": "http://127.0.0.1:8064/BrawlAndChain/",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+        "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+        "log: COMBO_LAB_READY controls=J_light+L_heavy+K_guard+R_reset provisional=true",
+        "log: COMBO_ACTION kind=light step=1",
+        "log: STRIKE_RESULT hit=false"
+      ],
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:8064/BrawlAndChain/?lab=preview",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+        "log: STRIKE_RESULT hit=false",
+        "log: STRIKE_RESULT hit=false",
+        "log: STRIKE_RESULT hit=true"
+      ],
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:8064/BrawlAndChain/?lab=combos",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+        "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+        "log: COMBO_LAB_READY controls=J_light+L_heavy+K_guard+R_reset provisional=true",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: COMBO_ACTION kind=light step=1",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: COMBO_BUFFER kind=light",
+        "log: COMBO_ACTION kind=light step=2",
+        "log: COMBO_BUFFER kind=light",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: COMBO_ACTION kind=light step=3",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=hero",
+        "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+        "log: EXCHANGE_RESET",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: COMBO_ACTION kind=light step=1",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: COMBO_ACTION kind=light step=2",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: STRIKE_RESULT hit=true",
+        "log: COMBO_ACTION kind=heavy step=3",
+        "log: EXCHANGE_WINDUP facing=-1.0",
+        "log: EXCHANGE_DAMAGED actor=goblin",
+        "log: COMBO_KNOCKBACK distance=48.0",
+        "log: STRIKE_RESULT hit=true",
+        "log: COMBO_ACTION kind=heavy step=1",
+        "log: EXCHANGE_RESET"
+      ],
+      "errors": []
+    },
+    {
+      "url": "http://127.0.0.1:8064/BrawlAndChain/?lab=money-shot",
+      "logs": [
+        "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+        "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+        "log: MONEY_SHOT_LAB_READY platform=Web playback=Stream bpm=120 original_audio=true",
+        "log: MONEY_SHOT_AUDIO_STARTED gesture=true",
+        "log: MONEY_SHOT_REQUEST music=2.3540 resolve=4.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=2.3540 seek=0.3540",
+        "log: MONEY_SHOT_RESOLUTION count=1 music=4.0245 target=4.0000 event_late_ms=24.46",
+        "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_REQUEST music=4.9787 resolve=6.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=4.9787 seek=0.9787",
+        "log: MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_REQUEST music=5.2341 resolve=6.0000 slowdown=0.20",
+        "log: MONEY_SHOT_CRESCENDO music=5.2341 seek=1.2341",
+        "log: MONEY_SHOT_RESOLUTION count=2 music=6.0318 target=6.0000 event_late_ms=31.78",
+        "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+        "log: MONEY_SHOT_RESTORED reason=reset interrupted=false time_scale=1.0000 zoom=1.0000",
+        "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J"
+      ],
+      "errors": []
+    }
+  ],
+  "scope": "local prepared GitHub Pages payload under repository subpath; no remote deployment verification",
+  "browser": "156.0.8078.79",
+  "default_root": {
+    "combo_ready": true,
+    "actual_light_input": true,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:8064/BrawlAndChain/",
+        "status": 200,
+        "content_type": "text/html"
+      },
+      {
+        "url": "http://127.0.0.1:8064/BrawlAndChain/index.png",
+        "status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "url": "http://127.0.0.1:8064/BrawlAndChain/index.js",
+        "status": 200,
+        "content_type": "text/javascript"
+      },
+      {
+        "url": "http://127.0.0.1:8064/BrawlAndChain/index.wasm",
+        "status": 200,
+        "content_type": "application/wasm"
+      },
+      {
+        "url": "http://127.0.0.1:8064/BrawlAndChain/index.pck",
+        "status": 200,
+        "content_type": "application/octet-stream"
+      }
+    ],
+    "errors": [],
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+      "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+      "log: COMBO_LAB_READY controls=J_light+L_heavy+K_guard+R_reset provisional=true",
+      "log: COMBO_ACTION kind=light step=1",
+      "log: STRIKE_RESULT hit=false"
+    ]
+  },
+  "explicit_preview": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+      "log: STRIKE_RESULT hit=false",
+      "log: STRIKE_RESULT hit=false",
+      "log: STRIKE_RESULT hit=true"
+    ],
+    "page_errors": [],
+    "held_attack_once": true,
+    "separate_tap": true,
+    "movement_to_close_hit": true
+  },
+  "combos": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J",
+      "log: COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true",
+      "log: COMBO_LAB_READY controls=J_light+L_heavy+K_guard+R_reset provisional=true",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: COMBO_ACTION kind=light step=1",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: COMBO_BUFFER kind=light",
+      "log: COMBO_ACTION kind=light step=2",
+      "log: COMBO_BUFFER kind=light",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: COMBO_ACTION kind=light step=3",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=hero",
+      "log: EXCHANGE_ENEMY_RESULT outcome=hit",
+      "log: EXCHANGE_RESET",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: COMBO_ACTION kind=light step=1",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: COMBO_ACTION kind=light step=2",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: STRIKE_RESULT hit=true",
+      "log: COMBO_ACTION kind=heavy step=3",
+      "log: EXCHANGE_WINDUP facing=-1.0",
+      "log: EXCHANGE_DAMAGED actor=goblin",
+      "log: COMBO_KNOCKBACK distance=48.0",
+      "log: STRIKE_RESULT hit=true",
+      "log: COMBO_ACTION kind=heavy step=1",
+      "log: EXCHANGE_RESET"
+    ],
+    "page_errors": [],
+    "light_branch_buffer_heavy_knockback_hold_and_reset": true
+  },
+  "audio_lab": {
+    "logs": [
+      "log: Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "log: OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "log: Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "log: MONEY_SHOT_LAB_READY platform=Web playback=Stream bpm=120 original_audio=true",
+      "log: MONEY_SHOT_AUDIO_STARTED gesture=true",
+      "log: MONEY_SHOT_REQUEST music=2.3540 resolve=4.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=2.3540 seek=0.3540",
+      "log: MONEY_SHOT_RESOLUTION count=1 music=4.0245 target=4.0000 event_late_ms=24.46",
+      "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_REQUEST music=4.9787 resolve=6.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=4.9787 seek=0.9787",
+      "log: MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_REQUEST music=5.2341 resolve=6.0000 slowdown=0.20",
+      "log: MONEY_SHOT_CRESCENDO music=5.2341 seek=1.2341",
+      "log: MONEY_SHOT_RESOLUTION count=2 music=6.0318 target=6.0000 event_late_ms=31.78",
+      "log: MONEY_SHOT_RESTORED reason=complete time_scale=1.0000 zoom=1.0000",
+      "log: MONEY_SHOT_RESTORED reason=reset interrupted=false time_scale=1.0000 zoom=1.0000",
+      "log: COMBAT_TEST_READY platform=Web renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J"
+    ],
+    "page_errors": [],
+    "audio": {
+      "peak": 0.21624755859375,
+      "samples": 87296,
+      "states": [
+        "running",
+        "running"
+      ]
+    },
+    "completion_reset_repeat_and_return": true
+  },
+  "pass": true
+}

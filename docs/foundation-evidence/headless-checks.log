@@ -1,0 +1,148 @@
+GODOT_VERSION_PASS 4.7.2.stable.official.ed1daf0bf
+CHECK_START editor_import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Loading docks...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+CHECK_PASS editor_import
+CHECK_START tools/check_visual_preview.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+COMBAT_TEST_READY platform=Linux renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J
+WALK_OBSERVED [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16] stopped_frame=0
+PREVIEW_CHECK walk_all_poses_then_idle=true
+PREVIEW_CHECK face_right=true
+PREVIEW_CHECK face_left=true
+STRIKE_RESULT hit=true
+PREVIEW_CHECK close_hit=true
+STRIKE_RESULT hit=false
+PREVIEW_CHECK distant_miss=true
+STRIKE_RESULT hit=false
+PREVIEW_CHECK facing_away_miss=true
+STRIKE_RESULT hit=false
+PREVIEW_CHECK wrong_lane_miss=true
+STRIKE_RESULT hit=true
+PREVIEW_CHECK moving_swing_repeat_lock_facing=true
+STRIKE_RESULT hit=true
+PREVIEW_CHECK next_swing_after_finish=true
+PREVIEW_CHECK contact_at_atlas_22=true
+PREVIEW_CHECK arena_bounds=true
+STRIKE_RESULT hit=false
+PREVIEW_CHECK hold_j_only_one_attack=true
+PREVIEW_CHECK separate_tap_starts_next_attack=true
+STRIKE_RESULT hit=false
+STRIKE_RESULT hit=true
+PREVIEW_CHECK hidden_presentation_still_hits=true
+PREVIEW_CHECK disabled_presentation_still_settles=true
+PREVIEW_RESULTS hits=[true, false, false, false, true, true, false, false, true] contacts=[22, 22, 22, 22, 22, 22, 22, 22] failures=[]
+CHECK_PASS tools/check_visual_preview.gd
+CHECK_START tools/check_authority.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+AUTHORITY_CHECK range_boundary_inclusive=true
+AUTHORITY_CHECK outside_range_misses=true
+AUTHORITY_CHECK lane_boundary_inclusive=true
+AUTHORITY_CHECK outside_lane_misses=true
+AUTHORITY_CHECK same_origin_is_not_in_front=true
+AUTHORITY_CHECK left_facing_hits=true
+AUTHORITY_CHECK unknown_action_rejected=true
+AUTHORITY_CHECK initial_strike_accepted=true
+AUTHORITY_CHECK no_contact_before_gameplay_marker=true
+AUTHORITY_CHECK contact_at_gameplay_marker=true
+AUTHORITY_CHECK completion_at_gameplay_duration=true
+AUTHORITY_CHECK cooldown_outlasts_visual_action=true
+AUTHORITY_CHECK new_action_after_point_32_seconds=true
+AUTHORITY_CHECK large_step_does_not_duplicate_contact_or_finish=true
+AUTHORITY_CHECK gameplay_timing_preserves_approved_source_cadence=true
+AUTHORITY_CHECK moving_attack_keeps_accepted_facing_60_false=true
+AUTHORITY_CHECK expected_hits_and_misses=true
+AUTHORITY_CHECK lock_and_cooldown_reject_repeated_requests=true
+AUTHORITY_CHECK one_contact_and_completion_per_accepted_action=true
+AUTHORITY_CHECK moving_attack_keeps_accepted_facing_15_true=true
+AUTHORITY_CHECK same_gameplay_with_15_fps_presentation=true
+AUTHORITY_CHECK moving_attack_keeps_accepted_facing_30_true=true
+AUTHORITY_CHECK same_gameplay_with_30_fps_presentation=true
+AUTHORITY_CHECK moving_attack_keeps_accepted_facing_60_true=true
+AUTHORITY_CHECK same_gameplay_with_60_fps_presentation=true
+AUTHORITY_CHECK moving_attack_keeps_accepted_facing_144_true=true
+AUTHORITY_CHECK same_gameplay_with_144_fps_presentation=true
+AUTHORITY_RESULTS failures=[]
+CHECK_PASS tools/check_authority.gd
+CHECK_START tools/check_money_shot_lab.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+MONEY_SHOT_CHECK reject_invalid_clock=true
+MONEY_SHOT_CHECK accept_finish=true
+MONEY_SHOT_CHECK resolve_on_bar=true
+MONEY_SHOT_CHECK reject_overlapping_finish=true
+MONEY_SHOT_CHECK start_midbar_crescendo=true
+MONEY_SHOT_CHECK wait_for_music_not_gameplay_time=true
+MONEY_SHOT_CHECK single_resolution=true
+MONEY_SHOT_CHECK no_duplicate_resolution=true
+MONEY_SHOT_CHECK restore_after_tail=true
+MONEY_SHOT_CHECK late_request_keeps_crescendo_window=true
+MONEY_SHOT_CHECK wait_for_next_crescendo=true
+MONEY_SHOT_CHECK start_next_bar_crescendo=true
+MONEY_SHOT_CHECK cancel_has_no_late_events=true
+MONEY_SHOT_CHECK cancel_idempotent=true
+MONEY_SHOT_CHECK large_clock_step_restores=true
+MONEY_SHOT_LAB_READY platform=Linux playback=Stream bpm=120 original_audio=true
+MONEY_SHOT_AUDIO_STARTED gesture=true
+MONEY_SHOT_REQUEST music=0.0207 resolve=2.0000 slowdown=0.16
+MONEY_SHOT_CRESCENDO music=0.0207 seek=0.0207
+MONEY_SHOT_CHECK runtime_slow_and_zoom=true
+MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=0.8000 zoom=1.0000
+MONEY_SHOT_CHECK reset_restores_captured_state=true
+MONEY_SHOT_REQUEST music=0.0208 resolve=2.0000 slowdown=0.16
+MONEY_SHOT_CRESCENDO music=0.0208 seek=0.0208
+MONEY_SHOT_RESTORED reason=reset interrupted=true time_scale=0.8000 zoom=1.0000
+MONEY_SHOT_FOCUS_LOST restored=true audio_stopped=true
+MONEY_SHOT_CHECK focus_loss_restores_and_stops_audio=true
+MONEY_SHOT_AUDIO_STARTED gesture=true
+MONEY_SHOT_REQUEST music=0.0211 resolve=2.0000 slowdown=0.16
+MONEY_SHOT_CRESCENDO music=0.0211 seek=0.0211
+MONEY_SHOT_CHECK scene_exit_restores_time=true
+MONEY_SHOT_RESULTS failures=[] audible_browser_check_required=true
+CHECK_PASS tools/check_money_shot_lab.gd
+CHECK_START tools/check_combat_exchange.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+EXCHANGE_CHECK no_attack_from_initial_distance=true
+EXCHANGE_CHECK windup_before_contact=true
+EXCHANGE_CHECK unguarded_contact_once=true
+EXCHANGE_CHECK recovery_has_no_second_contact=true
+EXCHANGE_CHECK front_guard_blocks_and_plants=true
+EXCHANGE_CHECK guard_prevents_starting_strike=true
+EXCHANGE_CHECK release_guard_permits_strike=true
+EXCHANGE_CHECK guard_does_not_cover_rear=true
+EXCHANGE_CHECK strike_commits_during_enemy_windup=true
+EXCHANGE_CHECK guard_does_not_cancel_committed_strike=true
+EXCHANGE_CHECK leaving_lane_avoids_committed_attack=true
+EXCHANGE_CHECK player_contact_damages_once_and_staggers=true
+EXCHANGE_CHECK original_repeat_delay_preserved=true
+EXCHANGE_CHECK distinct_strike_after_original_delay=true
+EXCHANGE_CHECK goblin_defeat_after_three_contacts=true
+EXCHANGE_CHECK finished_encounter_rejects_strike=true
+EXCHANGE_CHECK hero_defeat_stops_actions=true
+EXCHANGE_CHECK defeated_hero_cannot_move=true
+EXCHANGE_CHECK reset_restores_complete_encounter=true
+EXCHANGE_CHECK reset_cancels_pending_contact=true
+COMBAT_TEST_READY platform=Linux renderer=gl_compatibility viewport=(480.0, 270.0) controls=WASD+J
+COMBAT_EXCHANGE_READY controls=WASD+J+hold_K+R provisional=true
+EXCHANGE_CHECK scene_binds_exchange_before_resolver_ready=true
+EXCHANGE_CHECK named_guard_and_reset_actions=true
+COMBAT_EXCHANGE_RESULTS failures=[]
+CHECK_PASS tools/check_combat_exchange.gd
+PROJECT_CHECKS_PASS harnesses=4
